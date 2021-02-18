@@ -13,21 +13,22 @@
         <a class="btn" asp-controller="Home" asp-action="AddArendator">Добавление нового арендатора</a>
         <a class="btn" asp-controller="Home" asp-action="DeleteArendator">Удаление арендатора</a>
     </div>
-    <img id="image" src="../SVG/1этаж.svg" width="1331" height="500" asp-append-version="true">
-    <div class="main-floor">
-        <div class="group-floor">
-            <h4>Этажи</h4>
-            <button class="btn" id="0" onclick="ChangeText(this.id)">0</button>
-            <button class="btn" id="1" onclick="ChangeText(this.id)">1</button>
-            <button class="btn" id="2" onclick="ChangeText(this.id)">2</button>
-            <button class="btn" id="3" onclick="ChangeText(this.id)">3</button>
-            <button class="btn" id="4" onclick="ChangeText(this.id)">4</button>
-            <button class="btn" id="5" onclick="ChangeText(this.id)">5</button>
+    <!--<image height="548.6560614371914" width="1200" src="../SVG/0этаж.svg" x="0" y="0" visibility="visible"></image>-->
+        <img id="image" src="../SVG/1этаж.svg" width="1331" height="500" asp-append-version="true">
+        <div class="main-floor">
+            <div class="group-floor">
+                <h4>Этажи</h4>
+                <button class="btn" id="0" onclick="ChangeText(this.id)">0</button>
+                <button class="btn" id="1" onclick="ChangeText(this.id)">1</button>
+                <button class="btn" id="2" onclick="ChangeText(this.id)">2</button>
+                <button class="btn" id="3" onclick="ChangeText(this.id)">3</button>
+                <button class="btn" id="4" onclick="ChangeText(this.id)">4</button>
+                <button class="btn" id="5" onclick="ChangeText(this.id)">5</button>
+            </div>
         </div>
-    </div>
-    @foreach (Arendator a in Model)
-    {
-<a asp-controller="Information" asp-action="Info" class="btn">@a.ArendatorName</a>}
-</body>
-@*<a asp-controller="Information" asp-action="Info" asp-for="Name"></a>*@
-<!--<button class="btn btn-primary" (click)="incrementCounter()">Increment</button>-->
+        @foreach (Arendator a in Model)
+        {
+    <a asp-controller="Information" asp-action="Info" class="btn">@a.ArendatorName</a>}
+    </body>
+    @*<a asp-controller="Information" asp-action="Info" asp-for="Name"></a>*@
+    <!--<button class="btn btn-primary" (click)="incrementCounter()">Increment</button>-->
