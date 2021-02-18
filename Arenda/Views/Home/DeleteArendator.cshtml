@@ -1,0 +1,17 @@
+﻿@model Arenda.Models.Arendator
+@{
+    ViewBag.Title = "Удаление арендатора";
+}
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+<form asp-controller="Home" asp-action="DeleteArendator">
+    <div class="form-group">
+        <label asp-for="ArendatorName" class="control-label">Название Арендатора</label>
+        <input type="text" asp-for="ArendatorName" class="form-control" />
+    </div>
+    <div class="button-item">
+        <input type="submit" value="Удалить" class="btn-1" />
+    </div>
+</form>

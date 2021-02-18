@@ -1,0 +1,19 @@
+﻿@model IEnumerable<Arenda.Models.Arendator>
+@{ ViewBag.Title = "Специальные условия"; }
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="~/css/style.css"/>
+</head>
+<body>
+    <div class="button-item">
+        <a asp-controller="Information" asp-action="NewDogovor" class="btn">Добавить скидки</a>
+    </div>
+    <table class="content-table">
+        <thead>
+            <tr><td>Скидки</td></tr>
+        </thead>
+        @foreach (var item in Model)
+        {
+        <tr><td>@item.Commercial</td></tr>}
+    </table>
+</body>

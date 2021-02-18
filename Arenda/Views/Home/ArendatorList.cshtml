@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Arenda.Models.Arendator>
+@{
+    ViewBag.Title = "Список арендаторов";
+}
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+<body>
+    <div class="button-item">
+        <a asp-controller="Home" asp-action="AddArendator" class="btn">Добавление нового арендатора</a>
+        <a asp-controller="Home" asp-action="DeleteArendator" class="btn">Удаление арендатора</a>
+    </div>
+    <div class="container">
+        <div class="dropdown">
+            <a class="text-floor" href="#">0 этаж</a>
+            <div class="dropdown-content">
+                @foreach (var item in Model)
+                {
+    <a asp-controller="Information" asp-action="Info" class="btn">@item.ArendatorName</a>            }
+            </div>
+        </div>
+        <div class="dropdown">
+            <a class="text-floor" href="#">1 этаж</a>
+            <div class="dropdown-content">
+                @foreach (var item in Model)
+                {
+    <a asp-controller="Information" asp-action="Info" class="btn">@item.ArendatorName</a>            }
+            </div>
+        </div>
+        <div class="dropdown">
+            <a class="text-floor" href="#">2 этаж</a>
+            <div class="dropdown-content">
+                @foreach (var item in Model)
+                {
+    <a asp-controller="Information" asp-action="Info" class="btn">@item.ArendatorName</a>            }
+            </div>
+        </div>
+    </div>
+</body>

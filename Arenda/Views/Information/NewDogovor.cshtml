@@ -1,0 +1,33 @@
+﻿@model Arenda.Models.Arendator
+@{
+    ViewBag.Title = "Добавление договора";
+}
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+<form asp-action="NewDogovor" asp-controller="Information">
+    <div class="form-group">
+        <label asp-for="Commercial" class="control-label">Коммерция</label>
+        <input type="text" asp-for="Commercial" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Contact" class="control-label">Контактные данные</label>
+        <input type="text" asp-for="Contact" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Object" class="control-label">Предыдущий объект</label>
+        <input type="text" asp-for="Object" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="PastArenda" class="control-label">Предыдущая аренда</label>
+        <input type="text" asp-for="PastArenda" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Curator" class="control-label">Куратор</label>
+        <input type="text" asp-for="Curator" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Отправить" class="btn btn-default" />
+    </div>
+</form>

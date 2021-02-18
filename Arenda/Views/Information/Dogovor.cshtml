@@ -1,0 +1,22 @@
+﻿@model IEnumerable<Arenda.Models.Arendator>
+@{
+    ViewBag.Title = "Информация о договоре";
+}
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+<body>
+    <div class="button-item">
+            <a asp-controller="Information" asp-action="NewDogovor" class="btn">Добавить договор</a>
+    </div>
+    <table class="content-table">
+        <thead>
+            <tr><td>Коммерция</td><td>Контактные данные</td><td>Предыдущие объекты</td><td>Предыдущая аренда</td><td>Куратор</td></tr>
+        </thead>
+        @foreach (var item in Model)
+        {
+            <tr><td>@item.Commercial</td><td>@item.Contact</td><td>@item.Object</td><td>@item.PastArenda</td><td>@item.Curator</td></tr>
+        }
+    </table>
+</body>

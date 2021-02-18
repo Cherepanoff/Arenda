@@ -1,0 +1,21 @@
+﻿@model Arenda.Models.Arendator
+@{
+    ViewBag.Title = "Добавление арендатора";
+}
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+<form asp-controller="Home" asp-action="AddArendator">
+    <div class="form-group">
+        <label asp-for="ArendatorName" class="control-label">Название Арендатора</label>
+        <input type="text" asp-for="ArendatorName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="ArendatorFloor" class="control-label">Этаж</label>
+        <input type="number" asp-for="ArendatorFloor" class="form-control" />
+    </div>
+    <div class="button-item">
+        <input type="submit" value="Отправить" class="btn-1" />
+    </div>
+</form>
