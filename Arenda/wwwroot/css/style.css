@@ -74,7 +74,9 @@ padding-bottom: 15px;
 .rightsidebar {
     margin-top:40px;
     margin-right:100px;
-    float: right;
+    float: right; 
+    /*display: flex;
+    justify-content:space-between;  */
 }
 .leftsidebar {
     float: left;
@@ -131,7 +133,7 @@ padding-bottom: 15px;
 }
 
 /* Dropdown Content (Hidden by Default) */
-.dropdown-content {
+    .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f1f1f1;

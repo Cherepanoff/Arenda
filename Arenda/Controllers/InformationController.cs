@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
@@ -8,6 +9,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using OfficeOpenXml;
 
 namespace Arenda.Controllers
 {
@@ -17,6 +19,7 @@ namespace Arenda.Controllers
         //private FileManager _fileManager;
         private string _dir;
         public ShelkContext db;
+        //db dbop = new db();
         public InformationController(ShelkContext context, IWebHostEnvironment env)
         {
             ///_fileManager = fileManager;
@@ -103,5 +106,15 @@ namespace Arenda.Controllers
             }
             return RedirectToAction("Info");
         }
+       // public async IActionResult ExportExcel()
+       // {
+            //DataSet dbop = 
+        //    var stream = new MemoryStream();
+        //    using (var package = new ExcelPackage(stream))
+        //    {
+         //       var worksheet = package.Workbook.Worksheets.Add("Sheet1");
+         //       worksheet.Cells.LoadFromDataTable(ds)
+        //    }
+        //}
     }
 }

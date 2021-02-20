@@ -38,27 +38,42 @@ namespace Arenda.Controllers
         {
             return View();
         }
-        [HttpPost]
-        public ActionResult DeleteArendator(int id)
-        {
-            Arendator b = db.Arendators.Find(id);
-            if (b != null)
-            {
-                db.Arendators.Remove(b);
-                db.SaveChanges();
-            }
-            return RedirectToAction("Index");
-        }
-        //public async Task<IActionResult> DeleteArendator(Arendator arendator)
-        //{
-        //  db.Arendators.Remove(arendator);
-        // await db.SaveChangesAsync();
-        // return RedirectToAction("Index");
-        //}
-        //public IActionResult DeleteArendator()
+        // [HttpPost]
+        // public async Task<IActionResult> DeleteArendator(Arendator arendator)
+        // {
+        //     db.Arendators.Remove(arendator);
+        //        await db.SaveChangesAsync();
+        //         return RedirectToAction("Index");
+        // }
+        // public IActionResult DeleteArendator()
         //{
         //    return View();
-        //}
+        // }
+        [HttpGet]
+        [ActionName("DeleteArendator")]
+        public async Task<IActionResult> ConfirmDelete(int? ArendatorId)
+        {
+            if (ArendatorId != null)
+            {
+                Arendator arendator = await db.Arendators.FirstOrDefaultAsync(p => p.ArendatorId == ArendatorId);
+                if (arendator != null)
+                return View(arendator);
+            }
+            return NotFound();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteArendator(int? ArendatorId)
+        {
+            if (ArendatorId != null)
+            {
+                Arendator arendator = new Arendator { ArendatorId = ArendatorId.Value };
+                db.Entry(arendator).State = EntityState.Deleted;
+                await db.SaveChangesAsync();
+                return RedirectToAction("Index");
+            }
+            return NotFound();
+        }
         //private readonly ILogger<HomeController> _logger;
 
         //public HomeController(ILogger<HomeController> logger)
