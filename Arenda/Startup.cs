@@ -31,6 +31,7 @@ namespace Arenda
                 .AddCookie(options => //CookieAuthenticationOptions
                 {
                     options.LoginPath = new Microsoft.AspNetCore.Http.PathString("/Account/Login");
+                    options.AccessDeniedPath = new Microsoft.AspNetCore.Http.PathString("/Account/Login");
                 });
 
             string connection = Configuration.GetConnectionString("DefaultConnection");

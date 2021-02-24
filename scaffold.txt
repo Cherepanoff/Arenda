@@ -1,0 +1,1 @@
+Scaffold-DbContext "Server=WS-0687058;Initial Catalog=Shelk;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -f

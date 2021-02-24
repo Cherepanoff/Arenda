@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Arenda.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -55,6 +56,7 @@ namespace Arenda.Controllers
 
         //   return RedirectToAction("Info");
         // }
+        [Authorize(Roles = "Админ,Юрист")]
         public async Task<IActionResult> Info()
         { 
             return View(await db.Arendators.FromSqlRaw("SELECT * FROM Arendator WHERE ArendatorID=1").ToListAsync());
@@ -67,8 +69,9 @@ namespace Arenda.Controllers
             await db.SaveChangesAsync();
             return RedirectToAction("Info");
         }
+        [Authorize(Roles = "Админ")]
         //public IActionResult NewInfo() => View(_fileManager.GetFiles());
-       public IActionResult NewInfo()
+        public IActionResult NewInfo()
         {
 
             return View();
@@ -91,6 +94,17 @@ namespace Arenda.Controllers
         public async Task<IActionResult> SpecConditions()
         {
             return View(await db.Arendators.ToListAsync());
+        }
+        [HttpPost]
+        public async Task<IActionResult> NewCondition(Arendator Arendator)
+        {
+            db.Arendators.Add(Arendator);
+            await db.SaveChangesAsync();
+            return RedirectToAction("SpecCondtions");
+        }
+        public IActionResult NewCondition()
+        {
+            return View();
         }
         public async Task<IActionResult> UploadImage(IFormFile file)
         {

@@ -6,12 +6,15 @@
 </head>
 <body>
     <div class="button-item">
-        <a asp-controller="Information" asp-action="NewDogovor" class="btn">Добавить скидки</a>
+        <a asp-controller="Information" asp-action="NewCondition" class="btn">Добавить скидки</a>
     </div>
     <table class="content-table">
-        <thead>
+        <tbody>
             <tr><td>Скидки</td></tr>
-        </thead>
+            <tr><td>Бесплатная реклама</td></tr>
+            <tr><td>Спец. условия по парковке</td></tr>
+            <tr><td>Спец. условия по платежам</td></tr>
+        </tbody>
         @foreach (var item in Model)
         {
         <tr><td>@item.Commercial</td></tr>}

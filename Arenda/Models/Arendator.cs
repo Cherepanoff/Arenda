@@ -15,6 +15,7 @@ namespace Arenda.Models
         public int ArendatorId { get; set; }
         public string ArendatorName { get; set; }
         public string ArendatorFloor { get; set; }
+        public string ArendatorType { get; set; }
         public string LegalPerson { get; set; }
         public string GeneralDirector { get; set; }
         public string NumberContract { get; set; }
@@ -32,6 +33,12 @@ namespace Arenda.Models
         public string Contact1 { get; set; }
         public string Post { get; set; }
         public string Email { get; set; }
+        public string Sale { get; set; }
+        public string Advertising { get; set; }
+        public string SpecCondition { get; set; }
+        public string ParkingCondition { get; set; }
+        public byte[] Logo { get; set; }
+        public string PayCondition { get; set; }
 
         public virtual ICollection<Comment> Comments { get; set; }
     }

@@ -30,10 +30,11 @@ namespace Arenda.Controllers
         {
             if (ModelState.IsValid)
             {
-                User user = await db.Users.FirstOrDefaultAsync(u => u.UserLogin == model.Login && u.UserPassword == model.Password);
+                User user = await db.Users.Include(u => u.RoleFkNavigation).FirstOrDefaultAsync(u => u.UserLogin == model.Login && u.UserPassword == model.Password);
+                //User user = await db.Users.FirstOrDefaultAsync(u => u.UserLogin == model.Login && u.UserPassword == model.Password);
                 if (user != null)
                 {
-                    await Authenticate(model.Login); // аутентификация
+                    await Authenticate(user); // аутентификация
 
                     return RedirectToAction("Index", "Home");
                 }
@@ -46,35 +47,36 @@ namespace Arenda.Controllers
         {
             return View();
         }
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Register(RegisterModel model)
-        {
-            if (ModelState.IsValid)
-            {
-                User user = await db.Users.FirstOrDefaultAsync(u => u.UserLogin == model.Login);
-                if (user == null)
-                {
+//        [HttpPost]
+//        [ValidateAntiForgeryToken]
+ //       public async Task<IActionResult> Register(RegisterModel model)
+ //       {
+ //           if (ModelState.IsValid)
+ //           {
+ //               User user = await db.Users.FirstOrDefaultAsync(u => u.UserLogin == model.Login);
+ //               if (user == null)
+ //               {
                     // добавляем пользователя в бд
-                    db.Users.Add(new User { UserLogin = model.Login, UserName = model.Name, UserPassword = model.Password });
-                    await db.SaveChangesAsync();
+ //                   db.Users.Add(new User { UserLogin = model.Login, UserName = model.Name, UserPassword = model.Password });
+ //                   await db.SaveChangesAsync();
 
-                    await Authenticate(model.Login); // аутентификация
+   //                 await Authenticate(model.Login); // аутентификация
 
-                    return RedirectToAction("Index", "Home");
-                }
-                else
-                    ModelState.AddModelError("", "Некорректные логин и(или) пароль");
-            }
-            return View(model);
-        }
+     //               return RedirectToAction("Index", "Home");
+       //         }
+        //        else
+       //             ModelState.AddModelError("", "Некорректные логин и(или) пароль");
+         //   }
+           // return View(model);
+        //}
 
-        private async Task Authenticate(string userName)
+        private async Task Authenticate(User user)
         {
             // создаем один claim
             var claims = new List<Claim>
             {
-                new Claim(ClaimsIdentity.DefaultNameClaimType, userName)
+                new Claim(ClaimsIdentity.DefaultNameClaimType, user.UserLogin),
+            new Claim(ClaimsIdentity.DefaultRoleClaimType, user.RoleFkNavigation.RoleName),
             };
             // создаем объект ClaimsIdentity
             ClaimsIdentity id = new ClaimsIdentity(claims, "ApplicationCookie", ClaimsIdentity.DefaultNameClaimType, ClaimsIdentity.DefaultRoleClaimType);

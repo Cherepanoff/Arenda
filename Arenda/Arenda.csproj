@@ -5,6 +5,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Models\**" />
+    <Content Remove="Models\**" />
+    <EmbeddedResource Remove="Models\**" />
+    <None Remove="Models\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Models\Arendator.cs" />
+    <Compile Include="Models\Comment.cs" />
+    <Compile Include="Models\ErrorViewModel.cs" />
+    <Compile Include="Models\Role.cs" />
+    <Compile Include="Models\ShelkContext.cs" />
+    <Compile Include="Models\User.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="EPPlus" Version="5.5.4" />
     <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.7" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.0" />
@@ -17,10 +33,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\Image\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="Views\Account\Login.cshtml" />
     <None Include="Views\Account\Register.cshtml" />
     <None Include="Views\Home\AddArendator.cshtml" />
@@ -30,8 +42,10 @@
     <None Include="Views\Home\Privacy.cshtml" />
     <None Include="Views\Information\Dogovor.cshtml" />
     <None Include="Views\Information\Info.cshtml" />
+    <None Include="Views\Information\NewCondition.cshtml" />
     <None Include="Views\Information\NewDogovor.cshtml" />
     <None Include="Views\Information\NewInfo.cshtml" />
+    <None Include="Views\Information\SpecConditions.cshtml" />
     <None Include="Views\Shared\Error.cshtml" />
     <None Include="Views\Shared\_Layout.cshtml" />
     <None Include="Views\Shared\_ValidationScriptsPartial.cshtml" />

@@ -1,0 +1,31 @@
+﻿@model Arenda.Models.Arendator
+@{ ViewBag.Title = "Добавление скидки"; }
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+<form asp-action="NewDogovor" asp-controller="Information">
+    <div class="form-group">
+        <label asp-for="Sale" class="control-label">Скидки</label>
+        <input type="text" asp-for="Sale" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Advertising" class="control-label">Реклама</label>
+        <input type="text" asp-for="Advertising" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="ParkingCondition" class="control-label">Условия по парковке</label>
+        <input type="text" asp-for="ParkingCondition" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="PayCondition" class="control-label">Условия по оплате</label>
+        <input type="text" asp-for="PayCondition" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="SpecCondition" class="control-label">Куратор</label>
+        <input type="text" asp-for="SpecCondition" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Отправить" class="btn btn-default" />
+    </div>
+</form>

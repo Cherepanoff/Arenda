@@ -43,9 +43,13 @@ namespace Arenda.Models
 
                 entity.Property(e => e.AdressLegal).IsUnicode(false);
 
+                entity.Property(e => e.Advertising).IsUnicode(false);
+
                 entity.Property(e => e.ArendatorFloor).IsUnicode(false);
 
                 entity.Property(e => e.ArendatorName).IsUnicode(false);
+
+                entity.Property(e => e.ArendatorType).IsUnicode(false);
 
                 entity.Property(e => e.Commercial).IsUnicode(false);
 
@@ -65,17 +69,27 @@ namespace Arenda.Models
 
                 entity.Property(e => e.LegalPerson).IsUnicode(false);
 
+                entity.Property(e => e.Logo).HasColumnType("image");
+
                 entity.Property(e => e.Marketing).IsUnicode(false);
 
                 entity.Property(e => e.NumberContract).IsUnicode(false);
 
                 entity.Property(e => e.Object).IsUnicode(false);
 
+                entity.Property(e => e.ParkingCondition).IsUnicode(false);
+
                 entity.Property(e => e.PastArenda).IsUnicode(false);
+
+                entity.Property(e => e.PayCondition).IsUnicode(false);
 
                 entity.Property(e => e.Post).IsUnicode(false);
 
                 entity.Property(e => e.Rate).IsUnicode(false);
+
+                entity.Property(e => e.Sale).IsUnicode(false);
+
+                entity.Property(e => e.SpecCondition).IsUnicode(false);
             });
 
             modelBuilder.Entity<Comment>(entity =>
