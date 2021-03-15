@@ -9,12 +9,14 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using NLog;
 
 namespace Arenda.Controllers
 {
     public class AccountController : Controller
     {
         private ShelkContext db;
+        private static Logger logger = LogManager.GetCurrentClassLogger();
         public AccountController(ShelkContext context)
         {
             db = context;
@@ -35,7 +37,7 @@ namespace Arenda.Controllers
                 if (user != null)
                 {
                     await Authenticate(user); // аутентификация
-
+                    logger.Trace("Подключился пользователь " + user.UserLogin );
                     return RedirectToAction("Index", "Home");
                 }
                 ModelState.AddModelError("", "Некорректные логин и(или) пароль");
@@ -47,27 +49,27 @@ namespace Arenda.Controllers
         {
             return View();
         }
-//        [HttpPost]
-//        [ValidateAntiForgeryToken]
- //       public async Task<IActionResult> Register(RegisterModel model)
- //       {
- //           if (ModelState.IsValid)
- //           {
- //               User user = await db.Users.FirstOrDefaultAsync(u => u.UserLogin == model.Login);
- //               if (user == null)
- //               {
-                    // добавляем пользователя в бд
- //                   db.Users.Add(new User { UserLogin = model.Login, UserName = model.Name, UserPassword = model.Password });
- //                   await db.SaveChangesAsync();
+        //        [HttpPost]
+        //        [ValidateAntiForgeryToken]
+        //       public async Task<IActionResult> Register(RegisterModel model)
+        //       {
+        //           if (ModelState.IsValid)
+        //           {
+        //               User user = await db.Users.FirstOrDefaultAsync(u => u.UserLogin == model.Login);
+        //               if (user == null)
+        //               {
+        // добавляем пользователя в бд
+        //                   db.Users.Add(new User { UserLogin = model.Login, UserName = model.Name, UserPassword = model.Password });
+        //                   await db.SaveChangesAsync();
 
-   //                 await Authenticate(model.Login); // аутентификация
+        //                 await Authenticate(model.Login); // аутентификация
 
-     //               return RedirectToAction("Index", "Home");
-       //         }
+        //               return RedirectToAction("Index", "Home");
+        //         }
         //        else
-       //             ModelState.AddModelError("", "Некорректные логин и(или) пароль");
-         //   }
-           // return View(model);
+        //             ModelState.AddModelError("", "Некорректные логин и(или) пароль");
+        //   }
+        // return View(model);
         //}
 
         private async Task Authenticate(User user)
@@ -83,7 +85,8 @@ namespace Arenda.Controllers
             // установка аутентификационных куки
             await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(id));
         }
-
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Logout()
         {
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);

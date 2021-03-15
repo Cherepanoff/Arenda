@@ -15,7 +15,6 @@
             <a class="btn" asp-controller="Home" asp-action="AddArendator">Добавление нового арендатора</a>
             <a class="btn" asp-controller="Home" asp-action="DeleteArendator">Удаление арендатора</a>
             <a class="btn" href="../Contract/табличка.docx">Шаблон договора аренды</a>
-            <a class="btn" href="../Contract/табличка.docx">Шаблон договора рекламы</a>
         </div>
         <!--<img id="image" src="../SVG/1этаж.svg" width="1331" height="500" asp-append-version="true">-->
         <div class="map">
@@ -46,8 +45,7 @@
             <h1 id="text">План 1-ого этажа</h1>
             <a class="btn" asp-controller="Home" asp-action="AddArendator">Добавление нового арендатора</a>
             <a class="btn" asp-controller="Home" asp-action="DeleteArendator">Удаление арендатора</a>
-            <a class="btn" href="../Contract/табличка.docx">Шаблон договора аренды</a>
-            <a class="btn" href="../Contract/табличка.docx">Шаблон договора рекламы</a>
+            <a class="btn" href="../Contract/AdvertDoc.doc">Шаблон договора рекламы</a>
         </div>
         <!--<img id="image" src="../SVG/1этаж.svg" width="1331" height="500" asp-append-version="true">-->
         <div class="map">
@@ -67,11 +65,7 @@
                 <button class="btn" id="4" name="id" onclick="ChangeTextAdvert(this.id)">4</button>
                 <button class="btn" id="5" name="id" onclick="ChangeTextAdvert(this.id)">5</button>
             </div>
-        </div>
-        @foreach (var a in Model)
-        {
-            <a asp-controller="Information" asp-action="Info" class="btn" asp-route-id="@a.ArendatorId">@a.ArendatorName</a>
-        }}
+        </div>}
 </body>
         @*<a asp-controller="Information" asp-action="Info" asp-for="Name"></a>*@
         <!--<button class="btn btn-primary" (click)="incrementCounter()">Increment</button>-->

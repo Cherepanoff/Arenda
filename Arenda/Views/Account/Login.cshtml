@@ -1,17 +1,21 @@
 ﻿@model Arenda.ViewModels.LoginModel
-    <head>
-        <meta charset="utf-8">
-        <title> Login </title>
-        <link rel="stylesheet" href="~/css/Account.css">
-    </head>
-    <body>
+@{
+    Layout = null;
+}
 
-        <form class="box" asp-action="Login" asp-anti-forgery="true">
-            <div class="validation" asp-validation-summary="ModelOnly"></div>
-            <input type="text" placeholder="Логин" asp-for="Login" />
-            <input placeholder="Пароль" asp-for="Password" />
-            <div class="form-group">
-                <input type="submit" value="Войти" class="btn btn-outline-dark" />
-            </div>
-        </form>
-        </body>
+<head>
+    <meta charset="utf-8">
+    <title> Login </title>
+    <link rel="stylesheet" href="~/css/Account.css">
+</head>
+<body>
+
+    <form class="box" asp-action="Login" asp-anti-forgery="true">
+        <div class="validation" asp-validation-summary="ModelOnly"></div>
+        <input type="text" placeholder="Логин" asp-for="Login" />
+        <input placeholder="Пароль" asp-for="Password" />
+        <div class="form-group">
+            <input type="submit" value="Войти" class="btn btn-outline-dark" />
+        </div>
+    </form>
+</body>

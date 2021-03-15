@@ -38,7 +38,7 @@
                 @foreach (var item in Model)
                 {@if ((item.ArendatorFloor is 2) && (item.ArendatorType is "Обычный"))
                 {
-            <a asp-controller="Information" asp-action="Info" asp-route-id="@item.ArendatorId" class="btn">@item.ArendatorName</a>}}
+                <a asp-controller="Information" asp-action="Info" asp-route-id="@item.ArendatorId" class="btn">@item.ArendatorName</a>}}
                 </div>
         </div>
     </div>

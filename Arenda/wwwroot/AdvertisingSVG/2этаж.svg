@@ -1990,7 +1990,7 @@
      inkscape:window-width="1500"
      inkscape:window-height="1040"
      inkscape:window-x="203"
-     inkscape:window-y="63"
+     inkscape:window-y="4"
      inkscape:window-maximized="0" />
   <metadata
      id="metadata5">
@@ -2010,7 +2010,7 @@
      id="layer1">
     <g
        clip-path="url(#clip13)"
-       transform="matrix(5.3756781e-5,0,0,4.4335674e-5,-370.58611,4.4601202)"
+       transform="matrix(3.2254068e-5,0,0,2.6601405e-5,-171.01468,43.769644)"
        id="g718">
       <g
          clip-path="url(#clip15)"
@@ -2029,7 +2029,7 @@
     <g
        clip-path="url(#clip16)"
        filter="url(#fx0)"
-       transform="matrix(0.51203273,0,0,0.4222968,236.68471,80.895842)"
+       transform="matrix(0.30721964,0,0,0.25337808,193.34782,89.631077)"
        id="g730">
       <g
          clip-path="url(#clip17)"
@@ -2065,7 +2065,7 @@
     </g>
     <g
        clip-path="url(#clip21)"
-       transform="matrix(0,-4.4335674e-5,5.3756781e-5,0,239.75691,88.497183)"
+       transform="matrix(0,-2.6601405e-5,3.2254068e-5,0,195.19114,94.191882)"
        id="g736">
       <g
          clip-path="url(#clip23)"
@@ -2082,25 +2082,25 @@
       </g>
     </g>
     <path
-       d="m 239.24488,88.919481 v -5.912156 h 6.1444 v 5.912156 z"
+       d="m 194.88391,94.445261 v -3.547295 h 3.68664 v 3.547295 z"
        stroke="#000000"
-       stroke-width="0.93001"
+       stroke-width="0.558006"
        stroke-linecap="square"
        stroke-miterlimit="8"
        fill="none"
        fill-rule="evenodd"
        id="path738" />
     <rect
-       x="-257.9389"
-       y="135.37213"
-       width="7.1684585"
-       height="5.0675616"
+       x="-103.42635"
+       y="122.31685"
+       width="4.3010755"
+       height="3.0405371"
        fill="#ff0000"
        id="rect740"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <g
        clip-path="url(#clip24)"
-       transform="matrix(0,-4.4335674e-5,5.3756781e-5,0,-257.9389,140.43969)"
+       transform="matrix(0,-2.6601405e-5,3.2254068e-5,0,-103.42636,125.35738)"
        id="g746">
       <g
          clip-path="url(#clip25)"
@@ -2117,16 +2117,16 @@
       </g>
     </g>
     <rect
-       x="-258.45093"
-       y="110.03432"
-       width="6.6564255"
-       height="5.0675616"
+       x="-103.73357"
+       y="107.11417"
+       width="3.9938555"
+       height="3.0405371"
        fill="#ff0000"
        id="rect748"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <g
        clip-path="url(#clip26)"
-       transform="matrix(0,-4.4335674e-5,5.3756781e-5,0,-258.45093,115.10188)"
+       transform="matrix(0,-2.6601405e-5,3.2254068e-5,0,-103.73357,110.1547)"
        id="g754">
       <g
          clip-path="url(#clip27)"
@@ -2143,16 +2143,16 @@
       </g>
     </g>
     <rect
-       x="-210.83189"
-       y="159.86534"
-       width="7.680491"
-       height="5.0675616"
+       x="-75.162155"
+       y="137.01277"
+       width="4.6082945"
+       height="3.0405371"
        fill="#ff0000"
        id="rect756"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <g
        clip-path="url(#clip28)"
-       transform="matrix(-5.3756781e-5,0,0,-4.4335674e-5,-203.1514,164.9329)"
+       transform="matrix(-3.2254068e-5,0,0,-2.6601405e-5,-70.553861,140.05331)"
        id="g762">
       <g
          clip-path="url(#clip29)"
@@ -2169,16 +2169,16 @@
       </g>
     </g>
     <rect
-       x="-190.35059"
-       y="159.86534"
-       width="7.680491"
-       height="5.0675616"
+       x="-62.873394"
+       y="137.01277"
+       width="4.6082945"
+       height="3.0405371"
        fill="#ff0000"
        id="rect764"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <g
        clip-path="url(#clip30)"
-       transform="matrix(-5.3756781e-5,0,0,-4.4335674e-5,-182.67009,164.9329)"
+       transform="matrix(-3.2254068e-5,0,0,-2.6601405e-5,-58.265061,140.05331)"
        id="g770">
       <g
          clip-path="url(#clip31)"
@@ -2195,16 +2195,16 @@
       </g>
     </g>
     <rect
-       x="219.2756"
-       y="160.70993"
-       width="7.680491"
-       height="5.0675616"
+       x="182.90234"
+       y="137.51953"
+       width="4.6082945"
+       height="3.0405371"
        fill="#ff0000"
        id="rect772"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <g
        clip-path="url(#clip32)"
-       transform="matrix(-5.3756781e-5,0,0,-4.4335674e-5,226.9561,165.7775)"
+       transform="matrix(-3.2254068e-5,0,0,-2.6601405e-5,187.51064,140.56007)"
        id="g778">
       <g
          clip-path="url(#clip33)"
@@ -2221,16 +2221,16 @@
       </g>
     </g>
     <rect
-       x="55.425148"
-       y="84.274216"
-       width="7.680491"
-       height="5.0675616"
+       x="84.592079"
+       y="91.658096"
+       width="4.6082945"
+       height="3.0405371"
        fill="#ff0000"
        id="rect780"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <g
        clip-path="url(#clip34)"
-       transform="matrix(-5.3756781e-5,0,0,-4.4335674e-5,63.105622,89.341777)"
+       transform="matrix(-3.2254068e-5,0,0,-2.6601405e-5,89.200359,94.698638)"
        id="g786">
       <g
          clip-path="url(#clip35)"
@@ -2247,16 +2247,16 @@
       </g>
     </g>
     <rect
-       x="-32.132454"
-       y="84.274216"
-       width="7.680491"
-       height="5.0675616"
+       x="32.057514"
+       y="91.658096"
+       width="4.6082945"
+       height="3.0405371"
        fill="#ff0000"
        id="rect788"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <g
        clip-path="url(#clip36)"
-       transform="matrix(-5.3756781e-5,0,0,-4.4335674e-5,-24.451978,89.341777)"
+       transform="matrix(-3.2254068e-5,0,0,-2.6601405e-5,36.665799,94.698638)"
        id="g794">
       <g
          clip-path="url(#clip37)"
@@ -2273,16 +2273,16 @@
       </g>
     </g>
     <rect
-       x="-48.517509"
-       y="84.69651"
-       width="7.680491"
-       height="4.6452646"
+       x="22.226488"
+       y="91.911476"
+       width="4.6082945"
+       height="2.7871587"
        fill="#ff0000"
        id="rect796"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <g
        clip-path="url(#clip38)"
-       transform="matrix(-5.3756781e-5,0,0,-4.4335674e-5,-40.837018,89.341777)"
+       transform="matrix(-3.2254068e-5,0,0,-2.6601405e-5,26.834779,94.698638)"
        id="g802">
       <g
          clip-path="url(#clip39)"
@@ -2299,16 +2299,16 @@
       </g>
     </g>
     <rect
-       x="-118.666"
-       y="84.69651"
-       width="7.680491"
-       height="5.0675616"
+       x="-19.862593"
+       y="91.911476"
+       width="4.6082945"
+       height="3.0405371"
        fill="#ff0000"
        id="rect804"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <g
        clip-path="url(#clip40)"
-       transform="matrix(-5.3756781e-5,0,0,-4.4335674e-5,-110.98551,89.764073)"
+       transform="matrix(-3.2254068e-5,0,0,-2.6601405e-5,-15.254321,94.952016)"
        id="g810">
       <g
          clip-path="url(#clip41)"
@@ -2325,16 +2325,16 @@
       </g>
     </g>
     <rect
-       x="-101.25689"
-       y="84.69651"
-       width="7.680491"
-       height="5.0675616"
+       x="-9.4171581"
+       y="91.911476"
+       width="4.6082945"
+       height="3.0405371"
        fill="#ff0000"
        id="rect812"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <g
        clip-path="url(#clip42)"
-       transform="matrix(-5.3756781e-5,0,0,-4.4335674e-5,-93.576388,89.764073)"
+       transform="matrix(-3.2254068e-5,0,0,-2.6601405e-5,-4.8088414,94.952016)"
        id="g818">
       <g
          clip-path="url(#clip43)"
@@ -2351,16 +2351,16 @@
       </g>
     </g>
     <rect
-       x="-206.2236"
-       y="84.69651"
-       width="7.680491"
-       height="5.0675616"
+       x="-72.397171"
+       y="91.911476"
+       width="4.6082945"
+       height="3.0405371"
        fill="#ff0000"
        id="rect820"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <g
        clip-path="url(#clip44)"
-       transform="matrix(-5.3756781e-5,0,0,-4.4335674e-5,-198.5431,89.764073)"
+       transform="matrix(-3.2254068e-5,0,0,-2.6601405e-5,-67.788881,94.952016)"
        id="g826">
       <g
          clip-path="url(#clip45)"
@@ -2379,7 +2379,7 @@
     <g
        clip-path="url(#clip46)"
        filter="url(#fx1)"
-       transform="matrix(0.51203273,0,0,0.4222968,-244.11402,80.895842)"
+       transform="matrix(0.30721964,0,0,0.25337808,-95.131421,89.631077)"
        id="g838">
       <g
          clip-path="url(#clip47)"
@@ -2415,7 +2415,7 @@
     </g>
     <g
        clip-path="url(#clip51)"
-       transform="matrix(0,-4.4335674e-5,5.3756781e-5,0,-241.04182,88.497183)"
+       transform="matrix(0,-2.6601405e-5,3.2254068e-5,0,-93.288101,94.191882)"
        id="g844">
       <g
          clip-path="url(#clip52)"
@@ -2432,9 +2432,9 @@
       </g>
     </g>
     <path
-       d="m -241.55385,88.919481 v -5.912156 h 6.65642 v 5.912156 z"
+       d="m -93.595331,94.445261 v -3.547295 h 3.99386 v 3.547295 z"
        stroke="#000000"
-       stroke-width="0.93001"
+       stroke-width="0.558006"
        stroke-linecap="square"
        stroke-miterlimit="8"
        fill="none"
@@ -2443,7 +2443,7 @@
     <g
        clip-path="url(#clip53)"
        filter="url(#fx2)"
-       transform="matrix(0.51203273,0,0,0.4222968,-173.96553,158.17615)"
+       transform="matrix(0.30721964,0,0,0.25337808,-53.042331,135.99926)"
        id="g858">
       <g
          clip-path="url(#clip54)"
@@ -2480,7 +2480,7 @@
     </g>
     <g
        clip-path="url(#clip58)"
-       transform="matrix(0,4.4335674e-5,5.3756781e-5,0,-170.89333,160.70993)"
+       transform="matrix(0,2.6601405e-5,3.2254068e-5,0,-51.199011,137.51953)"
        id="g864">
       <g
          clip-path="url(#clip59)"
@@ -2497,9 +2497,9 @@
       </g>
     </g>
     <path
-       d="m -171.40537,160.28764 v 6.75675 h 7.16846 v -6.75675 z"
+       d="m -51.506231,137.26615 v 4.05405 h 4.30107 v -4.05405 z"
        stroke="#000000"
-       stroke-width="0.93001"
+       stroke-width="0.558006"
        stroke-linecap="square"
        stroke-miterlimit="8"
        fill="none"
@@ -2508,7 +2508,7 @@
     <g
        clip-path="url(#clip60)"
        filter="url(#fx3)"
-       transform="matrix(0.51203273,0,0,0.4222968,-72.071018,157.75386)"
+       transform="matrix(0.30721964,0,0,0.25337808,8.0943786,135.74589)"
        id="g878">
       <g
          clip-path="url(#clip61)"
@@ -2544,7 +2544,7 @@
     </g>
     <g
        clip-path="url(#clip65)"
-       transform="matrix(0,-4.4335674e-5,5.3756781e-5,0,-68.998818,165.3552)"
+       transform="matrix(0,-2.6601405e-5,3.2254068e-5,0,9.9376986,140.30669)"
        id="g884">
       <g
          clip-path="url(#clip66)"
@@ -2561,9 +2561,9 @@
       </g>
     </g>
     <path
-       d="m -69.510858,165.7775 v -5.91216 h 6.65643 v 5.91216 z"
+       d="m 9.6304686,140.56007 v -3.5473 h 3.9938604 v 3.5473 z"
        stroke="#000000"
-       stroke-width="0.93001"
+       stroke-width="0.558006"
        stroke-linecap="square"
        stroke-miterlimit="8"
        fill="none"
@@ -2572,7 +2572,7 @@
     <g
        clip-path="url(#clip67)"
        filter="url(#fx4)"
-       transform="matrix(0.51203273,0,0,0.4222968,-37.252788,158.17615)"
+       transform="matrix(0.30721964,0,0,0.25337808,28.985319,135.99926)"
        id="g898">
       <g
          clip-path="url(#clip68)"
@@ -2608,7 +2608,7 @@
     </g>
     <g
        clip-path="url(#clip72)"
-       transform="matrix(0,-4.4335674e-5,5.3756781e-5,0,-34.180598,165.7775)"
+       transform="matrix(0,-2.6601405e-5,3.2254068e-5,0,30.828619,140.56007)"
        id="g904">
       <g
          clip-path="url(#clip73)"
@@ -2625,9 +2625,9 @@
       </g>
     </g>
     <path
-       d="m -34.692628,166.19979 v -5.91215 h 6.14439 v 5.91215 z"
+       d="m 30.521409,140.81344 v -3.54729 h 3.68664 v 3.54729 z"
        stroke="#000000"
-       stroke-width="0.93001"
+       stroke-width="0.558006"
        stroke-linecap="square"
        stroke-miterlimit="8"
        fill="none"
@@ -2636,7 +2636,7 @@
     <g
        clip-path="url(#clip74)"
        filter="url(#fx5)"
-       transform="matrix(0.51203273,0,0,0.4222968,-71.046948,81.318138)"
+       transform="matrix(0.30721964,0,0,0.25337808,8.7088086,89.884454)"
        id="g918">
       <g
          clip-path="url(#clip75)"
@@ -2672,7 +2672,7 @@
     </g>
     <g
        clip-path="url(#clip79)"
-       transform="matrix(0,-4.4335674e-5,5.3756781e-5,0,-67.974758,88.919481)"
+       transform="matrix(0,-2.6601405e-5,3.2254068e-5,0,10.552129,94.445261)"
        id="g924">
       <g
          clip-path="url(#clip80)"
@@ -2689,9 +2689,9 @@
       </g>
     </g>
     <path
-       d="m -68.486788,89.341777 v -5.912154 h 6.14439 v 5.912154 z"
+       d="m 10.244919,94.698638 v -3.547292 h 3.68662 v 3.547292 z"
        stroke="#000000"
-       stroke-width="0.93001"
+       stroke-width="0.558006"
        stroke-linecap="square"
        stroke-miterlimit="8"
        fill="none"
@@ -2700,7 +2700,7 @@
     <g
        clip-path="url(#clip81)"
        filter="url(#fx6)"
-       transform="matrix(0.51203273,0,0,0.4222968,31.871622,80.895842)"
+       transform="matrix(0.30721964,0,0,0.25337808,70.459959,89.631077)"
        id="g938">
       <g
          clip-path="url(#clip82)"
@@ -2736,7 +2736,7 @@
     </g>
     <g
        clip-path="url(#clip86)"
-       transform="matrix(0,-4.4335674e-5,5.3756781e-5,0,34.943822,88.497183)"
+       transform="matrix(0,-2.6601405e-5,3.2254068e-5,0,72.303279,94.191882)"
        id="g944">
       <g
          clip-path="url(#clip87)"
@@ -2753,9 +2753,9 @@
       </g>
     </g>
     <path
-       d="m 34.431792,88.919481 v -5.912156 h 6.65642 v 5.912156 z"
+       d="m 71.996059,94.445261 v -3.547295 h 3.99386 v 3.547295 z"
        stroke="#000000"
-       stroke-width="0.93001"
+       stroke-width="0.558006"
        stroke-linecap="square"
        stroke-miterlimit="8"
        fill="none"
@@ -2764,7 +2764,7 @@
     <g
        clip-path="url(#clip88)"
        filter="url(#fx7)"
-       transform="matrix(0.51203273,0,0,0.4222968,69.250022,81.318138)"
+       transform="matrix(0.30721964,0,0,0.25337808,92.886999,89.884454)"
        id="g958">
       <g
          clip-path="url(#clip89)"
@@ -2800,7 +2800,7 @@
     </g>
     <g
        clip-path="url(#clip93)"
-       transform="matrix(0,-4.4335674e-5,5.3756781e-5,0,72.322212,88.919481)"
+       transform="matrix(0,-2.6601405e-5,3.2254068e-5,0,94.730319,94.445261)"
        id="g964">
       <g
          clip-path="url(#clip94)"
@@ -2817,9 +2817,9 @@
       </g>
     </g>
     <path
-       d="m 71.810182,89.341777 v -5.912154 h 6.65642 v 5.912154 z"
+       d="m 94.423099,94.698638 v -3.547292 h 3.99384 v 3.547292 z"
        stroke="#000000"
-       stroke-width="0.93001"
+       stroke-width="0.558006"
        stroke-linecap="square"
        stroke-miterlimit="8"
        fill="none"
@@ -2828,7 +2828,7 @@
     <g
        clip-path="url(#clip95)"
        filter="url(#fx8)"
-       transform="matrix(0.51203273,0,0,0.4222968,99.971972,81.318138)"
+       transform="matrix(0.30721964,0,0,0.25337808,111.32017,89.884454)"
        id="g978">
       <g
          clip-path="url(#clip96)"
@@ -2864,7 +2864,7 @@
     </g>
     <g
        clip-path="url(#clip100)"
-       transform="matrix(0,-4.4335674e-5,5.3756781e-5,0,103.04417,88.919481)"
+       transform="matrix(0,-2.6601405e-5,3.2254068e-5,0,113.16349,94.445261)"
        id="g984">
       <g
          clip-path="url(#clip101)"
@@ -2881,9 +2881,9 @@
       </g>
     </g>
     <path
-       d="m 102.53214,89.341777 v -5.912154 h 6.1444 v 5.912154 z"
+       d="m 112.85627,94.698638 v -3.547292 h 3.68664 v 3.547292 z"
        stroke="#000000"
-       stroke-width="0.93001"
+       stroke-width="0.558006"
        stroke-linecap="square"
        stroke-miterlimit="8"
        fill="none"
@@ -2892,7 +2892,7 @@
     <g
        clip-path="url(#clip102)"
        filter="url(#fx9)"
-       transform="matrix(0.51203273,0,0,0.4222968,202.89055,81.318138)"
+       transform="matrix(0.30721964,0,0,0.25337808,173.07131,89.884454)"
        id="g998">
       <g
          clip-path="url(#clip103)"
@@ -2928,7 +2928,7 @@
     </g>
     <g
        clip-path="url(#clip107)"
-       transform="matrix(0,-4.4335674e-5,5.3756781e-5,0,205.96275,88.497183)"
+       transform="matrix(0,-2.6601405e-5,3.2254068e-5,0,174.91463,94.191882)"
        id="g1004">
       <g
          clip-path="url(#clip108)"
@@ -2945,9 +2945,9 @@
       </g>
     </g>
     <path
-       d="m 205.45072,88.919481 v -5.489858 h 6.1444 v 5.489858 z"
+       d="m 174.60742,94.445261 v -3.293915 h 3.68664 v 3.293915 z"
        stroke="#000000"
-       stroke-width="0.93001"
+       stroke-width="0.558006"
        stroke-linecap="square"
        stroke-miterlimit="8"
        fill="none"
@@ -2956,7 +2956,7 @@
     <g
        clip-path="url(#clip109)"
        filter="url(#fx10)"
-       transform="matrix(0.51203273,0,0,0.4222968,198.7943,159.02075)"
+       transform="matrix(0.30721964,0,0,0.25337808,170.61356,136.50602)"
        id="g1018">
       <g
          clip-path="url(#clip110)"
@@ -2992,7 +2992,7 @@
     </g>
     <g
        clip-path="url(#clip114)"
-       transform="matrix(0,-4.4335674e-5,5.3756781e-5,0,201.8665,166.6221)"
+       transform="matrix(0,-2.6601405e-5,3.2254068e-5,0,172.45688,141.06683)"
        id="g1024">
       <g
          clip-path="url(#clip115)"
@@ -3009,170 +3009,170 @@
       </g>
     </g>
     <path
-       d="m 201.35446,167.04439 v -5.91216 h 6.14439 v 5.91216 z"
+       d="m 172.14967,141.3202 v -3.54729 h 3.68662 v 3.54729 z"
        stroke="#000000"
-       stroke-width="0.93001"
+       stroke-width="0.558006"
        stroke-linecap="square"
        stroke-miterlimit="8"
        fill="none"
        fill-rule="evenodd"
        id="path1026" />
     <rect
-       x="123.7815"
-       y="87.019142"
-       width="7.1684585"
-       height="2.1114841"
+       x="125.60589"
+       y="93.305054"
+       width="4.3010755"
+       height="1.2668904"
        stroke="#000000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#ffff00"
        id="rect1028" />
     <rect
-       x="-40.581001"
-       y="85.752251"
-       width="7.1684585"
-       height="2.9560776"
+       x="26.98839"
+       y="92.544914"
+       width="4.3010755"
+       height="1.7736465"
        stroke="#000000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#ffff00"
        id="rect1030" />
     <rect
-       x="-110.72948"
-       y="87.441444"
-       width="8.7045565"
-       height="1.6891872"
+       x="-15.100706"
+       y="93.558434"
+       width="5.222734"
+       height="1.0135123"
        stroke="#000000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#ffff00"
        id="rect1032" />
     <rect
-       x="-224.9128"
-       y="86.174553"
-       width="12.288786"
-       height="2.9560776"
+       x="-83.610672"
+       y="92.798302"
+       width="7.3732719"
+       height="1.7736465"
        stroke="#000000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#ffff00"
        id="rect1034" />
     <rect
-       x="-203.40741"
-       y="160.07648"
-       width="12.288786"
-       height="2.9560776"
+       x="-70.707474"
+       y="137.13945"
+       width="7.3732719"
+       height="1.7736465"
        stroke="#000000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#ffff00"
        id="rect1036" />
     <rect
-       x="-20.611717"
-       y="159.65421"
-       width="11.776753"
-       height="2.9560776"
+       x="38.969944"
+       y="136.88609"
+       width="7.0660524"
+       height="1.7736465"
        stroke="#000000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#ffff00"
        id="rect1038" />
     <rect
-       x="308.62534"
-       y="87.019142"
-       width="4.0962615"
-       height="7.1790457"
+       x="236.51219"
+       y="93.305054"
+       width="2.457757"
+       height="4.3074274"
        stroke="#000000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#ffff00"
        id="rect1040" />
     <rect
-       x="62.849617"
-       y="87.019142"
-       width="7.680491"
-       height="2.5337808"
+       x="89.046753"
+       y="93.305054"
+       width="4.6082945"
+       height="1.5202686"
        stroke="#000000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#ffff00"
        id="rect1042" />
     <rect
-       x="209.29095"
-       y="161.34337"
-       width="9.7286224"
-       height="2.1114841"
+       x="176.91156"
+       y="137.89958"
+       width="5.8371735"
+       height="1.2668904"
        stroke="#00b050"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#00b050"
        id="rect1044" />
     <rect
-       x="-218.76839"
-       y="146.56299"
-       width="32.25806"
-       height="4.6452646"
+       x="-79.924026"
+       y="129.03136"
+       width="19.354836"
+       height="2.7871587"
        stroke="#2f528f"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#00b0f0"
        id="rect1046" />
     <rect
-       x="56.193184"
-       y="146.56299"
-       width="32.25806"
-       height="4.6452646"
+       x="85.05291"
+       y="129.03136"
+       width="19.354836"
+       height="2.7871587"
        stroke="#2f528f"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#00b0f0"
        id="rect1048" />
     <path
-       d="m 94.022672,113.79994 c 10.352788,2.01647 16.701988,10.06587 14.182788,17.97971 -2.16588,6.81756 -10.321558,11.46747 -19.493598,11.11781 l 0.21455,-4.22128 c 7.82027,0.30743 14.399378,-4.16512 14.696358,-9.99028 0.25601,-5.04011 -4.311308,-9.56418 -10.901178,-10.79813 z"
+       d="m 107.75059,109.37353 c 6.21168,1.20989 10.0212,6.03953 8.50968,10.78783 -1.29954,4.09054 -6.19295,6.88048 -11.69616,6.67069 l 0.1287,-2.53277 c 4.69216,0.18446 8.63962,-2.49907 8.81781,-5.99417 0.1536,-3.02407 -2.58678,-5.73851 -6.54071,-6.47888 z"
        stroke="#92d050"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#92d050"
        fill-rule="evenodd"
        id="path1050" />
     <path
-       d="m -179.85852,114.2197 c 10.35279,2.01605 16.70354,10.06587 14.18485,17.97929 -2.17,6.81756 -10.32361,11.46747 -19.49616,11.11781 l 0.21454,-4.22128 c 7.82028,0.30785 14.3999,-4.16512 14.69585,-9.99028 0.25602,-5.04011 -4.3108,-9.56375 -10.90015,-10.79813 z"
+       d="m -56.578121,109.62539 c 6.21167,1.20963 10.02212,6.03952 8.51091,10.78757 -1.302,4.09054 -6.19417,6.88049 -11.6977,6.67069 l 0.1287,-2.53277 c 4.69216,0.18471 8.63994,-2.49907 8.81751,-5.99417 0.15361,-3.02406 -2.58648,-5.73825 -6.54009,-6.47887 z"
        stroke="#92d050"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#92d050"
        fill-rule="evenodd"
        id="path1052" />
     <path
-       d="m -224.97935,142.89028 c -10.61905,-0.52365 -18.54788,-7.55701 -17.70968,-15.70987 0.72197,-7.02322 7.78955,-12.75632 16.89862,-13.70775 l 0.66564,4.18918 c -7.76856,0.80194 -13.32207,6.13809 -12.40399,11.91891 0.79467,5.00168 6.23348,8.81375 12.98208,9.09838 z"
+       d="m -83.650631,126.82774 c -6.37143,-0.31419 -11.12872,-4.53421 -10.6258,-9.42592 0.43318,-4.21394 4.67373,-7.6538 10.13917,-8.22465 l 0.39939,2.5135 c -4.66114,0.48117 -7.99324,3.68286 -7.4424,7.15135 0.47681,3.00101 3.74009,5.28825 7.78925,5.45903 z"
        stroke="#92d050"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#92d050"
        fill-rule="evenodd"
        id="path1054" />
     <path
-       d="m 54.721092,143.72938 c -10.61854,-0.52365 -18.54736,-7.55742 -17.70968,-15.70986 0.72197,-7.02322 7.78955,-12.75632 16.89913,-13.70776 l 0.66513,4.18919 c -7.76856,0.80194 -13.32207,6.13808 -12.40348,11.9189 0.79467,5.00168 6.23348,8.81334 12.98208,9.09839 z"
+       d="m 84.169639,127.3312 c -6.37113,-0.31419 -11.12841,-4.53445 -10.6258,-9.42592 0.43318,-4.21393 4.67373,-7.65379 10.13947,-8.22465 l 0.39908,2.51351 c -4.66113,0.48116 -7.99325,3.68285 -7.44209,7.15134 0.47681,3.00101 3.74009,5.288 7.78925,5.45903 z"
        stroke="#92d050"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#92d050"
        fill-rule="evenodd"
        id="path1056" />
     <rect
-       x="-301.71771"
-       y="92.509003"
-       width="27.649767"
-       height="8.8682327"
+       x="-129.69365"
+       y="96.598969"
+       width="16.589861"
+       height="5.3209395"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#a9d18e"
        id="rect1058" />
     <g
        clip-path="url(#clip116)"
        id="g1062"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -3183,7 +3183,7 @@
     <g
        clip-path="url(#clip117)"
        id="g1066"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -3192,24 +3192,24 @@
          id="text1064">5</text>
     </g>
     <path
-       d="m -273.9645,101.26532 12.95699,8.1288 -0.20635,0.22424 -12.9575,-8.12922 z m 13.55043,6.55574 2.01997,3.38978 -4.50025,-0.70102 z"
+       d="m -113.04172,101.85276 7.7742,4.87728 -0.12375,0.13455 -7.7745,-4.87753 z m 8.13027,3.93345 1.21197,2.03386 -2.70015,-0.42061 z"
        fill="#ff0000"
        id="path1068"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <rect
-       x="-302.74176"
-       y="114.46844"
-       width="29.185867"
-       height="8.8682327"
+       x="-130.30806"
+       y="109.77464"
+       width="17.51152"
+       height="5.3209395"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#a9d18e"
        id="rect1070" />
     <g
        clip-path="url(#clip118)"
        id="g1074"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -3218,24 +3218,24 @@
          id="text1072">136</text>
     </g>
     <path
-       d="m -273.9645,124.91395 12.95699,8.12879 -0.20635,0.22424 -12.9575,-8.12922 z m 13.55043,6.55573 2.01997,3.38978 -4.50025,-0.70101 z"
+       d="m -113.04172,116.04194 7.7742,4.87727 -0.12375,0.13455 -7.7745,-4.87753 z m 8.13027,3.93344 1.21197,2.03387 -2.70015,-0.42061 z"
        fill="#ff0000"
        id="path1076"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <rect
-       x="-237.71361"
-       y="228.06627"
-       width="25.601635"
-       height="8.8682327"
+       x="-91.291183"
+       y="177.93333"
+       width="15.360981"
+       height="5.3209395"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#a9d18e"
        id="rect1078" />
     <g
        clip-path="url(#clip119)"
        id="g1082"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -3246,7 +3246,7 @@
     <g
        clip-path="url(#clip120)"
        id="g1086"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -3255,24 +3255,24 @@
          id="text1084">7</text>
     </g>
     <path
-       d="m -224.7457,228.24703 15.03532,-59.47334 -0.33421,-0.0578 -15.03528,59.47373 z m 16.73388,-58.60636 -1.16892,-3.65203 -2.84111,2.96241 z"
+       d="m -83.510441,178.04179 9.0212,-35.68401 -0.20052,-0.0347 -9.02117,35.68424 z m 10.04034,-35.16382 -0.70135,-2.19122 -1.70468,1.77745 z"
        fill="#ff0000"
        id="path1088"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <rect
-       x="-204.94351"
-       y="228.06627"
-       width="27.137735"
-       height="9.2905293"
+       x="-71.629135"
+       y="177.93333"
+       width="16.28264"
+       height="5.5743175"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#a9d18e"
        id="rect1090" />
     <g
        clip-path="url(#clip121)"
        id="g1094"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -3281,43 +3281,43 @@
          id="text1092">138</text>
     </g>
     <path
-       d="m -182.38437,227.58866 -4.10292,-59.62578 0.34101,-0.0161 4.10292,59.62578 z m -5.93856,-58.97587 1.8126,-3.46875 2.27701,3.27746 z"
+       d="m -58.093631,177.64676 -2.46175,-35.77547 0.2046,-0.01 2.46175,35.77547 z m -3.56314,-35.38552 1.08756,-2.08125 1.36621,1.96648 z"
        fill="#ff0000"
        id="path1096"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <rect
-       x="-107.14526"
-       y="160.07648"
-       width="19.457245"
-       height="8.8682327"
+       x="-12.950178"
+       y="137.13945"
+       width="11.674347"
+       height="5.3209395"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#ff0000"
        id="rect1098" />
     <text
        font-family="Calibri, Calibri_MSFontService, sans-serif"
        font-weight="400"
-       font-size="3.72005px"
+       font-size="2.23202px"
        id="text1100"
-       x="-93.277565"
-       y="182.07817"
-       style="stroke-width:0.465005"
-       transform="scale(1.1011335,0.90815511)">138</text>
+       x="-9.3445854"
+       y="154.49641"
+       style="stroke-width:0.279003"
+       transform="scale(1.1011335,0.90815509)">138</text>
     <rect
-       x="-7.8109059"
-       y="160.07648"
-       width="19.969276"
-       height="7.1790457"
+       x="46.65044"
+       y="137.13945"
+       width="11.981565"
+       height="4.3074274"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#ff0000"
        id="rect1102" />
     <g
        clip-path="url(#clip122)"
        id="g1106"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -3326,19 +3326,19 @@
          id="text1104">140</text>
     </g>
     <rect
-       x="63.361641"
-       y="160.07648"
-       width="17.409113"
-       height="6.7567487"
+       x="89.353973"
+       y="137.13945"
+       width="10.445468"
+       height="4.054049"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#ff3333"
        id="rect1108" />
     <g
        clip-path="url(#clip123)"
        id="g1112"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -3347,19 +3347,19 @@
          id="text1110">141</text>
     </g>
     <rect
-       x="165.25613"
-       y="160.07648"
-       width="17.409113"
-       height="6.7567487"
+       x="150.49068"
+       y="137.13945"
+       width="10.445468"
+       height="4.054049"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#ff3333"
        id="rect1114" />
     <g
        clip-path="url(#clip124)"
        id="g1118"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -3368,19 +3368,19 @@
          id="text1116">142</text>
     </g>
     <rect
-       x="214.92331"
-       y="228.91086"
-       width="26.113668"
-       height="8.4459362"
+       x="180.29099"
+       y="178.44009"
+       width="15.6682"
+       height="5.0675616"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#a9d18e"
        id="rect1120" />
     <g
        clip-path="url(#clip125)"
        id="g1124"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -3391,7 +3391,7 @@
     <g
        clip-path="url(#clip126)"
        id="g1128"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -3400,24 +3400,24 @@
          id="text1126">43</text>
     </g>
     <path
-       d="m 232.76767,229.15496 -8.89913,-60.35466 0.34306,-0.0338 8.89913,60.35466 z m -10.67588,-59.60889 1.5361,-3.55743 2.52944,3.14992 z"
+       d="m 190.99759,178.58654 -5.33948,-36.21279 0.20583,-0.0203 5.33948,36.21279 z m -6.40553,-35.76533 0.92166,-2.13446 1.51766,1.88995 z"
        fill="#ff0000"
        id="path1130"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <rect
-       x="243.08514"
-       y="228.91086"
-       width="25.601635"
-       height="8.4459362"
+       x="197.18808"
+       y="178.44009"
+       width="15.360981"
+       height="5.0675616"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#a9d18e"
        id="rect1132" />
     <g
        clip-path="url(#clip127)"
        id="g1136"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -3428,7 +3428,7 @@
     <g
        clip-path="url(#clip128)"
        id="g1140"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -3437,24 +3437,24 @@
          id="text1138">4</text>
     </g>
     <path
-       d="m 256.09076,229.14567 -12.10446,-60.35635 0.33796,-0.046 12.10445,60.35677 z m -13.84536,-59.54808 1.35177,-3.60895 2.68816,3.05743 z"
+       d="m 204.99145,178.58097 -7.26269,-36.21381 0.20279,-0.0276 7.26267,36.21406 z m -8.30723,-35.72885 0.81107,-2.16537 1.61289,1.83446 z"
        fill="#ff0000"
        id="path1142"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <rect
-       x="307.60123"
-       y="109.82317"
-       width="17.921146"
-       height="6.7567487"
+       x="235.89772"
+       y="106.98748"
+       width="10.752687"
+       height="4.054049"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#ff0000"
        id="rect1144" />
     <g
        clip-path="url(#clip129)"
        id="g1148"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -3463,18 +3463,18 @@
          id="text1146">145</text>
     </g>
     <rect
-       x="305.04105"
-       y="15.228731"
-       width="27.137735"
-       height="10.979717"
+       x="234.36162"
+       y="50.230812"
+       width="16.28264"
+       height="6.5878301"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        id="rect1150" />
     <g
        clip-path="url(#clip130)"
        id="g1154"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          fill="#ffffff"
          font-family="Calibri, Calibri_MSFontService, sans-serif"
@@ -3486,7 +3486,7 @@
     <g
        clip-path="url(#clip131)"
        id="g1158"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          fill="#ffffff"
          font-family="Calibri, Calibri_MSFontService, sans-serif"
@@ -3496,19 +3496,19 @@
          id="text1156">77</text>
     </g>
     <rect
-       x="133.5101"
-       y="82.373878"
-       width="19.457245"
-       height="6.3344522"
+       x="131.44304"
+       y="90.517891"
+       width="11.674347"
+       height="3.8006711"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#ff0000"
        id="rect1160" />
     <g
        clip-path="url(#clip132)"
        id="g1164"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -3519,7 +3519,7 @@
     <g
        clip-path="url(#clip133)"
        id="g1168"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -3528,19 +3528,19 @@
          id="text1166">52</text>
     </g>
     <rect
-       x="40.320168"
-       y="28.742188"
-       width="25.601635"
-       height="8.4459362"
+       x="75.529083"
+       y="58.338882"
+       width="15.360981"
+       height="5.0675616"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#a9d18e"
        id="rect1170" />
     <g
        clip-path="url(#clip134)"
        id="g1174"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -3549,24 +3549,24 @@
          id="text1172">151</text>
     </g>
     <path
-       d="m 54.827082,35.909829 4.50025,45.721231 -0.3405,0.02281 -4.49974,-45.721231 z m 6.31643,45.034577 -1.71019,3.503796 -2.37276,-3.230571 z"
+       d="m 84.233239,62.63947 2.70015,27.432737 -0.2043,0.01365 -2.69985,-27.432737 z m 3.78986,27.020746 -1.02612,2.102277 -1.42365,-1.938342 z"
        fill="#ff0000"
        id="path1176"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <rect
-       x="-25.732063"
-       y="27.475296"
-       width="26.113668"
-       height="9.7128267"
+       x="35.897755"
+       y="57.578747"
+       width="15.6682"
+       height="5.8276958"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#a9d18e"
        id="rect1178" />
     <g
        clip-path="url(#clip135)"
        id="g1182"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -3575,24 +3575,24 @@
          id="text1180">150</text>
     </g>
     <path
-       d="m -8.139608,34.188453 -18.7458,47.469635 0.32458,0.08699 18.7458,-47.469443 z m -20.31953,46.454855 0.6789,3.735216 3.21598,-2.689187 z"
+       d="m 46.453219,61.606643 -11.24748,28.481781 0.19475,0.0522 11.24748,-28.481665 z m -12.19171,27.872913 0.40734,2.24113 1.92958,-1.613512 z"
        fill="#ff0000"
        id="path1184"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <rect
-       x="-55.941994"
-       y="27.475296"
-       width="26.625702"
-       height="9.7128267"
+       x="17.771776"
+       y="57.578747"
+       width="15.975422"
+       height="5.8276958"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#a9d18e"
        id="rect1186" />
     <g
        clip-path="url(#clip136)"
        id="g1190"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -3601,24 +3601,24 @@
          id="text1188">149</text>
     </g>
     <path
-       d="m -46.554888,35.911518 3.85663,46.909997 -0.3405,0.01901 -3.85715,-46.909575 z m 5.68356,46.243612 -1.76651,3.484794 -2.32054,-3.256331 z"
+       d="m 23.404059,62.640482 2.31397,28.145998 -0.2043,0.0114 -2.31429,-28.145744 z m 3.41013,27.746167 -1.0599,2.090877 -1.39233,-1.953798 z"
        fill="#ff0000"
        id="path1192"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <rect
-       x="-97.416634"
-       y="28.319889"
-       width="26.113668"
-       height="10.135123"
+       x="-7.1130042"
+       y="58.085503"
+       width="15.6682"
+       height="6.0810742"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#a9d18e"
        id="rect1194" />
     <g
        clip-path="url(#clip137)"
        id="g1198"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -3629,7 +3629,7 @@
     <g
        clip-path="url(#clip138)"
        id="g1202"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -3638,24 +3638,24 @@
          id="text1200">8</text>
     </g>
     <path
-       d="m -84.676208,38.423629 -12.14575,43.799491 0.33277,0.06292 12.14574,-43.799646 z m -13.82374,42.905488 1.08336,3.670182 2.90983,-2.916804 z"
+       d="m 0.53125857,64.14775 -7.28744997,26.279693 0.19967,0.03775 7.28742997,-26.279786 z m -8.29424997,25.743292 0.65003,2.202109 1.74589,-1.750083 z"
        fill="#ff0000"
        id="path1204"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <rect
-       x="-211.59993"
-       y="28.319889"
-       width="26.113668"
-       height="8.4459362"
+       x="-75.622971"
+       y="58.085503"
+       width="15.6682"
+       height="5.0675616"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#a9d18e"
        id="rect1206" />
     <g
        clip-path="url(#clip139)"
        id="g1210"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -3666,7 +3666,7 @@
     <g
        clip-path="url(#clip140)"
        id="g1214"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -3675,24 +3675,24 @@
          id="text1212">6</text>
     </g>
     <path
-       d="m -198.66887,36.756647 -3.66196,46.215628 0.34062,0.01816 3.66197,-46.215428 z m -5.49092,45.552621 1.77667,3.481415 2.31089,-3.260975 z"
+       d="m -67.864331,63.14756 -2.19718,27.729376 0.20437,0.01095 2.19719,-27.729256 z m -3.29455,27.331573 1.066,2.088849 1.38653,-1.956585 z"
        fill="#ff0000"
        id="path1216"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <rect
-       x="-126.09047"
-       y="27.475296"
-       width="27.137735"
-       height="9.7128267"
+       x="-24.317274"
+       y="57.578747"
+       width="16.28264"
+       height="5.8276958"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#a9d18e"
        id="rect1218" />
     <g
        clip-path="url(#clip141)"
        id="g1222"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -3703,7 +3703,7 @@
     <g
        clip-path="url(#clip142)"
        id="g1226"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -3712,24 +3712,24 @@
          id="text1224">7</text>
     </g>
     <path
-       d="m -121.31218,38.441499 5.37685,46.244033 -0.33948,0.02702 -5.37736,-46.244034 z m 7.18074,45.535842 -1.64772,3.524067 -2.42959,-3.201432 z"
+       d="m -21.450321,64.158472 3.22611,27.746419 -0.20369,0.01621 -3.22641,-27.746421 z m 4.30845,27.321505 -0.98864,2.11444 -1.45776,-1.920859 z"
        fill="#ff0000"
        id="path1228"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <rect
-       x="-239.76173"
-       y="27.897593"
-       width="24.577572"
-       height="10.979717"
+       x="-92.520035"
+       y="57.832127"
+       width="14.746544"
+       height="6.5878301"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#c5e0b4"
        id="rect1230" />
     <g
        clip-path="url(#clip143)"
        id="g1234"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -3738,24 +3738,24 @@
          id="text1232">180</text>
     </g>
     <path
-       d="m -227.30398,38.858729 7.17614,43.934491 -0.33846,0.03759 -7.17562,-43.934493 z m 8.94572,43.169712 -1.48284,3.573475 -2.57707,-3.122462 z"
+       d="m -85.045401,64.40881 4.30569,26.360693 -0.20309,0.02256 -4.30536,-26.360695 z m 5.36743,25.901827 -0.88971,2.144085 -1.54623,-1.873478 z"
        fill="#ff0000"
        id="path1236"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <rect
-       x="-116.87388"
-       y="40.566494"
-       width="22.017406"
-       height="10.55742"
+       x="-18.787352"
+       y="65.433472"
+       width="13.210444"
+       height="6.3344522"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#c5e0b4"
        id="rect1238" />
     <g
        clip-path="url(#clip144)"
        id="g1242"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -3764,24 +3764,24 @@
          id="text1240">181</text>
     </g>
     <path
-       d="m -106.14131,51.121671 -0.60825,31.432741 0.34131,0.0045 0.60825,-31.432725 z m -2.47457,30.84503 1.98251,3.404896 2.11323,-3.35101 z"
+       d="m -12.347801,71.766575 -0.36495,18.859644 0.20478,0.0027 0.36495,-18.859635 z m -1.48474,18.507018 1.18951,2.042937 1.26794,-2.010606 z"
        fill="#ff0000"
        id="path1244"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <rect
-       x="-43.653191"
-       y="39.721901"
-       width="27.649767"
-       height="7.6013422"
+       x="25.145067"
+       y="64.926712"
+       width="16.589861"
+       height="4.5608053"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#a9d18e"
        id="rect1246" />
     <g
        clip-path="url(#clip145)"
        id="g1250"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -3790,24 +3790,24 @@
          id="text1248">182</text>
     </g>
     <path
-       d="m -29.894548,47.301534 -6.74437,35.632776 0.33728,0.04341 6.74436,-35.632765 z m -8.49409,34.837634 1.39186,3.598517 2.65541,-3.077446 z"
+       d="m 33.400249,69.474492 -4.04661,21.379665 0.20237,0.02604 4.04661,-21.379659 z m -5.09644,20.902581 0.83511,2.159109 1.59325,-1.846467 z"
        fill="#ff0000"
        id="path1252"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <rect
-       x="56.705208"
-       y="39.721901"
-       width="26.625702"
-       height="10.55742"
+       x="85.360107"
+       y="64.926712"
+       width="15.975422"
+       height="6.3344522"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#a9d18e"
        id="rect1254" />
     <g
        clip-path="url(#clip146)"
        id="g1258"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -3816,24 +3816,24 @@
          id="text1256">183</text>
     </g>
     <path
-       d="m 66.297062,51.963482 -1.44816,33.420655 0.34114,0.01006 1.44816,-33.420651 z m -3.30003,32.802666 1.90053,3.436526 2.19312,-3.315876 z"
+       d="m 91.115229,72.271661 -0.86891,20.052393 0.20469,0.006 0.86889,-20.05239 z m -1.98002,19.6816 1.14032,2.061915 1.31587,-1.989525 z"
        fill="#ff0000"
        id="path1260"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <rect
-       x="121.73338"
-       y="38.877308"
-       width="25.089605"
-       height="10.979717"
+       x="124.37702"
+       y="64.41996"
+       width="15.053763"
+       height="6.5878301"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#c5e0b4"
        id="rect1262" />
     <g
        clip-path="url(#clip147)"
        id="g1266"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -3842,24 +3842,24 @@
          id="text1264">184</text>
     </g>
     <path
-       d="m 130.40626,51.110655 -3.91337,34.106803 0.33983,0.02653 3.91337,-34.1068 z m -5.71815,33.400342 1.65312,3.522505 2.42492,-3.204219 z"
+       d="m 129.58075,71.759964 -2.34803,20.464083 0.2039,0.01591 2.34802,-20.464081 z m -3.43089,20.040206 0.99186,2.113503 1.45495,-1.922531 z"
        fill="#ff0000"
        id="path1268"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <rect
-       x="307.0892"
-       y="30.431374"
-       width="25.601635"
-       height="9.2905293"
+       x="235.59052"
+       y="59.352394"
+       width="15.360981"
+       height="5.5743175"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#a9d18e"
        id="rect1270" />
     <g
        clip-path="url(#clip148)"
        id="g1274"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -3868,24 +3868,24 @@
          id="text1272">185</text>
     </g>
     <path
-       d="m 319.61906,39.699856 -8.57755,44.611099 0.33717,0.04393 8.57754,-44.610926 z m -10.32492,43.812536 1.38131,3.601348 2.66441,-3.07221 z"
+       d="m 243.10842,64.913486 -5.14653,26.766658 0.2023,0.02635 5.14653,-26.766554 z m -6.19495,26.287521 0.82879,2.160808 1.59864,-1.843326 z"
        fill="#ff0000"
        id="path1276"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <rect
-       x="-28.292213"
-       y="214.13048"
-       width="25.601635"
-       height="9.7128267"
+       x="34.361668"
+       y="169.57185"
+       width="15.360981"
+       height="5.8276958"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#a9d18e"
        id="rect1278" />
     <g
        clip-path="url(#clip149)"
        id="g1282"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -3894,24 +3894,24 @@
          id="text1280">179</text>
     </g>
     <path
-       d="m -15.320738,213.83945 0.68223,-48.41204 -0.34133,-0.003 -0.68223,48.41216 z m 2.55163,-47.83138 -2.00039,-3.39739 -2.0956,3.35854 z"
+       d="m 42.144549,169.39724 0.40933,-29.04723 -0.20479,-0.002 -0.40934,29.0473 z m 1.53097,-28.69883 -1.20024,-2.03843 -1.25736,2.01512 z"
        fill="#ff0000"
        id="path1284"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <rect
-       x="-220.30449"
-       y="217.93114"
-       width="27.137735"
-       height="8.0236397"
+       x="-80.845688"
+       y="171.85225"
+       width="16.28264"
+       height="4.8141837"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#a9d18e"
        id="rect1286" />
     <g
        clip-path="url(#clip150)"
        id="g1290"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -3920,24 +3920,24 @@
          id="text1288">178</text>
     </g>
     <path
-       d="m -206.82302,217.93686 9.64479,-50.83377 -0.33727,-0.0439 -9.64477,50.83419 z m 11.3941,-50.03817 -1.39022,-3.5988 -2.65678,3.07643 z"
+       d="m -72.756821,171.85568 5.78687,-30.50026 -0.20237,-0.0263 -5.78685,30.50052 z m 6.83646,-30.0229 -0.83413,-2.15928 -1.59407,1.84586 z"
        fill="#ff0000"
        id="path1292"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <rect
-       x="-298.64551"
-       y="71.81646"
-       width="25.601635"
-       height="8.8682327"
+       x="-127.85033"
+       y="84.183449"
+       width="15.360981"
+       height="5.3209395"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#a9d18e"
        id="rect1294" />
     <g
        clip-path="url(#clip151)"
        id="g1298"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -3948,7 +3948,7 @@
     <g
        clip-path="url(#clip152)"
        id="g1302"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -3957,24 +3957,24 @@
          id="text1300">6</text>
     </g>
     <path
-       d="m -272.98345,75.907671 29.32412,9.124145 -0.12084,0.263514 -29.32411,-9.124146 z m 29.34818,7.476765 3.10958,2.7728 -4.55556,0.388091 z"
+       d="m -112.45309,86.638175 17.594479,5.474487 -0.0725,0.158107 -17.594479,-5.474487 z m 17.608919,4.486059 1.86575,1.66368 -2.73335,0.232854 z"
        fill="#ff0000"
        id="path1304"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <rect
-       x="-177.80579"
-       y="81.951576"
-       width="17.921146"
-       height="7.6013422"
+       x="-55.346462"
+       y="90.264519"
+       width="10.752687"
+       height="4.5608053"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#ff0000"
        id="rect1306" />
     <g
        clip-path="url(#clip153)"
        id="g1310"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -3983,19 +3983,19 @@
          id="text1308">167</text>
     </g>
     <rect
-       x="-141.45146"
-       y="82.373878"
-       width="17.409113"
-       height="6.7567487"
+       x="-33.533886"
+       y="90.517891"
+       width="10.445468"
+       height="4.054049"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#ff0000"
        id="rect1312" />
     <g
        clip-path="url(#clip154)"
        id="g1316"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -4004,19 +4004,19 @@
          id="text1314">168</text>
     </g>
     <rect
-       x="-78.471428"
-       y="38.877308"
-       width="27.137735"
-       height="9.2905293"
+       x="4.2541375"
+       y="64.41996"
+       width="16.28264"
+       height="5.5743175"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#a9d18e"
        id="rect1318" />
     <g
        clip-path="url(#clip155)"
        id="g1322"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -4025,24 +4025,24 @@
          id="text1320">169</text>
     </g>
     <path
-       d="m -64.948148,48.161771 -1.76967,33.83052 0.34104,0.01213 1.76967,-33.830508 z m -3.61595,33.201214 1.86967,3.448012 2.22279,-3.302405 z"
+       d="m 12.368089,69.990635 -1.06179,20.298312 0.20462,0.0074 1.0618,-20.298306 z m -2.16957,19.920727 1.12181,2.068808 1.33368,-1.981443 z"
        fill="#ff0000"
        id="path1324"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <rect
-       x="-6.2748036"
-       y="82.796173"
-       width="16.897079"
-       height="6.3344522"
+       x="47.572102"
+       y="90.771271"
+       width="10.138247"
+       height="3.8006711"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#ff0000"
        id="rect1326" />
     <g
        clip-path="url(#clip156)"
        id="g1330"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -4051,19 +4051,19 @@
          id="text1328">170</text>
     </g>
     <rect
-       x="22.399025"
-       y="39.299606"
-       width="26.625702"
-       height="9.2905293"
+       x="64.776398"
+       y="64.673332"
+       width="15.975422"
+       height="5.5743175"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#ffc000"
        id="rect1332" />
     <g
        clip-path="url(#clip157)"
        id="g1336"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -4072,24 +4072,24 @@
          id="text1334">171</text>
     </g>
     <path
-       d="m 35.882382,48.582534 2.1362,32.400301 -0.34102,0.01516 -2.1362,-32.4003 z m 3.97337,31.753764 -1.82232,3.465367 -2.2678,-3.28209 z"
+       d="m 72.866419,70.243092 1.28172,19.44018 -0.20461,0.0091 -1.28172,-19.44018 z m 2.38401,19.052258 -1.09338,2.07922 -1.36068,-1.969254 z"
        fill="#ff0000"
        id="path1338"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <rect
-       x="97.1558"
-       y="28.742188"
-       width="28.673782"
-       height="8.4459362"
+       x="109.63046"
+       y="58.338882"
+       width="17.204269"
+       height="5.0675616"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#a9d18e"
        id="rect1340" />
     <g
        clip-path="url(#clip158)"
        id="g1344"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -4098,24 +4098,24 @@
          id="text1342">173</text>
     </g>
     <path
-       d="m 111.31264,37.174195 -5.28439,43.831443 0.3397,0.02787 5.28437,-43.83146 z m -7.08509,43.117761 1.63276,3.529135 2.4434,-3.194676 z"
+       d="m 118.12457,63.398089 -3.17064,26.298865 0.20382,0.01673 3.17063,-26.298876 z m -4.25106,25.870657 0.97967,2.117481 1.46604,-1.916807 z"
        fill="#ff0000"
        id="path1346"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <rect
-       x="67.969948"
-       y="28.742188"
-       width="26.625702"
-       height="8.0236397"
+       x="92.118965"
+       y="58.338882"
+       width="15.975422"
+       height="4.8141837"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#a9d18e"
        id="rect1348" />
     <g
        clip-path="url(#clip159)"
        id="g1352"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -4126,7 +4126,7 @@
     <g
        clip-path="url(#clip160)"
        id="g1356"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -4135,24 +4135,24 @@
          id="text1354">72</text>
     </g>
     <path
-       d="m 89.336522,35.465928 -13.56382,46.377971 0.33185,0.0663 13.56383,-46.378256 z m -15.22885,45.467498 1.03057,3.680317 2.95151,-2.888088 z"
+       d="m 104.9389,62.373128 -8.138301,27.826783 0.19911,0.03978 8.138311,-27.826954 z m -9.137311,27.2805 0.61834,2.20819 1.7709,-1.732854 z"
        fill="#ff0000"
        id="path1358"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <rect
-       x="167.30426"
-       y="82.373878"
-       width="19.969276"
-       height="7.1790457"
+       x="151.71954"
+       y="90.517891"
+       width="11.981565"
+       height="4.3074274"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#ff0000"
        id="rect1360" />
     <g
        clip-path="url(#clip161)"
        id="g1364"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -4161,19 +4161,19 @@
          id="text1362">174</text>
     </g>
     <rect
-       x="210.82706"
-       y="29.586781"
-       width="25.601635"
-       height="8.8682327"
+       x="177.83322"
+       y="58.845638"
+       width="15.360981"
+       height="5.3209395"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#a9d18e"
        id="rect1366" />
     <g
        clip-path="url(#clip162)"
        id="g1370"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -4184,7 +4184,7 @@
     <g
        clip-path="url(#clip163)"
        id="g1374"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -4193,24 +4193,24 @@
          id="text1372">5</text>
     </g>
     <path
-       d="m 216.45461,40.122737 -7.83624,41.89084 0.33737,0.04295 7.83622,-41.890862 z m -9.58766,41.098273 1.39965,3.596279 2.64874,-3.081163 z"
+       d="m 181.20976,65.167214 -4.70175,25.134504 0.20242,0.02577 4.70174,-25.134517 z m -5.75261,24.658963 0.83979,2.157768 1.58925,-1.848697 z"
        fill="#ff0000"
        id="path1376"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <rect
-       x="240.52496"
-       y="30.009079"
-       width="27.649767"
-       height="8.0236397"
+       x="195.65195"
+       y="59.099018"
+       width="16.589861"
+       height="4.8141837"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#a9d18e"
        id="rect1378" />
     <g
        clip-path="url(#clip164)"
        id="g1382"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -4219,24 +4219,24 @@
          id="text1380">176</text>
     </g>
     <path
-       d="m 254.39266,38.004143 -11.2938,44.933926 0.33426,0.05701 11.2938,-44.93379 z m -12.9936,44.068217 1.17403,3.650756 2.83697,-2.964946 z"
+       d="m 203.97259,63.896057 -6.77628,26.960356 0.20055,0.0342 6.77628,-26.960273 z m -7.79616,26.44093 0.70441,2.190455 1.70219,-1.778969 z"
        fill="#ff0000"
        id="path1384"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <rect
-       x="271.24692"
-       y="30.009079"
-       width="27.649767"
-       height="8.0236397"
+       x="214.08514"
+       y="59.099018"
+       width="16.589861"
+       height="4.8141837"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#a9d18e"
        id="rect1386" />
     <g
        clip-path="url(#clip165)"
        id="g1390"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -4245,24 +4245,24 @@
          id="text1388">153</text>
     </g>
     <path
-       d="m 282.30049,39.711204 -3.7982,41.094266 0.34037,0.0214 3.7982,-41.094278 z m -5.61833,40.415128 1.73086,3.497124 2.35354,-3.240325 z"
+       d="m 220.71728,64.920295 -2.27892,24.656558 0.20423,0.0129 2.27892,-24.656566 z m -3.37099,24.249076 1.03851,2.098275 1.41213,-1.944195 z"
        fill="#ff0000"
        id="path1392"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <rect
-       x="307.60123"
-       y="133.89409"
-       width="17.409113"
-       height="7.1790457"
+       x="235.89772"
+       y="121.43002"
+       width="10.445468"
+       height="4.3074274"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#ff0000"
        id="rect1394" />
     <g
        clip-path="url(#clip166)"
        id="g1398"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -4271,18 +4271,18 @@
          id="text1396">165</text>
     </g>
     <rect
-       x="305.55313"
-       y="164.72176"
-       width="18.433178"
-       height="8.0236397"
+       x="234.66887"
+       y="139.92662"
+       width="11.059907"
+       height="4.8141837"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        id="rect1400" />
     <g
        clip-path="url(#clip167)"
        id="g1404"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          fill="#ffffff"
          font-family="Calibri, Calibri_MSFontService, sans-serif"
@@ -4292,19 +4292,19 @@
          id="text1402">164</text>
     </g>
     <rect
-       x="269.19879"
-       y="160.49876"
-       width="16.897079"
-       height="6.7567487"
+       x="212.85626"
+       y="137.39282"
+       width="10.138247"
+       height="4.054049"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#ff0000"
        id="rect1406" />
     <g
        clip-path="url(#clip168)"
        id="g1410"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -4315,7 +4315,7 @@
     <g
        clip-path="url(#clip169)"
        id="g1414"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -4324,24 +4324,24 @@
          id="text1412">63</text>
     </g>
     <path
-       d="m 197.17201,230.43998 7.37118,-61.21359 -0.33969,-0.0279 -7.37116,61.21362 z m 9.17194,-60.50033 -1.63328,-3.52872 -2.4429,3.19469 z"
+       d="m 169.6402,179.35756 4.4227,-36.72816 -0.20382,-0.0167 -4.42269,36.72817 z m 5.50315,-36.3002 -0.97996,-2.11724 -1.46574,1.91682 z"
        fill="#ff0000"
        id="path1416"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <rect
-       x="130.94995"
-       y="159.65421"
-       width="17.921146"
-       height="6.7567487"
+       x="129.90697"
+       y="136.88609"
+       width="10.752687"
+       height="4.054049"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#ff3333"
        id="rect1418" />
     <g
        clip-path="url(#clip170)"
        id="g1422"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -4350,19 +4350,19 @@
          id="text1420">161</text>
     </g>
     <rect
-       x="96.131752"
-       y="160.07648"
-       width="17.409061"
-       height="6.3344522"
+       x="109.01603"
+       y="137.13945"
+       width="10.445436"
+       height="3.8006711"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#ff3333"
        id="rect1424" />
     <g
        clip-path="url(#clip171)"
        id="g1428"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -4371,19 +4371,19 @@
          id="text1426">160</text>
     </g>
     <rect
-       x="27.519356"
-       y="160.07648"
-       width="17.921146"
-       height="7.1790457"
+       x="67.848602"
+       y="137.13945"
+       width="10.752687"
+       height="4.3074274"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#ff3333"
        id="rect1430" />
     <g
        clip-path="url(#clip172)"
        id="g1434"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -4392,19 +4392,19 @@
          id="text1432">159</text>
     </g>
     <rect
-       x="-50.309624"
-       y="228.06627"
-       width="25.089605"
-       height="10.135123"
+       x="21.151217"
+       y="177.93333"
+       width="15.053763"
+       height="6.0810742"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#dae3f3"
        id="rect1436" />
     <g
        clip-path="url(#clip173)"
        id="g1440"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -4413,24 +4413,24 @@
          id="text1438">158</text>
     </g>
     <path
-       d="m -37.338728,228.0261 6.06238,-59.6426 -0.34019,-0.0233 -6.06235,59.64231 z m 7.87626,-58.95215 -1.69882,-3.5076 -2.38315,3.22551 z"
+       d="m 28.933749,177.90923 3.63742,-35.78556 -0.2041,-0.0139 -3.63741,35.78538 z m 4.72576,-35.37129 -1.01929,-2.10456 -1.42989,1.9353 z"
        fill="#ff0000"
        id="path1442"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <rect
-       x="-80.519554"
-       y="228.06627"
-       width="25.601635"
-       height="10.135123"
+       x="3.0252402"
+       y="177.93333"
+       width="15.360981"
+       height="6.0810742"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#dae3f3"
        id="rect1444" />
     <g
        clip-path="url(#clip174)"
        id="g1448"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -4439,24 +4439,24 @@
          id="text1446">157</text>
     </g>
     <path
-       d="m -67.548118,227.92071 1.81541,-59.95867 -0.34125,-0.008 -1.81541,59.95883 z m 3.67524,-59.35733 -1.94524,-3.41934 -2.14975,3.3353 z"
+       d="m 10.808119,177.84599 1.08924,-35.9752 -0.20475,-0.005 -1.08924,35.9753 z m 2.20514,-35.61439 -1.16714,-2.05161 -1.28985,2.00118 z"
        fill="#ff0000"
        id="path1450"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <rect
-       x="-175.24562"
-       y="228.06627"
-       width="26.625702"
-       height="10.135123"
+       x="-53.81039"
+       y="177.93333"
+       width="15.975422"
+       height="6.0810742"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#a9d18e"
        id="rect1452" />
     <g
        clip-path="url(#clip175)"
        id="g1456"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -4465,24 +4465,24 @@
          id="text1454">155</text>
     </g>
     <path
-       d="m -159.75969,229.93324 -7.62366,-60.70726 0.33948,-0.0292 7.62365,60.70728 z m -9.4209,-59.98767 1.61547,-3.53464 2.45929,3.18625 z"
+       d="m -44.518821,179.05351 -4.57421,-36.42435 0.2037,-0.0175 4.57419,36.42436 z m -5.65254,-35.9926 0.96928,-2.12079 1.47557,1.91176 z"
        fill="#ff0000"
        id="path1458"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <rect
-       x="-246.41815"
-       y="162.18797"
-       width="19.969276"
-       height="8.8682327"
+       x="-96.513901"
+       y="138.40636"
+       width="11.981565"
+       height="5.3209395"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#ff0000"
        id="rect1460" />
     <g
        clip-path="url(#clip176)"
        id="g1464"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -4491,19 +4491,19 @@
          id="text1462">154</text>
     </g>
     <rect
-       x="-142.47552"
-       y="160.07648"
-       width="16.897079"
-       height="8.0236397"
+       x="-34.148342"
+       y="137.13945"
+       width="10.138247"
+       height="4.8141837"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#ff0000"
        id="rect1466" />
     <g
        clip-path="url(#clip177)"
        id="g1470"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -4512,19 +4512,19 @@
          id="text1468">156</text>
     </g>
     <rect
-       x="201.61047"
-       y="187.52577"
-       width="29.697899"
-       height="10.135123"
+       x="172.30328"
+       y="153.60902"
+       width="17.818741"
+       height="6.0810742"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#a9d18e"
        id="rect1472" />
     <g
        clip-path="url(#clip178)"
        id="g1476"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -4533,14 +4533,14 @@
          id="text1474">186.1</text>
     </g>
     <path
-       d="m 214.06992,188.19454 0.29443,-22.34538 -0.34134,-0.003 -0.29442,22.34536 z m 2.16436,-21.76552 -2.0035,-3.39655 -2.09254,3.35984 z"
+       d="m 179.77894,154.01029 0.17665,-13.40723 -0.20479,-0.002 -0.17666,13.40722 z m 1.29861,-13.05931 -1.2021,-2.03793 -1.25552,2.0159 z"
        fill="#ff0000"
        id="path1478"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <g
        clip-path="url(#clip179)"
        filter="url(#fx11)"
-       transform="matrix(0.51203273,0,0,0.4222968,236.68471,159.02075)"
+       transform="matrix(0.30721964,0,0,0.25337808,193.34782,136.50602)"
        id="g1490">
       <g
          clip-path="url(#clip180)"
@@ -4576,7 +4576,7 @@
     </g>
     <g
        clip-path="url(#clip184)"
-       transform="matrix(0,-4.4335674e-5,5.3756781e-5,0,239.75691,165.7775)"
+       transform="matrix(0,-2.6601405e-5,3.2254068e-5,0,195.19114,140.56007)"
        id="g1496">
       <g
          clip-path="url(#clip185)"
@@ -4593,28 +4593,28 @@
       </g>
     </g>
     <path
-       d="m 239.24488,166.19979 v -5.06756 h 7.6805 v 5.06756 z"
+       d="m 194.88391,140.81344 v -3.04053 h 4.6083 v 3.04053 z"
        stroke="#000000"
-       stroke-width="0.93001"
+       stroke-width="0.558006"
        stroke-linecap="square"
        stroke-miterlimit="8"
        fill="none"
        fill-rule="evenodd"
        id="path1498" />
     <rect
-       x="185.22543"
-       y="228.48857"
-       width="23.041473"
-       height="9.2905293"
+       x="162.47226"
+       y="178.18672"
+       width="13.824883"
+       height="5.5743175"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#a9d18e"
        id="rect1500" />
     <g
        clip-path="url(#clip186)"
        id="g1504"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -4623,16 +4623,16 @@
          id="text1502">162</text>
     </g>
     <rect
-       x="273.03903"
-       y="82.58503"
-       width="7.680491"
-       height="5.0675616"
+       x="215.16042"
+       y="90.644585"
+       width="4.6082945"
+       height="3.0405371"
        fill="#ff0000"
        id="rect1506"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
     <g
        clip-path="url(#clip187)"
-       transform="matrix(-5.3756781e-5,0,0,-4.4335674e-5,280.71954,87.65259)"
+       transform="matrix(-3.2254068e-5,0,0,-2.6601405e-5,219.76871,93.685125)"
        id="g1512">
       <g
          clip-path="url(#clip188)"
@@ -4649,19 +4649,19 @@
       </g>
     </g>
     <rect
-       x="203.14658"
-       y="142.34003"
-       width="24.065538"
-       height="9.2905293"
+       x="173.22495"
+       y="126.49759"
+       width="14.439322"
+       height="5.5743175"
        stroke="#ff0000"
-       stroke-width="0.620006"
+       stroke-width="0.372003"
        stroke-miterlimit="8"
        fill="#a9d18e"
        id="rect1514" />
     <g
        clip-path="url(#clip189)"
        id="g1518"
-       transform="matrix(0.51203273,0,0,0.4222968,-411.03669,-19.610798)">
+       transform="matrix(0.30721964,0,0,0.25337808,-195.28503,29.327093)">
       <text
          font-family="Calibri, Calibri_MSFontService, sans-serif"
          font-weight="400"
@@ -4670,9 +4670,9 @@
          id="text1516">186</text>
     </g>
     <path
-       d="m 214.06824,152.47515 v 4.63724 h -0.33795 v -4.63724 z m 1.87916,4.07389 -2.04815,3.37838 -2.04812,-3.37838 z"
+       d="m 179.77793,132.57866 v 2.78234 h -0.20277 v -2.78234 z m 1.12749,2.44433 -1.22889,2.02703 -1.22887,-2.02703 z"
        fill="#ff0000"
        id="path1520"
-       style="stroke-width:0.465005" />
+       style="stroke-width:0.279003" />
   </g>
 </svg>
