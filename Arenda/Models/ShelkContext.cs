@@ -19,6 +19,7 @@ namespace Arenda.Models
 
         public virtual DbSet<Arendator> Arendators { get; set; }
         public virtual DbSet<Comment> Comments { get; set; }
+        public virtual DbSet<Contact> Contacts { get; set; }
         public virtual DbSet<Role> Roles { get; set; }
         public virtual DbSet<User> Users { get; set; }
 
@@ -45,7 +46,7 @@ namespace Arenda.Models
 
                 entity.Property(e => e.Advertising).IsUnicode(false);
 
-                entity.Property(e => e.ArendatorFloor).IsUnicode(false);
+                entity.Property(e => e.AllowAct).HasColumnType("date");
 
                 entity.Property(e => e.ArendatorName).IsUnicode(false);
 
@@ -90,6 +91,8 @@ namespace Arenda.Models
                 entity.Property(e => e.Sale).IsUnicode(false);
 
                 entity.Property(e => e.SpecCondition).IsUnicode(false);
+
+                entity.Property(e => e.StartAct).HasColumnType("date");
             });
 
             modelBuilder.Entity<Comment>(entity =>
@@ -106,6 +109,28 @@ namespace Arenda.Models
                     .WithMany(p => p.Comments)
                     .HasForeignKey(d => d.CommentFk)
                     .HasConstraintName("FK__Comment__Comment__2B3F6F97");
+            });
+
+            modelBuilder.Entity<Contact>(entity =>
+            {
+                entity.ToTable("Contact");
+
+                entity.Property(e => e.ContactId).HasColumnName("ContactID");
+
+                entity.Property(e => e.ContactComment).IsUnicode(false);
+
+                entity.Property(e => e.ContactEmail).IsUnicode(false);
+
+                entity.Property(e => e.ContactFk).HasColumnName("ContactFK");
+
+                entity.Property(e => e.ContactName).IsUnicode(false);
+
+                entity.Property(e => e.ContactTel).IsUnicode(false);
+
+                entity.HasOne(d => d.ContactFkNavigation)
+                    .WithMany(p => p.Contacts)
+                    .HasForeignKey(d => d.ContactFk)
+                    .HasConstraintName("FK__Contact__Contact__2E1BDC42");
             });
 
             modelBuilder.Entity<Role>(entity =>

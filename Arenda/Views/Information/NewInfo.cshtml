@@ -6,7 +6,11 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="~/css/style.css" />
 </head>
-<form asp-action="NewInfo" asp-controller="Information">
+<form asp-action="NewInfo" asp-controller="Information" asp-route-id="@Model.ArendatorId">
+    <input asp-for="ArendatorId" type="hidden" />
+    <input asp-for="ArendatorName" type="hidden" />
+    <input asp-for="ArendatorFloor" type="hidden" />
+    <input asp-for="ArendatorType" type="hidden" />
     <div class="form-group">
         <label asp-for="LegalPerson" class="control-label">Юридическое лицо</label>
         <input type="text" asp-for="LegalPerson" class="form-control" />
@@ -30,6 +34,14 @@
     <div class="form-group">
         <label asp-for="AdressFact" class="control-label">Фактический адрес</label>
         <input type="text" asp-for="AdressFact" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="AllowAct" class="control-label">Акт допуска</label>
+        <input type="date" asp-for="AllowAct" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="StartAct" class="control-label">Акт о начале коммерческой деятельности</label>
+        <input type="date" asp-for="StartAct" class="form-control" />
     </div>
     <div class="form-group">
         <input type="submit" value="Отправить" class="btn btn-default" />

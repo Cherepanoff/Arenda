@@ -4,7 +4,30 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="~/css/style.css" />
 </head>
-<form asp-action="NewDogovor" asp-controller="Information">
+<form asp-action="NewCondition" asp-controller="Information" asp-route-id="@Model.ArendatorId">
+    <input asp-for="ArendatorId" type="hidden" />
+    <input asp-for="ArendatorName" type="hidden" />
+    <input asp-for="ArendatorFloor" type="hidden" />
+    <input asp-for="ArendatorType" type="hidden" />
+    <input asp-for="LegalPerson" type="hidden" />
+    <input asp-for="GeneralDirector" type="hidden" />
+    <input asp-for="NumberContract" type="hidden" />
+    <input asp-for="DateContract" type="hidden" />
+    <input asp-for="AdressLegal" type="hidden" />
+    <input asp-for="AdressFact" type="hidden" />
+    <input asp-for="AllowAct" type="hidden" />
+    <input asp-for="StartAct" type="hidden" />
+    <input asp-for="Commercial" type="hidden" />
+    <input asp-for="Contact" type="hidden" />
+    <input asp-for="Object" type="hidden" />
+    <input asp-for="PastArenda" type="hidden" />
+    <input asp-for="Curator" type="hidden" />
+    <input asp-for="Rate" type="hidden" />
+    <input asp-for="Marketing" type="hidden" />
+    <input asp-for="Contact1" type="hidden" />
+    <input asp-for="Post" type="hidden" />
+    <input asp-for="Email" type="hidden" />
+    <input asp-for="Logo" type="hidden" />
     <div class="form-group">
         <label asp-for="Sale" class="control-label">Скидки</label>
         <input type="text" asp-for="Sale" class="form-control" />
@@ -20,10 +43,6 @@
     <div class="form-group">
         <label asp-for="PayCondition" class="control-label">Условия по оплате</label>
         <input type="text" asp-for="PayCondition" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="SpecCondition" class="control-label">Куратор</label>
-        <input type="text" asp-for="SpecCondition" class="form-control" />
     </div>
     <div class="form-group">
         <input type="submit" value="Отправить" class="btn btn-default" />

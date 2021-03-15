@@ -73,10 +73,10 @@ namespace Arenda.Controllers
         private async Task Authenticate(User user)
         {
             // создаем один claim
-            var claims = new List<Claim>
-            {
-                new Claim(ClaimsIdentity.DefaultNameClaimType, user.UserLogin),
-            new Claim(ClaimsIdentity.DefaultRoleClaimType, user.RoleFkNavigation.RoleName),
+           var claims = new List<Claim>
+           {
+               new Claim(ClaimsIdentity.DefaultNameClaimType, user.UserLogin),
+           new Claim(ClaimsIdentity.DefaultRoleClaimType, user.RoleFkNavigation.RoleName),
             };
             // создаем объект ClaimsIdentity
             ClaimsIdentity id = new ClaimsIdentity(claims, "ApplicationCookie", ClaimsIdentity.DefaultNameClaimType, ClaimsIdentity.DefaultRoleClaimType);

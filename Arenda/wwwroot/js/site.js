@@ -57,4 +57,32 @@ function ChangeText(id) {
             break;
 }   
 }
+function ChangeTextAdvert(id) {
+    switch (id) {
+        case "0":
+            document.getElementById("text").innerHTML = "План 0-ого этажа";
+            document.getElementById("image").src = "../AdvertisingSVG/0этаж.svg";
+            break;
+        case "1":
+            document.getElementById("text").innerHTML = "План 1-ого этажа";
+            document.getElementById("image").src = "../AdvertisingSVG/1этаж.svg";
+            break;
+        case "2":
+            document.getElementById("text").innerHTML = "План 2-ого этажа";
+            document.getElementById("image").src = "../AdvertisingSVG/2этаж.svg";
+            break;
+        case "3":
+            document.getElementById("text").innerHTML = "План 3-ого этажа";
+            document.getElementById("image").src = "../AdvertisingSVG/3этаж.svg";
+            break;
+        case "4":
+            document.getElementById("text").innerHTML = "План 4-ого этажа";
+            document.getElementById("image").src = "../AdvertisingSVG/4этаж.svg";
+            break;
+        case "5":
+            document.getElementById("text").innerHTML = "План 5-ого этажа";
+            document.getElementById("image").src = "../AdvertisingSVG/5этаж.svg";
+            break;
+    }
+}
 

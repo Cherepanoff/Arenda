@@ -27,6 +27,10 @@ namespace Arenda.Controllers
         {
             return View(db.Arendators.ToList());
         }
+        public IActionResult IslandArendatorList()
+        {
+            return View(db.Arendators.ToList());
+        }
         [HttpPost]
         public async Task<IActionResult> AddArendator(Arendator arendator)
         {
@@ -74,6 +78,8 @@ namespace Arenda.Controllers
             }
             return NotFound();
         }
+        //return NotFound();
+        //}
         //private readonly ILogger<HomeController> _logger;
 
         //public HomeController(ILogger<HomeController> logger)

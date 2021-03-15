@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Arendator>
+﻿@model IEnumerable<Arenda.Models.Arendator>
 @{
     ViewBag.Title = "Вся информация";
 }
@@ -8,29 +8,70 @@
     <link rel="stylesheet" href="~/css/style.css" />
 </head>
 <body>
-    <div class="button-item">
-        <h1 id="text">План 1-ого этажа</h1>
-        <a class="btn" asp-controller="Home" asp-action="AddArendator">Добавление нового арендатора</a>
-        <a class="btn" asp-controller="Home" asp-action="DeleteArendator">Удаление арендатора</a>
-        <a class="btn" href="../Contract/табличка.docx">Шаблон договора аренды</a>
-        <a class="btn" href="../Contract/табличка.docx">Шаблон договора рекламы</a>
-    </div>
-    <!--<image height="548.6560614371914" width="1200" src="../SVG/0этаж.svg" x="0" y="0" visibility="visible"></image>-->
-        <img id="image" src="../SVG/1этаж.svg" width="1331" height="500" asp-append-version="true">
+    @if (User.IsInRole("Админ") || User.IsInRole("Аренда"))
+    {
+        <div class="button-item">
+            <h1 id="text">План 1-ого этажа</h1>
+            <a class="btn" asp-controller="Home" asp-action="AddArendator">Добавление нового арендатора</a>
+            <a class="btn" asp-controller="Home" asp-action="DeleteArendator">Удаление арендатора</a>
+            <a class="btn" href="../Contract/табличка.docx">Шаблон договора аренды</a>
+            <a class="btn" href="../Contract/табличка.docx">Шаблон договора рекламы</a>
+        </div>
+        <!--<img id="image" src="../SVG/1этаж.svg" width="1331" height="500" asp-append-version="true">-->
+        <div class="map">
+            <svg viewBox="0 0 1331 500">
+                <path d="m 833,780 c -15.9,0 -31.8,0 -47.7,0 -0.1,0 -0.1,0 -0.2,0 h -12.9 v 82.6 h -29.5 c 0,12.3 0,24.5 0,36.8 14.2,0 65.4,0 79.5,0 l 0.8,-59.2 h 35 C 849.8,820.1 841.4,800 833,780 Z" />
+                <path d="m 968.4,840.2 c -16.7,0 -33.3,0 -50,0 8.4,-20 16.8,-40.1 25.2,-60.1 8.3,0 16.6,0 24.8,-0.1 0,20.1 0,40.1 0,60.2 z" />
+                <img id="image" src="../SVG/1этаж.svg" width="1331" height="500" asp-append-version="true">
+            </svg>
+        </div>
         <div class="main-floor">
             <div class="group-floor">
                 <h4>Этажи</h4>
-                <button class="btn" id="0" onclick="ChangeText(this.id)">0</button>
-                <button class="btn" id="1" onclick="ChangeText(this.id)">1</button>
-                <button class="btn" id="2" onclick="ChangeText(this.id)">2</button>
-                <button class="btn" id="3" onclick="ChangeText(this.id)">3</button>
-                <button class="btn" id="4" onclick="ChangeText(this.id)">4</button>
-                <button class="btn" id="5" onclick="ChangeText(this.id)">5</button>
+                <button class="btn" id="0" name="id" onclick="ChangeText(this.id)">0</button>
+                <button class="btn" id="1" name="id" onclick="ChangeText(this.id)">1</button>
+                <button class="btn" id="2" name="id" onclick="ChangeText(this.id)">2</button>
+                <button class="btn" id="3" name="id" onclick="ChangeText(this.id)">3</button>
+                <button class="btn" id="4" name="id" onclick="ChangeText(this.id)">4</button>
+                <button class="btn" id="5" name="id" onclick="ChangeText(this.id)">5</button>
             </div>
         </div>
-        @foreach (Arendator a in Model)
+        @foreach (var a in Model)
         {
-    <a asp-controller="Information" asp-action="Info" class="btn">@a.ArendatorName</a>}
-    </body>
-    @*<a asp-controller="Information" asp-action="Info" asp-for="Name"></a>*@
-    <!--<button class="btn btn-primary" (click)="incrementCounter()">Increment</button>-->
+            <a asp-controller="Information" asp-action="Info" class="btn" asp-route-id="@a.ArendatorId">@a.ArendatorName</a>
+        }}
+    @if (User.IsInRole("Реклама"))
+    {
+        <div class="button-item">
+            <h1 id="text">План 1-ого этажа</h1>
+            <a class="btn" asp-controller="Home" asp-action="AddArendator">Добавление нового арендатора</a>
+            <a class="btn" asp-controller="Home" asp-action="DeleteArendator">Удаление арендатора</a>
+            <a class="btn" href="../Contract/табличка.docx">Шаблон договора аренды</a>
+            <a class="btn" href="../Contract/табличка.docx">Шаблон договора рекламы</a>
+        </div>
+        <!--<img id="image" src="../SVG/1этаж.svg" width="1331" height="500" asp-append-version="true">-->
+        <div class="map">
+            <svg viewBox="0 0 1331 500">
+                <path d="m 833,780 c -15.9,0 -31.8,0 -47.7,0 -0.1,0 -0.1,0 -0.2,0 h -12.9 v 82.6 h -29.5 c 0,12.3 0,24.5 0,36.8 14.2,0 65.4,0 79.5,0 l 0.8,-59.2 h 35 C 849.8,820.1 841.4,800 833,780 Z" />
+                <path d="m 968.4,840.2 c -16.7,0 -33.3,0 -50,0 8.4,-20 16.8,-40.1 25.2,-60.1 8.3,0 16.6,0 24.8,-0.1 0,20.1 0,40.1 0,60.2 z" />
+                <img id="image" src="../AdvertisingSVG/1этаж.svg" width="1331" height="500" asp-append-version="true">
+            </svg>
+        </div>
+        <div class="main-floor">
+            <div class="group-floor">
+                <h4>Этажи</h4>
+                <button class="btn" id="0" name="id" onclick="ChangeTextAdvert(this.id)">0</button>
+                <button class="btn" id="1" name="id" onclick="ChangeTextAdvert(this.id)">1</button>
+                <button class="btn" id="2" name="id" onclick="ChangeTextAdvert(this.id)">2</button>
+                <button class="btn" id="3" name="id" onclick="ChangeTextAdvert(this.id)">3</button>
+                <button class="btn" id="4" name="id" onclick="ChangeTextAdvert(this.id)">4</button>
+                <button class="btn" id="5" name="id" onclick="ChangeTextAdvert(this.id)">5</button>
+            </div>
+        </div>
+        @foreach (var a in Model)
+        {
+            <a asp-controller="Information" asp-action="Info" class="btn" asp-route-id="@a.ArendatorId">@a.ArendatorName</a>
+        }}
+</body>
+        @*<a asp-controller="Information" asp-action="Info" asp-for="Name"></a>*@
+        <!--<button class="btn btn-primary" (click)="incrementCounter()">Increment</button>-->

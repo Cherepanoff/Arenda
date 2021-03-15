@@ -1,19 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
-#nullable disable
-
-namespace Arenda.Models
+namespace Arenda.ViewModels
 {
-    public partial class Arendator
+    public class ArendatorModel
     {
-        public Arendator()
-        {
-            Comments = new HashSet<Comment>();
-            Contacts = new HashSet<Contact>();
-        }
-
-        public int ArendatorId { get; set; }
         public string ArendatorName { get; set; }
         public int? ArendatorFloor { get; set; }
         public string ArendatorType { get; set; }
@@ -42,8 +35,5 @@ namespace Arenda.Models
         public string ParkingCondition { get; set; }
         public byte[] Logo { get; set; }
         public string PayCondition { get; set; }
-
-        public virtual ICollection<Comment> Comments { get; set; }
-        public virtual ICollection<Contact> Contacts { get; set; }
     }
 }
