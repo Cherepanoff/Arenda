@@ -53,31 +53,30 @@ namespace Arenda.Controllers
         //{
         //    return View();
         // }
-        [HttpGet]
-        [ActionName("DeleteArendator")]
-        public async Task<IActionResult> ConfirmDelete(int? ArendatorId)
+        public IActionResult DeleteArendator()
         {
-            if (ArendatorId != null)
-            {
-                Arendator arendator = await db.Arendators.FirstOrDefaultAsync(p => p.ArendatorId == ArendatorId);
-                if (arendator != null)
-                return View(arendator);
-            }
-            return NotFound();
+            return View();
         }
-
         [HttpPost]
-        public async Task<IActionResult> DeleteArendator(int? ArendatorId)
+        public async Task<IActionResult> DeleteArendator(Arendator arendator)
         {
-            if (ArendatorId != null)
-            {
-                Arendator arendator = new Arendator { ArendatorId = ArendatorId.Value };
-                db.Entry(arendator).State = EntityState.Deleted;
-                await db.SaveChangesAsync();
-                return RedirectToAction("Index");
-            }
-            return NotFound();
+            db.Arendators.Remove(arendator);
+            await db.SaveChangesAsync();
+            return RedirectToAction("Index");
         }
+        //  [HttpGet]
+        //  [ActionName("DeleteArendator")]
+        //  public async Task<IActionResult> ConfirmDelete(int? ArendatorId)
+        // {
+        //     if (ArendatorId != null)
+        //     {
+        //         Arendator arendator = await db.Arendators.FirstOrDefaultAsync(p => p.ArendatorId == ArendatorId);
+        //        if (arendator != null)
+        //        return View(arendator);
+        //    }
+        //     return NotFound();
+        // }
+
         //return NotFound();
         //}
         //private readonly ILogger<HomeController> _logger;

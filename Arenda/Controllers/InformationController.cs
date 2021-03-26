@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using NLog;
 using OfficeOpenXml;
 
 namespace Arenda.Controllers
@@ -20,6 +21,7 @@ namespace Arenda.Controllers
         private IWebHostEnvironment _env;
         //private FileManager _fileManager;
         private string _dir;
+        private static Logger logger = LogManager.GetCurrentClassLogger();
         public ShelkContext db;
         //db dbop = new db();
         public InformationController(ShelkContext context, IWebHostEnvironment env)
@@ -49,6 +51,7 @@ namespace Arenda.Controllers
             if (id != null)
             {
                 Arendator arendator = await db.Arendators.FirstOrDefaultAsync(p => p.ArendatorId == id);
+                logger.Trace("Зашел посмотреть информацию об арендаторе " + arendator.ArendatorName);
                 return View(arendator);
             }
            return NotFound();
@@ -59,7 +62,8 @@ namespace Arenda.Controllers
              if (id != null)
              {
             Arendator arendator = await db.Arendators.FirstOrDefaultAsync(p => p.ArendatorId == id);
-            if (arendator != null)
+                logger.Trace("Зашел изменить информацию об арендаторе " + arendator.ArendatorName);
+                if (arendator != null)
             return View(arendator);
             }
             return NotFound();
@@ -71,10 +75,13 @@ namespace Arenda.Controllers
             await db.SaveChangesAsync();
             return RedirectToAction("Index", "Home");
         }
-        [Authorize(Roles = "Админ")]
-        public async Task<IActionResult> Dogovor()
+        [Authorize(Roles = "Админ,Юрист")]
+        public async Task<IActionResult> Dogovor(int? id)
         {
-            return View(await db.Arendators.ToListAsync());
+
+                Arendator arendator = await db.Arendators.FirstOrDefaultAsync(p => p.ArendatorId == id);
+                logger.Trace("Зашел посмотреть договор " + arendator.ArendatorName);
+                return View(arendator);
         }
         [HttpPost]
         public async Task<IActionResult> NewDogovor(Arendator Arendator)

@@ -38,7 +38,7 @@
                     <tr><td>Комментарий:</td><td></td></tr>
                     <tr><td><input type='text' name='1'></td></tr>
                 </table>
-    <a asp-controller="Information" asp-action="Dogovor" class="btn">Информация о договоре</a>
+    <a asp-controller="Information" asp-action="Dogovor" asp-route-id="@Model.ArendatorId" class="btn">Информация о договоре</a>
     <a asp-controller="Information" asp-action="SpecConditions" asp-route-id="@Model.ArendatorId" class="btn">Спец условия</a>
     <h4>Договор</h4>
     <form asp-controller="Information" asp-action="UploadCondition"
