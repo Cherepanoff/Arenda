@@ -43,7 +43,23 @@ ArendatorType varchar(max),
  SpecCondition varchar(max),
  ParkingCondition varchar(max),
  Logo image,
- PayCondition varchar(max))
+ PayCondition varchar(max),
+ ProductCategory varchar(max),
+ RoomNumber varchar(max),
+ Area varchar(max),
+ ExplPay varchar(max),
+ MarkPay varchar(max),
+ CommunalPay varchar(max),
+ Curs varchar(max),
+ IndexSize varchar(max),
+ AvansPay varchar(max),
+ Deposit varchar(max),
+ DateOpen date,
+ PayStart varchar(max),
+ RepairTime varchar(max),
+ ElectricPower varchar(max),
+ TermArenda varchar(max),
+ ContactPerson varchar(max))
 
 CREATE table Comment
 (
@@ -71,7 +87,7 @@ INSERT INTO Users VALUES ('Андрей Черепанов','Cherep','123',1)
 INSERT INTO Users VALUES ('Иванов Иван','Lawyer','1',3)
 INSERT INTO Users VALUES ('Иванов Иван','Accounter','2',2)
 INSERT INTO Users VALUES ('Иванов Иван','Arenda','3',4)
-INSERT INTO Users VALUES ('Иванов Иван','Реклама','4',1002)
+INSERT INTO Users VALUES ('Иванов Иван','Реклама','4',5)
 
 INSERT INTO q VALUES('фывыф')
 
@@ -79,6 +95,7 @@ SELECT * FROM Users
 SELECT * FROM Roles
 SELECT * FROM arendator
 
+ALTER TABLE Arendator Add ContactPerson date
 
 SELECT * FROM arendator WHERE ArendatorId=1
 

@@ -1,0 +1,34 @@
+﻿@model Arenda.Models.Arendator
+@{ ViewBag.Title = "Карточка"; }
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+<body>
+    <div class="button-item">
+        <a asp-controller="Information" asp-action="NewCard" class="btn" asp-route-id="@Model.ArendatorId">Добавить информацию</a>
+    </div>
+    <table class="content-table">
+        <tbody>
+            <tr><td>Категория товара</td><td>@Model.ProductCategory</td></tr>
+            <tr><td>Номер помещения</td><td>@Model.RoomNumber</td></tr>
+            <tr><td>Номер договора</td><td>@Model.NumberContract</td></tr>
+            <tr><td>Этаж</td><td>@Model.ArendatorFloor</td></tr>
+            <tr><td>Расчетная площадь</td><td>@Model.Area</td></tr>
+            <tr><td>Арендная ставка</td><td>@Model.PayCondition</td></tr>
+            <tr><td>Эксплуатационные платежи</td><td>@Model.ExplPay</td></tr>
+            <tr><td>Маркетинговые платежи</td><td>@Model.MarkPay</td></tr>
+            <tr><td>Коммунальные платежи</td><td>@Model.CommunalPay</td></tr>
+            <tr><td>Курс</td><td>@Model.Curs</td></tr>
+            <tr><td>Размер индексации</td><td>@Model.IndexSize</td></tr>
+            <tr><td>Авансовый платеж</td><td>@Model.AvansPay</td></tr>
+            <tr><td>Депозит, порядок зачета депозита</td><td>@Model.Deposit</td></tr>
+            <tr><td>Дата открытия</td><td>@Model.DateOpen</td></tr>
+            <tr><td>Начало начисления аренды</td><td>@Model.PayStart</td></tr>
+            <tr><td>Срок на ремонт</td><td>@Model.RepairTime</td></tr>
+            <tr><td>Электромощность</td><td>@Model.ElectricPower</td></tr>
+            <tr><td>Срок аренды</td><td>@Model.TermArenda</td></tr>
+            <tr><td>Контактное лицо</td><td>@Model.ContactPerson</td></tr>
+        </tbody>
+    </table>
+</body>

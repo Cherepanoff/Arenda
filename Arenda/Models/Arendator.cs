@@ -42,6 +42,22 @@ namespace Arenda.Models
         public string ParkingCondition { get; set; }
         public byte[] Logo { get; set; }
         public string PayCondition { get; set; }
+        public string ProductCategory { get; set; }
+        public string RoomNumber { get; set; }
+        public string Area { get; set; }
+        public string ExplPay { get; set; }
+        public string MarkPay { get; set; }
+        public string CommunalPay { get; set; }
+        public string Curs { get; set; }
+        public string IndexSize { get; set; }
+        public string AvansPay { get; set; }
+        public string Deposit { get; set; }
+        public DateTime? DateOpen { get; set; }
+        public string PayStart { get; set; }
+        public string RepairTime { get; set; }
+        public string ElectricPower { get; set; }
+        public string TermArenda { get; set; }
+        public string ContactPerson { get; set; }
 
         public virtual ICollection<Comment> Comments { get; set; }
         public virtual ICollection<Contact> Contacts { get; set; }

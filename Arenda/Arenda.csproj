@@ -57,7 +57,9 @@
     <None Include="Views\Home\ArendatorList.cshtml" />
     <None Include="Views\Home\DeleteArendator.cshtml" />
     <None Include="Views\Home\Index.cshtml" />
+    <None Include="Views\Home\IslandArendatorList.cshtml" />
     <None Include="Views\Home\Privacy.cshtml" />
+    <None Include="Views\Information\Card.cshtml" />
     <None Include="Views\Information\Dogovor.cshtml" />
     <None Include="Views\Information\Info.cshtml" />
     <None Include="Views\Information\NewCondition.cshtml" />

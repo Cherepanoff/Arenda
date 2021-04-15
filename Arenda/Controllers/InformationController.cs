@@ -122,26 +122,49 @@ namespace Arenda.Controllers
             await db.SaveChangesAsync();
             return RedirectToAction("Info");
         }
-       // [HttpPost]
+        // [HttpPost]
         //public async Task<IActionResult> AddFile(IFormFile uploadedFile)
         //{
         //    if (uploadedFile != null)
         //    {
-                // путь к папке Files
-       //         string path = "/Files/" + uploadedFile.FileName;
-                // сохраняем файл в папку Files в каталоге wwwroot
+        // путь к папке Files
+        //         string path = "/Files/" + uploadedFile.FileName;
+        // сохраняем файл в папку Files в каталоге wwwroot
         //        using (var fileStream = new FileStream(_env.WebRootPath + path, FileMode.Create))
         //        {
         //            await uploadedFile.CopyToAsync(fileStream);
-         //       }
-                //FileModel file = new FileModel { Name = uploadedFile.FileName, Path = path };
-                //_context.Files.Add(file);
-                //_context.SaveChanges();
-         //   }
+        //       }
+        //FileModel file = new FileModel { Name = uploadedFile.FileName, Path = path };
+        //_context.Files.Add(file);
+        //_context.SaveChanges();
+        //   }
 
         //    return RedirectToAction("Index");
-       // }
+        // }
+        public async Task<IActionResult> Card(int? id)
+        {
 
+            Arendator arendator = await db.Arendators.FirstOrDefaultAsync(p => p.ArendatorId == id);
+            return View(arendator);
+        }
+        [Authorize(Roles = "Админ,Бухгалтер")]
+        public async Task<IActionResult> NewCard(int? id)
+        {
+            //if (id != null)
+           // {
+                Arendator arendator = await db.Arendators.FirstOrDefaultAsync(p => p.ArendatorId == id);
+             //   if (arendator != null)
+                    return View(arendator);
+           // }
+            //return NotFound();
+        }
+        [HttpPost]
+        public async Task<IActionResult> NewCard(Arendator arendator)
+        {
+            db.Arendators.Update(arendator);
+            await db.SaveChangesAsync();
+            return RedirectToAction("Index", "Home");
+        }
         public IActionResult Excel()
         {
             using (var workbook = new XLWorkbook())

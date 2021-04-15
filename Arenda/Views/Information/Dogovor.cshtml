@@ -8,11 +8,12 @@
 </head>
 <body>
     <div class="button-item">
+        <a asp-controller="Information" asp-action="Card" class="btn" asp-route-id="@Model.ArendatorId">Карточка</a>
         <a asp-controller="Information" asp-action="NewDogovor" class="btn">Добавить договор</a>
     </div>
     <table class="content-table">
         <tbody>
-            <tr><td>Коммерция</td><td>@Model.Commercial</td></tr>
+            <tr><td>Потенциальные арендаторы</td><td>@Model.Commercial</td></tr>
             <tr><td>Контактные данные</td><td>@Model.Contact</td></tr>
             <tr><td>Предыдущие объекты</td><td>@Model.Object</td></tr>
             <tr><td>Куратор</td><td>@Model.Curator</td></tr>

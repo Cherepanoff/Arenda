@@ -33,27 +33,31 @@ function ChangeText(id) {
     switch (id) {
         case "0":
             document.getElementById("text").innerHTML = "План 0-ого этажа";
-            document.getElementById("image").src = "../SVG/0этаж.svg";
+            document.getElementById("image").src = "../SVG/0 этаж.jpg";
             break;
         case "1":
             document.getElementById("text").innerHTML = "План 1-ого этажа";
-            document.getElementById("image").src = "../SVG/1этаж.svg";
+            document.getElementById("image").src = "../SVG/1 этаж.jpg";
             break;
         case "2":
             document.getElementById("text").innerHTML = "План 2-ого этажа";
-            document.getElementById("image").src = "../SVG/2этаж.svg";
+            document.getElementById("image").src = "../SVG/2 этаж.jpg";
             break;
         case "3":
             document.getElementById("text").innerHTML = "План 3-ого этажа";
-            document.getElementById("image").src = "../SVG/3этаж.svg";
+            document.getElementById("image").src = "../SVG/3 этаж.jpg";
             break;
         case "4":
             document.getElementById("text").innerHTML = "План 4-ого этажа";
-            document.getElementById("image").src = "../SVG/4этаж.svg";
+            document.getElementById("image").src = "../SVG/4 этаж.jpg";
             break;
         case "5":
             document.getElementById("text").innerHTML = "План 5-ого этажа";
-            document.getElementById("image").src = "../SVG/5этаж.svg";
+            document.getElementById("image").src = "../SVG/5 этаж.jpg";
+            break;
+        case "6":
+            document.getElementById("text").innerHTML = "План 6-ого этажа";
+            document.getElementById("image").src = "../SVG/6 этаж.jpg";
             break;
 }   
 }

@@ -48,29 +48,51 @@ namespace Arenda.Models
 
                 entity.Property(e => e.AllowAct).HasColumnType("date");
 
+                entity.Property(e => e.Area).IsUnicode(false);
+
                 entity.Property(e => e.ArendatorName).IsUnicode(false);
 
                 entity.Property(e => e.ArendatorType).IsUnicode(false);
+
+                entity.Property(e => e.AvansPay).IsUnicode(false);
 
                 entity.Property(e => e.Commercial).IsUnicode(false);
 
                 entity.Property(e => e.Communal).IsUnicode(false);
 
+                entity.Property(e => e.CommunalPay).IsUnicode(false);
+
                 entity.Property(e => e.Contact).IsUnicode(false);
 
                 entity.Property(e => e.Contact1).IsUnicode(false);
 
+                entity.Property(e => e.ContactPerson).IsUnicode(false);
+
                 entity.Property(e => e.Curator).IsUnicode(false);
+
+                entity.Property(e => e.Curs).IsUnicode(false);
 
                 entity.Property(e => e.DateContract).HasColumnType("date");
 
+                entity.Property(e => e.DateOpen).HasColumnType("date");
+
+                entity.Property(e => e.Deposit).IsUnicode(false);
+
+                entity.Property(e => e.ElectricPower).IsUnicode(false);
+
                 entity.Property(e => e.Email).IsUnicode(false);
 
+                entity.Property(e => e.ExplPay).IsUnicode(false);
+
                 entity.Property(e => e.GeneralDirector).IsUnicode(false);
+
+                entity.Property(e => e.IndexSize).IsUnicode(false);
 
                 entity.Property(e => e.LegalPerson).IsUnicode(false);
 
                 entity.Property(e => e.Logo).HasColumnType("image");
+
+                entity.Property(e => e.MarkPay).IsUnicode(false);
 
                 entity.Property(e => e.Marketing).IsUnicode(false);
 
@@ -84,15 +106,25 @@ namespace Arenda.Models
 
                 entity.Property(e => e.PayCondition).IsUnicode(false);
 
+                entity.Property(e => e.PayStart).IsUnicode(false);
+
                 entity.Property(e => e.Post).IsUnicode(false);
 
+                entity.Property(e => e.ProductCategory).IsUnicode(false);
+
                 entity.Property(e => e.Rate).IsUnicode(false);
+
+                entity.Property(e => e.RepairTime).IsUnicode(false);
+
+                entity.Property(e => e.RoomNumber).IsUnicode(false);
 
                 entity.Property(e => e.Sale).IsUnicode(false);
 
                 entity.Property(e => e.SpecCondition).IsUnicode(false);
 
                 entity.Property(e => e.StartAct).HasColumnType("date");
+
+                entity.Property(e => e.TermArenda).IsUnicode(false);
             });
 
             modelBuilder.Entity<Comment>(entity =>
