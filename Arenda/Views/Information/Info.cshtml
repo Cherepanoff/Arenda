@@ -16,58 +16,60 @@
         <!--<input type="button" class="btn" value="Удалить комментарий(1)" onClick='deleterow2();'>-->
 
     </div>
-    <div class="rightsidebar">
-        <table class="content-table1" id="table1">
-            <tr><td>ФИО</td><td><input type='text' name='2'></tr>
-            <tr><td>Телефон</td><td><input type='text' name='2'></tr>
-            <tr><td>Е-mail</td><td><input type='text' name='2'></tr>
-            <tr><td>Комментарий</td><td><input type='text' name='2'></tr>
+    <h1>@Model.ArendatorName</h1>
+    <div class="container">
+        <table id="table" class="content-table">
+            <tr><td>Юридическое лицо</td><td>@Model.GeneralDirector</td>
+            <tr><td>Ген. директор</td><td>@Model.LegalPerson</td></tr>
+            <tr><td>Номер договора</td><td>@Model.NumberContract</td></tr>
+            <tr><td>Дата договора</td><td>@Model.DateContract</td></tr>
+            <tr><td>Юр. Адрес</td><td>@Model.AdressLegal</td></tr>
+            <tr><td>Факт. Адрес</td><td>@Model.AdressFact</td></tr>
+            <tr><td>Акт допуска</td><td>@Model.AllowAct</td></tr>
+            <tr><td>Акт приема передачи</td><td>@Model.StartAct</td></tr>
+            <tr><td>Комментарий:</td><td></td></tr>
+            <tr><td><input type='text' name='1'></td></tr>
         </table>
-        <img src="../Image/Перекресток.png" alt="Изображение"/>
+        <div>
+            <table class="content-table1" id="table1">
+                <tr><td>ФИО</td><td><input type='text' name='2'></tr>
+                <tr><td>Телефон</td><td><input type='text' name='2'></tr>
+                <tr><td>Е-mail</td><td><input type='text' name='2'></tr>
+                <tr><td>Комментарий</td><td><input type='text' name='2'></tr>
+            </table>
+            <img src="../Image/Перекресток.png" alt="Изображение" />
+        </div>
     </div>
-<h1>@Model.ArendatorName</h1>
-                <table id="table" class="content-table">
-                    <tr><td>Юридическое лицо</td><td>@Model.GeneralDirector</td>
-                    <tr><td>Ген. директор</td><td>@Model.LegalPerson</td></tr>
-                    <tr><td>Номер договора</td><td>@Model.NumberContract</td></tr>
-                    <tr><td>Дата договора</td><td>@Model.DateContract</td></tr>
-                    <tr><td>Юр. Адрес</td><td>@Model.AdressLegal</td></tr>
-                    <tr><td>Факт. Адрес</td><td>@Model.AdressFact</td></tr>
-                    <tr><td>Акт допуска</td><td>@Model.AllowAct</td></tr>
-                    <tr><td>Акт приема передачи</td><td>@Model.StartAct</td></tr>
-                    <tr><td>Комментарий:</td><td></td></tr>
-                    <tr><td><input type='text' name='1'></td></tr>
-                </table>
-    <a asp-controller="Information" asp-action="Dogovor" asp-route-id="@Model.ArendatorId" class="btn">Информация о договоре</a>
-    <a asp-controller="Information" asp-action="SpecConditions" asp-route-id="@Model.ArendatorId" class="btn">Спец условия</a>
-    <h4>Договор</h4>
-    <form asp-controller="Information" asp-action="UploadCondition"
-          enctype="multipart/form-data" method="post">
-        <input type="file" name="file" />
-        <button type="submit" class="btn">Загрузить договор</button>
-    </form>
-    <div class="button-item">
-        <h4>Изображение</h4>
-        <!--       <a asp-controller="Information" asp-action="SpecConditions" class="btn">Загрузить изображение</a> -->
-        <form asp-controller="Information" asp-action="UploadImage" 
+        <a asp-controller="Information" asp-action="Dogovor" asp-route-id="@Model.ArendatorId" class="btn">Информация о договоре</a>
+        <a asp-controller="Information" asp-action="SpecConditions" asp-route-id="@Model.ArendatorId" class="btn">Спец условия</a>
+        <h4>Договор</h4>
+        <form asp-controller="Information" asp-action="UploadCondition"
               enctype="multipart/form-data" method="post">
             <input type="file" name="file" />
-            <button type="submit" class="btn">Загрузить изображение</button>
+            <button type="submit" class="btn">Загрузить договор</button>
         </form>
-    </div>
-    @section scripts {
-        <script>
-            var UploadFile = function (e) {
-                var file = e.target.files[0];
+        <div class="button-item">
+            <h4>Изображение</h4>
+            <!--       <a asp-controller="Information" asp-action="SpecConditions" class="btn">Загрузить изображение</a> -->
+            <form asp-controller="Information" asp-action="UploadImage"
+                  enctype="multipart/form-data" method="post">
+                <input type="file" name="file" />
+                <button type="submit" class="btn">Загрузить изображение</button>
+            </form>
+        </div>
+        @section scripts {
+            <script>
+                var UploadFile = function (e) {
+                    var file = e.target.files[0];
 
-                var formData = new FormData();
+                    var formData = new FormData();
 
-                formData.append("file", file);
+                    formData.append("file", file);
 
-                axios.post("/Information/SingleFile", formData);
-            }
-        </script>
-    }
-    <script src="/js/site.js"></script>
+                    axios.post("/Information/SingleFile", formData);
+                }
+            </script>
+        }
+        <script src="/js/site.js"></script>
 </body>
 

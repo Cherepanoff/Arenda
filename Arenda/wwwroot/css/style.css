@@ -8,9 +8,17 @@
     background-color: #fff58c;
 }
 .container {
-    display: block;
+    /*display: block;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto;*/
+    display: -webkit-flex; /* для поддержки ранних версий браузеров */
+    display: flex; /* элемент отображается как блочный flex-контейнер */
+    -webkit-justify-content: flex-start; /* для поддержки ранних версий браузеров */
+    justify-content: flex-start;
+}
+.container > div {
+    width: 100px;
+    height: 100px;
 }
 .main-floor{
     float:left;
@@ -19,7 +27,7 @@
     width: 50px;
     position: absolute;
     top: 30%;
-    left: 22%;
+    left: 15%;
 }
 .add_menu {
     width: 100%;
@@ -75,9 +83,8 @@ padding-bottom: 15px;
     }
 
 .rightsidebar {
-    margin-top:40px;
-    margin-right:100px;
-    float: right; 
+
+
     /*display: flex;
     justify-content:space-between;  */
 }
@@ -86,7 +93,7 @@ padding-bottom: 15px;
 }
 .content-table {
     border-collapse: collapse;
-    margin: 25px 0;
+    margin: 25px 25px;
     font-size: 0.9em;
     min-width: 400px;
     border-radius: 5px 5px 0 0;

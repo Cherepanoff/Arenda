@@ -56,6 +56,17 @@ namespace Arenda.Controllers
             }
            return NotFound();
         }
+        public async Task<IActionResult> Info1(int? id, int? floor)
+        {
+            //if (id != null)
+            //{
+                Arendator arendator = await db.Arendators.FirstOrDefaultAsync(p => p.ArendatorId == id);
+                arendator = (Arendator)db.Arendators.Where(p => p.ArendatorFloor == floor);
+                logger.Trace("Зашел посмотреть информацию об арендаторе " + arendator.ArendatorName);
+                return View(arendator);
+            //}
+            //return NotFound();
+        }
         [Authorize(Roles = "Админ")]
         public async Task<IActionResult> NewInfo(int? id)
         {

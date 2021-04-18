@@ -1,4 +1,5 @@
 ﻿@model IEnumerable<Arenda.Models.Arendator>
+
 @{
     ViewBag.Title = "Вся информация";
 }
@@ -16,7 +17,6 @@
             <h1 id="text">План 1-ого этажа</h1>
             <a class="btn" asp-controller="Home" asp-action="AddArendator">Добавление нового арендатора</a>
             <a class="btn" asp-controller="Home" asp-action="DeleteArendator">Удаление арендатора</a>
-            <a class="btn" href="../Contract/табличка.docx">Шаблон договора аренды</a>
         </div>
         <!--<img id="image" src="../SVG/1этаж.svg" width="1331" height="500" asp-append-version="true">-->
         <div class="map">
@@ -29,18 +29,19 @@
         <div class="main-floor">
             <div class="group-floor">
                 <h4>Этажи</h4>
-                <button class="btn" id="0" name="id" onclick="ChangeText(this.id)">0</button>
-                <button class="btn" id="1" name="id" onclick="ChangeText(this.id)">1</button>
-                <button class="btn" id="2" name="id" onclick="ChangeText(this.id)">2</button>
-                <button class="btn" id="3" name="id" onclick="ChangeText(this.id)">3</button>
-                <button class="btn" id="4" name="id" onclick="ChangeText(this.id)">4</button>
-                <button class="btn" id="5" name="id" onclick="ChangeText(this.id)">5</button>
-                <button class="btn" id="6" name="id" onclick="ChangeText(this.id)">6</button>
+                <button class="btn" id="0" name="floor" onclick="ChangeText(this.id)" >0</button>
+                <button class="btn" id="1" name="floor" onclick="ChangeText(this.id)" asp-controller="Information" asp-action="Info1" asp-for="ArendatorFloor">1</button>
+                <button class="btn" id="2" name="floor" onclick="ChangeText(this.id)" asp-controller="Information" asp-action="Info1" asp-for="ArendatorFloor">2</button>
+                <button class="btn" id="3" name="floor" onclick="ChangeText(this.id)" asp-controller="Information" asp-action="Info1" asp-for="ArendatorFloor">3</button>
+                <button class="btn" id="4" name="floor" onclick="ChangeText(this.id)" asp-controller="Information" asp-action="Info1" asp-for="ArendatorFloor">4</button>
+                <button class="btn" id="5" name="floor" onclick="ChangeText(this.id)" asp-controller="Information" asp-action="Info1" asp-for="ArendatorFloor">5</button>
+                <button class="btn" id="6" name="floor" onclick="ChangeText(this.id)" asp-controller="Information" asp-action="Info1" asp-for="ArendatorFloor">6</button>
             </div>
         </div>
         @foreach (var a in Model)
-        {
+        {@if (a.ArendatorFloor == 2) {
             <a asp-controller="Information" asp-action="Info" class="btn" asp-route-id="@a.ArendatorId">@a.ArendatorName</a>
+            }
         }}
     @if (User.IsInRole("Реклама"))
     {
