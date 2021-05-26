@@ -35,7 +35,6 @@ ArendatorType varchar(max),
  Rate varchar(max),
  Marketing varchar(max),
  Communal varchar(max),
- Contact1 varchar(max),
  Post varchar(max),
  Email varchar(max),
  Sale varchar(max),
@@ -76,6 +75,29 @@ ContactEmail varchar(max),
 ContactComment varchar(max),
 ContactFK int foreign key references Arendator(ArendatorID)
 )
+CREATE TABLE PdfFiles 
+(
+ PDFId int primary key identity(1,1),
+ PDFKda varchar(max),
+ PDFPda varchar(max),
+ PDFDda varchar(max), 
+ PDFStore varchar(max), 
+ PDFDoc varchar(max),
+ PDFPolicy varchar(max),
+ PDFFk int foreign key references Arendator(ArendatorID)
+)
+
+CREATE TABLE WordFiles 
+(
+ WordId int primary key identity(1,1),
+ WordKda varchar(max),
+ WordPda varchar(max),
+ WordDda varchar(max), 
+ WordStore varchar(max), 
+ WordDoc varchar(max),
+ WordPolicy varchar(max),
+ WordFk int foreign key references Arendator(ArendatorID)
+)
 
 INSERT INTO Roles VALUES('Админ')
 INSERT INTO Roles VALUES('Бухгалтер')
@@ -84,6 +106,8 @@ INSERT INTO Roles VALUES('Аренда')
 INSERT INTO Roles VALUES('Реклама')
 
 INSERT INTO Users VALUES ('Андрей Черепанов','Cherep','123',1)
+INSERT INTO Users VALUES ('Пучкова Маргарита','Пучкова Маргарита','gerasim',4)
+INSERT INTO Users VALUES ('Андрова Анна','Андрова Анна','Anna',4)
 INSERT INTO Users VALUES ('Иванов Иван','Lawyer','1',3)
 INSERT INTO Users VALUES ('Иванов Иван','Accounter','2',2)
 INSERT INTO Users VALUES ('Иванов Иван','Arenda','3',4)
@@ -94,8 +118,14 @@ INSERT INTO q VALUES('фывыф')
 SELECT * FROM Users
 SELECT * FROM Roles
 SELECT * FROM arendator
+SELECT * FROM contact
+SELECT * FROM PdfFiles
 
-ALTER TABLE Arendator Add ContactPerson date
+
+INSERT INTO PDFFiles Select pdfFk
+INSERT INTO arendator VALUES ('Счастливый взгляд',0,'Обычный','','','','','','',)
+
+ALTER TABLE Arendator Add Files varbinary(max)
 
 SELECT * FROM arendator WHERE ArendatorId=1
 

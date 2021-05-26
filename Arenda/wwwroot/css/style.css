@@ -7,6 +7,12 @@
     line-height: 1.6;
     background-color: #fff58c;
 }
+a{
+    text-decoration:none;
+}
+h3{
+    text-align:center;
+}
 .container {
     /*display: block;
     width: 100%;
@@ -14,11 +20,7 @@
     display: -webkit-flex; /* для поддержки ранних версий браузеров */
     display: flex; /* элемент отображается как блочный flex-контейнер */
     -webkit-justify-content: flex-start; /* для поддержки ранних версий браузеров */
-    justify-content: flex-start;
-}
-.container > div {
-    width: 100px;
-    height: 100px;
+    justify-content: space-between;
 }
 .main-floor{
     float:left;
@@ -81,6 +83,30 @@ padding-bottom: 15px;
         background: rgb(33,147,90);
         box-shadow: 0 3px rgb(33,147,90) inset;
     }
+.map {
+    position: relative;
+    text-align: center;
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+path {
+    opacity: 0.4;
+    fill: orange;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+    path:hover {
+        opacity: 0.8;
+        transition: 0.3s;
+    }
 
 .rightsidebar {
 
@@ -94,8 +120,9 @@ padding-bottom: 15px;
 .content-table {
     border-collapse: collapse;
     margin: 25px 25px;
+    padding-bottom:10px;
     font-size: 0.9em;
-    min-width: 400px;
+    min-width: 600px;
     border-radius: 5px 5px 0 0;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
@@ -154,7 +181,6 @@ path {
         transition: 0.3s;
     }
 .dropdown {
-    float: left;
     margin-right: 50px;
     text-align: center;
     font-size: 20px;
@@ -162,14 +188,15 @@ path {
     display: inline-block;
     display: block;
     width: 200px;
-    border: 5px solid rgb(64,199,129);
+}
+.dropdown a {
+    text-decoration:none;
 }
 
 /* Dropdown Content (Hidden by Default) */
     .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -181,7 +208,7 @@ path {
 .text-floor {
     text-align: center;
     color: rgb(64,199,129);
-    font-size: 20px;
+    font-size: 30px;
     text-decoration: none;
 }
 .content-table1 {

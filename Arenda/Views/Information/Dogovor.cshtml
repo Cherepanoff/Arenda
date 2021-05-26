@@ -1,7 +1,5 @@
 ﻿@model Arenda.Models.Arendator
-@{
-    ViewBag.Title = "Информация о договоре";
-}
+@{ ViewBag.Title = "Информация о договоре"; }
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="~/css/style.css" />
@@ -10,18 +8,14 @@
     <div class="button-item">
         <!--<a asp-controller="Information" asp-action="Card" class="btn" asp-route-id="@Model.ArendatorId">Карточка</a>-->
         <a asp-controller="Information" asp-action="NewDogovor" class="btn">Добавить договор</a>
-        <a asp-controller="Information" asp-action="NewCard" class="btn" asp-route-id="@Model.ArendatorId">Добавить информацию</a>
+        <a asp-controller="Information" asp-action="NewCard" class="btn" asp-route-id="@Model.ArendatorId">Добавить информацию в карточку</a>
     </div>
     <div class="container">
-        <table class="content-table">
-            <tbody>
-                <tr><td>Потенциальные арендаторы</td><td>@Model.Commercial</td></tr>
-                <tr><td>Контактные данные</td><td>@Model.Contact</td></tr>
-                <tr><td>Предыдущие объекты</td><td>@Model.Object</td></tr>
-                <tr><td>Куратор</td><td>@Model.Curator</td></tr>
-            </tbody>
-        </table>
+        <div id="modDialog" class="modal fade">
+            <div id="dialogContent" class="modal-dialog"></div>
+        </div>
         <div>
+            <h3>Карточка</h3>
             <table class="content-table">
                 <tbody>
                     <tr><td>Категория товара</td><td>@Model.ProductCategory</td></tr>
@@ -30,12 +24,14 @@
                     <tr><td>Этаж</td><td>@Model.ArendatorFloor</td></tr>
                     <tr><td>Расчетная площадь</td><td>@Model.Area</td></tr>
                     <tr><td>Арендная ставка</td><td>@Model.PayCondition</td></tr>
+                    <tr><td>Товарооборот</td><td>@Model.PayCondition</td></tr>
                     <tr><td>Эксплуатационные платежи</td><td>@Model.ExplPay</td></tr>
                     <tr><td>Маркетинговые платежи</td><td>@Model.MarkPay</td></tr>
                     <tr><td>Коммунальные платежи</td><td>@Model.CommunalPay</td></tr>
                     <tr><td>Курс</td><td>@Model.Curs</td></tr>
                     <tr><td>Размер индексации</td><td>@Model.IndexSize</td></tr>
                     <tr><td>Авансовый платеж</td><td>@Model.AvansPay</td></tr>
+                    <tr><td>Обеспечительный платеж</td><td>@Model.PayCondition</td></tr>
                     <tr><td>Депозит, порядок зачета депозита</td><td>@Model.Deposit</td></tr>
                     <tr><td>Дата открытия</td><td>@Model.DateOpen</td></tr>
                     <tr><td>Начало начисления аренды</td><td>@Model.PayStart</td></tr>
@@ -46,5 +42,33 @@
                 </tbody>
             </table>
         </div>
+        <div>
+            <h3>Условия</h3>
+            <table class="content-table">
+                <tbody>
+                    <tr><td>Потенциальные арендаторы</td><td>@Model.Commercial</td></tr>
+                    <tr><td>Контактные данные</td><td>@Model.Contact</td></tr>
+                    <tr><td>Предыдущие объекты</td><td>@Model.Object</td></tr>
+                    <tr><td>Куратор</td><td>@Model.Curator</td></tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </body>
+@section scripts
+{
+    <script type="text/javascript">
+
+        $(function () {
+            $.ajaxSetup({ cache: false });
+           $(".compItem").click(function (e) {
+
+                e.preventDefault();
+                $.get(this.href, function (data) {
+                    $('#dialogContent').html(data);
+                    $('#modDialog').modal('show');
+                });
+            });
+        })
+    </script>
+}

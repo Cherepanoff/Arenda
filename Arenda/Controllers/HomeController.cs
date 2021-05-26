@@ -19,9 +19,9 @@ namespace Arenda.Controllers
         }
         [HttpGet]
         [Authorize]
-        public IActionResult Index()
+        public IActionResult Index(string id)
         {
-            return View(db.Arendators.ToList());
+           return View(db.Arendators.Where(p => p.ArendatorFloor.ToString() == id).ToList());
         }
         public IActionResult ArendatorList()
         {
@@ -42,65 +42,42 @@ namespace Arenda.Controllers
         {
             return View();
         }
-        // [HttpPost]
-        // public async Task<IActionResult> DeleteArendator(Arendator arendator)
-        // {
-        //     db.Arendators.Remove(arendator);
-        //        await db.SaveChangesAsync();
-        //         return RedirectToAction("Index");
-        // }
-        // public IActionResult DeleteArendator()
-        //{
-        //    return View();
-        // }
-        public IActionResult DeleteArendator()
-        {
-            return View();
-        }
         [HttpPost]
-        public async Task<IActionResult> DeleteArendator(Arendator arendator)
+        public async Task<IActionResult> DeleteArendator(int? id)
         {
+            Arendator arendator = await db.Arendators.FirstOrDefaultAsync(p => p.ArendatorId == id);
             db.Arendators.Remove(arendator);
             await db.SaveChangesAsync();
             return RedirectToAction("Index");
         }
-        //  [HttpGet]
-        //  [ActionName("DeleteArendator")]
-        //  public async Task<IActionResult> ConfirmDelete(int? ArendatorId)
-        // {
-        //     if (ArendatorId != null)
-        //     {
-        //         Arendator arendator = await db.Arendators.FirstOrDefaultAsync(p => p.ArendatorId == ArendatorId);
-        //        if (arendator != null)
-        //        return View(arendator);
-        //    }
-        //     return NotFound();
-        // }
-
-        //return NotFound();
-        //}
-        //private readonly ILogger<HomeController> _logger;
-
-        //public HomeController(ILogger<HomeController> logger)
-        //{
-        //    _logger = logger;
-        //}
-
-        //public IActionResult Index()
-        //{
-        //    return View();
-        //}
-
-        //public IActionResult Privacy()
-        //{
-        //    return View();
-        //}
-
-        //[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        //public IActionResult Error()
-        //{
-        //    return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        //}
+        public IActionResult DeleteArendator()
+        {
+            return View();
+        }
+        public IActionResult fl_0(string id)
+        {
+            return View(db.Arendators.Where(p => p.ArendatorFloor.ToString() == id).ToList());
+        }
+        public IActionResult fl_2(string id)
+        {
+            return View(db.Arendators.Where(p => p.ArendatorFloor.ToString() == id).ToList());
+        }
+        public IActionResult fl_3(string id)
+        {
+            return View(db.Arendators.Where(p => p.ArendatorFloor.ToString() == id).ToList());
+        }
+        public IActionResult fl_4(string id)
+        {
+            return View(db.Arendators.Where(p => p.ArendatorFloor.ToString() == id).ToList());
+        }
+        public IActionResult fl_5(string id)
+        {
+            return View(db.Arendators.Where(p => p.ArendatorFloor.ToString() == id).ToList());
+        }
+        public IActionResult fl_6(string id)
+        {
+            return View(db.Arendators.Where(p => p.ArendatorFloor.ToString() == id).ToList());
+        }
     }
 
 }

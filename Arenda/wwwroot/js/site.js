@@ -1,7 +1,7 @@
 ﻿function addrow() {
     var nodet = document.createElement('tr');
     var node = document.createElement('td');
-    node.innerHTML = "<input type='text' name='1'>";
+    node.innerHTML = "<input type='text' name='1'><input type='button' class='btn' value='+' onClick='addrow();'>";
     document.getElementById('table').appendChild(nodet);
     nodet.appendChild(node);
     localStorage.addrow();
@@ -15,10 +15,7 @@ function deleterow(tableID) {
 function addrow1() {
     var nodet = document.createElement('tr');
     var node = document.createElement('td');
-    node.innerHTML = "<input type='text' name='2'>";
-    node.innerHTML = "<input type='text' name='3'>";
-    node.innerHTML = "<input type='text' name='4'>";
-    node.innerHTML = "<input type='text' name='5'>";
+    node.innerHTML = "<table class='content - table1' id='table1'><tr><td>ФИО</td><td><input type='text' name='2'></tr><tr><td>Телефон</td><td><input type='text' name='3'></tr><tr><td>Е-mail</td><td><input type='text' name='4'></tr><tr><td>Комментарий</td><td><input type='text' name='5'></td><td></td></tr></table>";
     document.getElementById('table1').appendChild(nodet);
     nodet.appendChild(node);
     localStorage.addrow();
@@ -61,6 +58,7 @@ function ChangeText(id) {
             break;
 }   
 }
+setTimeout(ChangeText(id), 2000);
 function ChangeTextAdvert(id) {
     switch (id) {
         case "0":

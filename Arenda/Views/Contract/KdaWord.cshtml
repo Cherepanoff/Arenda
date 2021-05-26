@@ -1,0 +1,17 @@
+﻿@model Arenda.Models.Arendator
+@{ }
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+<body>
+    @if (Model.Contact != null)
+    {
+    <a class="btn" href="@Model.Contact" target="_blank">@Model.Contact</a>
+    }
+ <form asp-controller="Contract" asp-action="UploadKdaWord" asp-route-id="@Model.ArendatorId"
+                enctype="multipart/form-data" method="post">
+                    <input type="file" name="ContactWord" />
+                    <button type="submit" class="btn">Загрузить договор</button>
+                </form>
+                            </body>

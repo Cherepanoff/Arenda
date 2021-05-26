@@ -3,9 +3,6 @@
 @{
     ViewBag.Title = "Вся информация";
 }
-@{
-   int x1 = 1;
-}
 <head>
     <link rel="stylesheet" href="~/css/style.css" />
     <meta name="viewport" content="width=device-width">
@@ -19,30 +16,199 @@
             <a class="btn" asp-controller="Home" asp-action="DeleteArendator">Удаление арендатора</a>
         </div>
         <!--<img id="image" src="../SVG/1этаж.svg" width="1331" height="500" asp-append-version="true">-->
-        <div class="map">
-            <svg viewBox="0 0 1331 500">
-                <path d="m 833,780 c -15.9,0 -31.8,0 -47.7,0 -0.1,0 -0.1,0 -0.2,0 h -12.9 v 82.6 h -29.5 c 0,12.3 0,24.5 0,36.8 14.2,0 65.4,0 79.5,0 l 0.8,-59.2 h 35 C 849.8,820.1 841.4,800 833,780 Z" />
-                <path d="m 968.4,840.2 c -16.7,0 -33.3,0 -50,0 8.4,-20 16.8,-40.1 25.2,-60.1 8.3,0 16.6,0 24.8,-0.1 0,20.1 0,40.1 0,60.2 z" />
-                <img id="image" src="../SVG/1 этаж.jpg" width="1331" height="500" asp-append-version="true">
-            </svg>
-        </div>
+<div class="map">
+    <!--Sephora-->
+    <svg viewBox="0 0 1352 500">
+        <a xlink:href="http://localhost/Information/Info/1007">
+            <path d="m 542.07181,54.998002 1.07839,131.204388 106.0419,0.35946 0.35947,-55.35747 19.05159,0.71893 1.43786,-28.0382 h 22.28677 l 1.79732,-26.9598 -7.54875,-10.783922 0.35947,-10.064994 z" />
+        </a>
+        <!--Iqos-->
+        <a xlink:href="https://localhost:5001/Information/Info/1007">
+            <path d="m 709.58208,132.64224 1.07839,54.63854 62.90621,-0.71893 -0.35946,-53.20068 z" />
+        </a>
+        <!--Мегафон-->
+        <a xlink:href="https://localhost:5001/Information/Info/1007">
+            <path d="m 475.2115,154.21009 0.35947,32.71123 h 54.998 l 1.07839,-34.14909 z" />
+        </a>
+        <!--Теле2-->
+        <a xlink:href="https://localhost:5001/Information/Info/1007">
+            <path d="m 809.15362,132.64224 0.35947,56.0764 -35.94641,-2.15679 -0.35946,-53.20068 z" />
+        </a>
+        <!--12storeez-->
+        <a xlink:href="https://localhost:5001/Information/Info/1007">
+            <path d="m 821.73487,134.43956 -0.71893,52.84122 h 84.83352 V 55.357467 l -89.50656,0.359464 0.35947,45.292469 h 20.48945 l -0.35946,33.43016 z" />
+        </a>
+        <!--Henderson-->
+        <a xlink:href="https://localhost:5001/Information/Info/1007">
+            <path d="m 964.80157,71.892814 -0.35947,116.106896 122.9367,-0.35947 v -4.31356 l 92.7417,0.35946 -0.3594,-67.21978 -34.868,1.07839 -1.0784,-23.005699 -107.1203,0.359464 -2.1568,-0.359464 0.7189,-38.82212 -19.0516,-0.359464 v 17.613739 z" />
+        </a>
+        <!--Рив Гош-->
+        <a xlink:href="https://localhost:5001/Information/Info/1007">
+            <path d="m 1222.8575,148.94918 v -32.2808 l -43.0964,-0.20202 0.3594,67.21978 -92.7417,-0.35946 -0.2532,89.66208 173.6046,-0.50836 v -92.77551 l -6.6086,-0.76253 0.5083,-30.24736 z" />
+        </a>
+        <!--Rendez-Vous-->
+        <a xlink:href="https://localhost:5001/Information/Info/1007">
+            <path d="m 1282.0813,271.97205 -0.2542,93.79222 -191.3971,0.50836 0.5083,-6.86284 -4.321,0.25418 0.5083,-86.67521 z" />
+        </a>
+        <!--МУ-МУ-->
+        <a xlink:href="https://localhost:5001/Information/Info/1007">
+            <path d="m 995.71548,357.66675 -0.35947,131.92331 164.63459,-0.35946 0.7189,-122.57725 -70.2795,-0.38072 0.5083,-6.86284 z" />
+        </a>
+        <!--Molecule-->
+        <a xlink:href="https://localhost:5001/Information/Info/1007">
+            <path d="m 861.92262,356.86799 v 70.15354 l 25.41795,-1.01672 -0.25418,-17.2842 h 18.80928 l -0.25418,-51.34426 z" />
+        </a>
+        <!--Sunlight-->
+        <a xlink:href="https://localhost:5001/Information/Info/1007">
+            <path d="m 802.19045,357.12217 0.76253,129.37736 97.09657,-0.50836 -0.25418,-26.43467 -37.36439,1.01672 -0.50836,-103.70523 z" />
+        </a>
+        <!--Xiaomi-->
+        <a xlink:href="https://localhost:5001/Information/Info/1007">
+            <path d="m 774.48488,357.37635 27.70557,-0.25418 0.50835,70.40772 -51.34425,-0.50836 0.25418,-13.21733 z" />
+        </a>
+        <!--Buketsi-->
+        <a xlink:href="https://localhost:5001/Information/Info/1007">
+            <path d="m 769.61258,489.59006 0.35946,-3.9541 h 3.59464 l 0.35946,-3.23518 3.59464,-0.71893 2.15679,-19.05159 h 23.36516 l -0.34393,-35.10037 -51.34425,-0.50836 0.28482,10.80571 13.30017,29.47605 -0.35946,21.20838 z" />
+        </a>
+        <!--Mobil Case-->
+        <a xlink:href="https://localhost:5001/Information/Info/1007">
+            <path d="m 647.03533,427.76224 h 26.60034 v 9.34607 l -12.22178,26.60034 0.71893,26.24088 -15.09749,0.35946 z" />
+        </a>
+        <!--RE STORE-->
+        <a xlink:href="https://localhost:5001/Information/Info/1007">
+            <path d="m 588.44268,356.94782 62.90622,1.43786 22.28677,56.07639 v 13.30017 h -26.60034 v 62.54675 l -97.77423,-0.71893 -0.35946,-39.54104 38.82212,-1.43786 z" />
+        </a>
+        <!--Samsung-->
+        <a xlink:href="https://localhost:5001/Information/Info/1007">
+            <path d="m 524.45808,357.30729 63.9846,-0.35947 -0.71892,91.66334 -38.82212,1.43786 0.35946,-27.67874 h -24.08409 z" />
+        </a>
+        <!--Комфорт обувь-->
+        <a xlink:href="https://localhost:5001/Information/Info/1007">
+            <path d="m 458.31669,357.66675 -0.35946,63.9846 67.21978,0.71893 -0.71893,-65.06299 z" />
+        </a>
+        <!--Lady Collection-->
+        <a xlink:href="https://localhost:5001/Information/Info/1007">
+            <path d="m 429.55956,358.38568 -0.35946,71.53335 19.41106,0.35946 2.15678,-3.23517 0.71893,-9.34607 h 6.47036 l 0.35946,-60.0305 z" />
+        </a>
+        <!--Голд центр-->
+        <a xlink:href="https://localhost:5001/Information/Info/1007">
+            <path d="m 374.2021,356.22889 -0.35947,52.84122 44.57355,1.43786 v -53.91961 z" />
+        </a>
+        <!--Yves Rocher-->
+        <a xlink:href="https://localhost:5001/Information/Info/1007">
+            <path d="m 330.70695,356.94782 -0.35947,39.18159 h 43.13569 l 0.71893,-39.90052 z" />
+        </a>
+        <!--Calzedonia-->
+        <a xlink:href="https://localhost:5001/Information/Info/1007">
+            <path d="m 183.32668,355.86943 -0.71893,69.0171 h 12.22178 l 0.71892,26.24088 74.76853,-1.43786 0.35947,24.80302 h 3.9541 v 14.0191 h 120.42046 v -8.9866 l -25.88141,1.07839 0.35946,-17.9732 h 27.31927 l -1.43785,-23.72463 -4.67304,-2.87571 v -7.18928 l 28.75713,-0.71893 -1.07839,-17.61374 -44.57355,-1.43786 -0.35946,-12.9407 h -43.13569 l 0.35947,-39.18159 z" />
+        </a>
+        <!--Organic shop-->
+        <a xlink:href="https://localhost:5001/Information/Info/1007">
+            <path d="m 140.90992,356.58836 -0.71893,68.65764 42.41676,-0.35947 0.71893,-69.0171 z" />
+        </a>
+        <!--Шеф бургер-->
+        <a xlink:href="https://localhost:5001/Information/Info/1007">
+            <path d="m 8.6271377,361.98032 68.2981733,0.71893 0.359464,-6.82982 63.625145,0.71893 -0.71893,68.65764 54.63854,-0.35947 0.71892,26.24088 h -13.65963 l -0.35946,37.74373 -115.028507,1.07839 -57.8737153,-59.31157 z" />
+        </a>
+        <!--МТС-->
+        <a xlink:href="https://localhost:5001/Information/Info/1007">
+            <path d="m 8.6271377,324.23659 15.4569553,0.35947 35.586943,-24.44356 h 24.803021 v 56.79532 l -7.189282,-1.07839 -0.359464,6.82982 -68.2981733,-0.71893 z" />
+        </a>
+        <!--Связной-->
+        <a xlink:href="https://localhost:5001/Information/Info/1007">
+            <path d="M 7.9082096,183.68614 83.755128,184.0456 84.474057,244.79503 59.311572,244.43557 25.521949,220.71094 9.7055299,220.35148 Z" />
+        </a>
+        <!--SimpleWine-->
+        <a xlink:href="https://localhost:5001/Information/Info/1007">
+            <path d="m 8.6271377,130.48546 107.8392223,1.07839 -0.35947,15.81642 26.60035,-0.35947 1.07839,41.69784 -135.8774204,-5.0325 z" />
+        </a>
+        <!--Casio-->
+        <a xlink:href="https://localhost:5001/Information/Info/1007">
+            <path d="m 183.68614,164.63454 -0.35946,21.92731 44.57354,0.35947 v -37.0248 H 203.0972 l -0.71893,15.81642 z" />
+        </a>
+        <!--Адамас-->
+        <a xlink:href="https://localhost:5001/Information/Info/1007">
+            <path d="m 268.51966,132.64224 -0.35946,54.63854 -40.25998,-0.35946 v -37.0248 l 14.73803,0.35946 v -8.62714 l 6.11089,0.35947 0.71893,-9.34607 z" />
+        </a>
+        <!--Линзмастер-->
+        <a xlink:href="https://localhost:5001/Information/Info/1007">
+            <path d="m 332.1448,133.36117 2.15679,53.91961 H 268.1602 l 0.35946,-54.63854 z" />
+        </a>
+        <!--Delua-->
+        <a xlink:href="https://localhost:5001/Information/Info/1007">
+            <path d="m 346.88283,136.59635 23.0057,0.35946 -0.71893,14.73803 6.47035,-0.71893 v 36.30587 h -41.33836 l -1.0784,-43.85462 13.30017,0.71893 z" />
+        </a>
+        <!--Tesoro-->
+        <a xlink:href="https://localhost:5001/Information/Info/1007">
+            <path d="m 392.53477,167.86972 67.9387,0.71893 0.71893,20.12999 -69.37656,-1.0784 z" />
+        </a>
+        <!--Tutti FRUTTI-->
+        <a xlink:href="https://localhost:5001/Information/Info/1007">
+            <path d="m 543.817,260.02561 -0.12709,23.38451 30.50154,-0.12709 -0.25418,-23.13033 z" />
+        </a>
+        <!--MosTime-->
+        <a xlink:href="https://localhost:5001/Information/Info/1007">
+            <path d="m 474.29891,283.15594 -0.25418,12.70898 28.72229,0.50836 0.50835,-13.21734 z" />
+        </a>
+        <!--Моб.акс-->
+        <a xlink:href="https://localhost:5001/Information/Info/1007">
+            <path d="m 474.55309,246.80828 0.25418,13.47151 29.48482,0.50836 -0.50836,-13.72569 z" />
+        </a>
+        <!--Бюз-->
+        <a xlink:href="https://localhost:5001/Information/Info/1007">
+            <path d="m 352.80112,281.88505 0.25418,15.50494 h 29.99318 l 0.25418,-14.23405 -31.0099,0.25418 z" />
+        </a>
+        <!--Cristal Vape-->
+        <a xlink:href="https://localhost:5001/Information/Info/1007">
+            <path d="m 352.54694,247.06246 0.25418,14.48823 29.739,0.25418 0.25418,-14.99659 z" />
+        </a>
+        <!--Silver&Silver-->
+        <a xlink:href="https://localhost:5001/Information/Info/1007">
+            <path d="m 408.97479,261.04233 v 23.63869 l 32.78915,-0.76254 -0.50836,-23.63869 z" />
+        </a>
+        <!--Pandora-->
+        <a xlink:href="https://localhost:5001/Information/Info/1007">
+            <path d="m 845.65514,242.99558 -0.50836,17.79257 33.04333,-0.50836 -0.25418,-17.53838 z" />
+        </a>
+        <!--Mr.Tutti-->
+        <a xlink:href="https://localhost:5001/Information/Info/1007">
+            <path d="m 845.99869,274.45082 -0.5392,25.88141 h 31.99231 l -0.35947,-25.16248 z" />
+        </a>
+        <!--Glo-->
+        <a xlink:href="https://localhost:5001/Information/Info/1007">
+            <path d="m 916.63338,257.91547 v 24.80302 l 34.32882,-0.53919 -0.89866,-24.26383 z" />
+        </a>
+        <!--Langery-->
+        <a xlink:href="https://localhost:5001/Information/Info/1007">
+            <path d="m 987.26807,247.85048 0.17973,15.45695 26.6003,-0.17973 v -14.37856 z" />
+        </a>
+        <!--саквояж-->
+        <a xlink:href="https://localhost:5001/Information/Info/1007">
+            <path d="m 987.62753,281.6401 -0.17973,14.73803 26.9598,0.53919 -0.1797,-15.09749 z" />
+        </a>
+    </svg>
+    <img id="image" src="../SVG/1 этаж.jpg" width="1352" height="500" asp-append-version="true">
+
+</div>
         <div class="main-floor">
             <div class="group-floor">
                 <h4>Этажи</h4>
-                <button class="btn" id="0" name="floor" onclick="ChangeText(this.id)" >0</button>
-                <button class="btn" id="1" name="floor" onclick="ChangeText(this.id)" asp-controller="Information" asp-action="Info1" asp-for="ArendatorFloor">1</button>
-                <button class="btn" id="2" name="floor" onclick="ChangeText(this.id)" asp-controller="Information" asp-action="Info1" asp-for="ArendatorFloor">2</button>
-                <button class="btn" id="3" name="floor" onclick="ChangeText(this.id)" asp-controller="Information" asp-action="Info1" asp-for="ArendatorFloor">3</button>
-                <button class="btn" id="4" name="floor" onclick="ChangeText(this.id)" asp-controller="Information" asp-action="Info1" asp-for="ArendatorFloor">4</button>
-                <button class="btn" id="5" name="floor" onclick="ChangeText(this.id)" asp-controller="Information" asp-action="Info1" asp-for="ArendatorFloor">5</button>
-                <button class="btn" id="6" name="floor" onclick="ChangeText(this.id)" asp-controller="Information" asp-action="Info1" asp-for="ArendatorFloor">6</button>
+                <form>
+                    <button class="btn" id="0" name="id" value="0" onclick="ChangeText(this.id)" asp-controller="Home" asp-action="fl_0">0</button>
+                    <button class="btn" id="1" name="id" value="1" onclick="ChangeText(this.id)" asp-controller="Home" asp-action="Index">1</button>
+                    <button class="btn" id="2" name="id" value="2" onclick="ChangeText(this.id)" asp-controller="Home" asp-action="fl_2">2</button>
+                    <button class="btn" id="3" name="id" value="3" onclick="ChangeText(this.id)" asp-controller="Home" asp-action="fl_3">3</button>
+                    <button class="btn" id="4" name="id" value="4" onclick="ChangeText(this.id)" asp-controller="Home" asp-action="fl_4">4</button>
+                    <button class="btn" id="5" name="id" value="5" onclick="ChangeText(this.id)" asp-controller="Home" asp-action="fl_5">5</button>
+                    <button class="btn" id="6" name="id" value="6" onclick="ChangeText(this.id)" asp-controller="Home" asp-action="fl_6">6</button>
+                </form>
             </div>
         </div>
         @foreach (var a in Model)
-        {@if (a.ArendatorFloor == 2) {
+        { 
             <a asp-controller="Information" asp-action="Info" class="btn" asp-route-id="@a.ArendatorId">@a.ArendatorName</a>
             }
-        }}
+        }
     @if (User.IsInRole("Реклама"))
     {
         <div class="button-item">
@@ -56,7 +222,7 @@
             <svg viewBox="0 0 1331 500">
                 <path d="m 833,780 c -15.9,0 -31.8,0 -47.7,0 -0.1,0 -0.1,0 -0.2,0 h -12.9 v 82.6 h -29.5 c 0,12.3 0,24.5 0,36.8 14.2,0 65.4,0 79.5,0 l 0.8,-59.2 h 35 C 849.8,820.1 841.4,800 833,780 Z" />
                 <path d="m 968.4,840.2 c -16.7,0 -33.3,0 -50,0 8.4,-20 16.8,-40.1 25.2,-60.1 8.3,0 16.6,0 24.8,-0.1 0,20.1 0,40.1 0,60.2 z" />
-                <img id="image" src="../AdvertisingSVG/1 этаж.jpg" width="1331" height="500" asp-append-version="true">
+                <img id="image" src="../AdvertisingSVG/1этаж.svg" width="1331" height="500" asp-append-version="true">
             </svg>
         </div>
         <div class="main-floor">

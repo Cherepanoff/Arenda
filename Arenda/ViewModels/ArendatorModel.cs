@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Arenda.Models;
+using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -7,6 +9,7 @@ namespace Arenda.ViewModels
 {
     public class ArendatorModel
     {
+        public int ArendatorId { get; set; }
         public string ArendatorName { get; set; }
         public int? ArendatorFloor { get; set; }
         public string ArendatorType { get; set; }
@@ -27,6 +30,7 @@ namespace Arenda.ViewModels
         public string Marketing { get; set; }
         public string Communal { get; set; }
         public string Contact1 { get; set; }
+        public IFormFile ContactPDF { get; set; }
         public string Post { get; set; }
         public string Email { get; set; }
         public string Sale { get; set; }
@@ -35,5 +39,24 @@ namespace Arenda.ViewModels
         public string ParkingCondition { get; set; }
         public byte[] Logo { get; set; }
         public string PayCondition { get; set; }
+        public string ProductCategory { get; set; }
+        public string RoomNumber { get; set; }
+        public string Area { get; set; }
+        public string ExplPay { get; set; }
+        public string MarkPay { get; set; }
+        public string CommunalPay { get; set; }
+        public string Curs { get; set; }
+        public string IndexSize { get; set; }
+        public string AvansPay { get; set; }
+        public string Deposit { get; set; }
+        public DateTime? DateOpen { get; set; }
+        public string PayStart { get; set; }
+        public string RepairTime { get; set; }
+        public string ElectricPower { get; set; }
+        public string TermArenda { get; set; }
+        public string ContactPerson { get; set; }
+        public byte[] Files { get; set; }
+        public virtual ICollection<Comment> Comments { get; set; }
+        public virtual ICollection<Contact> Contacts { get; set; }
     }
 }

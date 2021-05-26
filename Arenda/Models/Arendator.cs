@@ -11,6 +11,8 @@ namespace Arenda.Models
         {
             Comments = new HashSet<Comment>();
             Contacts = new HashSet<Contact>();
+            PdfFiles = new HashSet<PdfFile>();
+            WordFiles = new HashSet<WordFile>();
         }
 
         public int ArendatorId { get; set; }
@@ -33,7 +35,6 @@ namespace Arenda.Models
         public string Rate { get; set; }
         public string Marketing { get; set; }
         public string Communal { get; set; }
-        public string Contact1 { get; set; }
         public string Post { get; set; }
         public string Email { get; set; }
         public string Sale { get; set; }
@@ -61,5 +62,7 @@ namespace Arenda.Models
 
         public virtual ICollection<Comment> Comments { get; set; }
         public virtual ICollection<Contact> Contacts { get; set; }
+        public virtual ICollection<PdfFile> PdfFiles { get; set; }
+        public virtual ICollection<WordFile> WordFiles { get; set; }
     }
 }

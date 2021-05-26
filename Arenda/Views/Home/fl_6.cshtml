@@ -1,0 +1,80 @@
+﻿@model IEnumerable<Arenda.Models.Arendator>
+
+@{
+    ViewBag.Title = "Вся информация";
+}
+@{
+    int x1 = 1;
+}
+<head>
+    <link rel="stylesheet" href="~/css/style.css" />
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+    @if (User.IsInRole("Админ") || User.IsInRole("Аренда"))
+    {
+        <div class="button-item">
+            <h1 id="text">План 6-ого этажа</h1>
+            <a class="btn" asp-controller="Home" asp-action="AddArendator">Добавление нового арендатора</a>
+            <a class="btn" asp-controller="Home" asp-action="DeleteArendator">Удаление арендатора</a>
+        </div>
+        <!--<img id="image" src="../SVG/1этаж.svg" width="1331" height="500" asp-append-version="true">-->
+        <div class="map">
+            <!--Sephora-->
+            <svg viewBox="0 0 1352 500">
+                <!--WorldClass-->
+                <a xlink:href="http://localhost/Information/Info/1007">
+                    <path d="m 500.45984,149.40017 v 17.21484 h 10.45186 v 54.10376 l -54.10376,1.22964 0.61481,59.02229 -173.99279,-0.61482 -22.13336,20.90373 H 198.58542 L 172.76316,279.12625 67.629708,280.9707 v 54.71858 l 53.488952,54.10376 124.80755,1.22964 1.22963,14.14075 h -20.90373 l 0.61482,6.14816 h -9.83705 l -0.61481,35.04448 0.61481,4.30371 175.83724,0.61482 0.61482,-60.25192 73.16305,0.61481 0.61481,23.97781 -24.59262,2.45926 1.84445,31.97041 75.00749,-2.45927 0.61482,36.27412 -462.956096,7.9926 L 27.051883,482.01537 7.3777863,458.03757 1.8444466,431.6005 3.6888932,138.94831 9.2222329,113.74087 23.36299,88.533436 54.718582,69.474155 70.08897,63.940815 65.170446,165.38538 l 92.837144,-1.84445 1.22963,-12.91113 69.47416,-1.84444 -0.61482,-31.97041 166.00019,1.84445 1.22963,-7.99261 h 48.57043 l 1.22963,7.37779 4.30371,1.22963 v 30.12596 z" />
+                </a>
+            </svg>
+            <img id="image" src="../SVG/6 этаж.jpg" width="1352" height="500" asp-append-version="true">
+        </div>
+        <div class="main-floor">
+            <div class="group-floor">
+                <h4>Этажи</h4>
+                <form>
+                    <button class="btn" id="0" name="id" value="0" onclick="ChangeText(this.id)" asp-controller="Home" asp-action="fl_0">0</button>
+                    <button class="btn" id="1" name="id" value="1" onclick="ChangeText(this.id)" asp-controller="Home" asp-action="Index">1</button>
+                    <button class="btn" id="2" name="id" value="2" onclick="ChangeText(this.id)" asp-controller="Home" asp-action="fl_2">2</button>
+                    <button class="btn" id="3" name="id" value="3" onclick="ChangeText(this.id)" asp-controller="Home" asp-action="fl_3">3</button>
+                    <button class="btn" id="4" name="id" value="4" onclick="ChangeText(this.id)" asp-controller="Home" asp-action="fl_4">4</button>
+                    <button class="btn" id="5" name="id" value="5" onclick="ChangeText(this.id)" asp-controller="Home" asp-action="fl_5">5</button>
+                    <button class="btn" id="6" name="id" value="6" onclick="ChangeText(this.id)" asp-controller="Home" asp-action="fl_6">6</button>
+                </form>
+            </div>
+        </div>
+        @foreach (var a in Model)
+        {
+            <a asp-controller="Information" asp-action="Info" class="btn" asp-route-id="@a.ArendatorId">@a.ArendatorName</a>
+        }
+    }
+    @if (User.IsInRole("Реклама"))
+    {
+        <div class="button-item">
+            <h1 id="text">План 2-ого этажа</h1>
+            <a class="btn" asp-controller="Home" asp-action="AddArendator">Добавление нового арендатора</a>
+            <a class="btn" asp-controller="Home" asp-action="DeleteArendator">Удаление арендатора</a>
+            <a class="btn" href="../Contract/AdvertDoc.doc">Шаблон договора рекламы</a>
+        </div>
+        <!--<img id="image" src="../SVG/1этаж.svg" width="1331" height="500" asp-append-version="true">-->
+        <div class="map">
+            <svg viewBox="0 0 1331 500">
+                <path d="m 833,780 c -15.9,0 -31.8,0 -47.7,0 -0.1,0 -0.1,0 -0.2,0 h -12.9 v 82.6 h -29.5 c 0,12.3 0,24.5 0,36.8 14.2,0 65.4,0 79.5,0 l 0.8,-59.2 h 35 C 849.8,820.1 841.4,800 833,780 Z" />
+                <path d="m 968.4,840.2 c -16.7,0 -33.3,0 -50,0 8.4,-20 16.8,-40.1 25.2,-60.1 8.3,0 16.6,0 24.8,-0.1 0,20.1 0,40.1 0,60.2 z" />
+                <img id="image" src="../AdvertisingSVG/1этаж.svg" width="1331" height="500" asp-append-version="true">
+            </svg>
+        </div>
+        <div class="main-floor">
+            <div class="group-floor">
+                <h4>Этажи</h4>
+                <button class="btn" id="0" name="id" onclick="ChangeTextAdvert(this.id)">0</button>
+                <button class="btn" id="1" name="id" onclick="ChangeTextAdvert(this.id)">1</button>
+                <button class="btn" id="2" name="id" onclick="ChangeTextAdvert(this.id)">2</button>
+                <button class="btn" id="3" name="id" onclick="ChangeTextAdvert(this.id)">3</button>
+                <button class="btn" id="4" name="id" onclick="ChangeTextAdvert(this.id)">4</button>
+                <button class="btn" id="5" name="id" onclick="ChangeTextAdvert(this.id)">5</button>
+            </div>
+        </div>}
+</body>
+@*<a asp-controller="Information" asp-action="Info" asp-for="Name"></a>*@
+<!--<button class="btn btn-primary" (click)="incrementCounter()">Increment</button>-->

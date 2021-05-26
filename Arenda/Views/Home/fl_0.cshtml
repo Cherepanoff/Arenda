@@ -1,0 +1,200 @@
+﻿@model IEnumerable<Arenda.Models.Arendator>
+
+@{
+    ViewBag.Title = "Вся информация";
+}
+@{
+    int x1 = 1;
+}
+<head>
+    <link rel="stylesheet" href="~/css/style.css" />
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+    @if (User.IsInRole("Админ") || User.IsInRole("Аренда"))
+    {
+        <div class="button-item">
+            <h1 id="text">План 0-ого этажа</h1>
+            <a class="btn" asp-controller="Home" asp-action="AddArendator">Добавление нового арендатора</a>
+            <a class="btn" asp-controller="Home" asp-action="DeleteArendator">Удаление арендатора</a>
+        </div>
+        <!--<img id="image" src="../SVG/1этаж.svg" width="1331" height="500" asp-append-version="true">-->
+        <div class="map">
+            <!--Перекресток-->
+            <svg viewBox="0 0 1352 500">
+                <a xlink:href="http://localhost/Information/Info/1007">
+                    <path d="m 1053.0849,14.222521 -0.6183,379.679479 173.7621,-1.85511 3.0918,-39.57571 10.5123,1.23674 V 274.5565 l -11.749,0.61837 1.8551,-21.0246 111.3067,1.23674 1.2367,-173.762106 h -77.9147 l -0.6183,-72.9677172 -212.1011,0.6183705 z" />
+                </a>
+                <!--Кухни Мария-->
+                <a xlink:href="http://localhost/Information/Info/1007">
+                    <path d="m 996.19485,83.480016 v 80.388164 l 59.36355,-3.09185 -0.6184,-76.059574 z" />
+                </a>
+                <!--Askona-->
+                <a xlink:href="http://localhost/Information/Info/1007">
+                    <path d="m 941.15988,9.8939278 0.61837,38.3389702 -119.3455,1.855111 V 166.34166 l 173.7621,-2.47348 V 83.480016 l 58.74515,1.23674 -1.8551,-70.494235 z" />
+                </a>
+                <!--MODI-->
+                <a xlink:href="http://localhost/Information/Info/1007">
+                    <path d="m 762.45081,48.232898 1.85511,118.727132 58.12683,-0.61837 V 50.088009 Z" />
+                </a>
+                <!--MIELE-->
+                <a xlink:href="http://localhost/Information/Info/1007">
+                    <path d="m 651.76249,115.01691 0.61837,51.94312 82.24328,-0.61837 1.85511,-17.93274 -46.99616,0.61837 -0.61837,-32.77364 z" />
+                </a>
+                <!--Подружка-->
+                <a xlink:href="http://localhost/Information/Info/1007">
+                    <path d="m 591.78055,168.19677 -59.36356,-0.61837 1.23674,-53.79823 h -18.55112 l 1.23675,-66.165643 76.67794,1.855112 z" />
+                </a>
+                <!--Кантата-->
+                <a xlink:href="http://localhost/Information/Info/1007">
+                    <path d="m 488.51268,131.09454 v 35.24712 h 34.01038 l -0.61837,-33.39201 z" />
+                </a>
+                <!--Заповедная поляна-->
+                <a xlink:href="http://localhost/Information/Info/1007">
+                    <path d="m 419.25519,147.79055 0.61837,21.02459 h -59.98194 l 0.61837,-17.31437 z" />
+                </a>
+                <!--Дом быта-->
+                <a xlink:href="http://localhost/Information/Info/1007">
+                    <path d="m 302.38317,127.38432 30.30015,-1.23674 0.61837,-11.13067 28.44504,0.61837 -1.85511,53.17986 -58.12682,-1.85511 z" />
+                </a>
+                <!--Счастливый взгляд-->
+                <a xlink:href="http://localhost/Information/Info/1007">
+                    <path d="m 244.87471,116.87202 58.7452,-0.61837 -1.85511,50.70638 -58.7452,-2.47348 z" />
+                </a>
+                <!--Химчистка-->
+                <a xlink:href="http://localhost/Information/Info/1007">
+                    <path d="m 168.81514,48.851268 v 69.875862 l 44.52268,-2.47348 0.61837,14.22252 -29.06341,1.23674 0.61837,30.91853 5.56533,4.94696 51.94312,-3.09185 4.32859,-115.016911 z" />
+                </a>
+                <!--BSB-->
+                <a xlink:href="http://localhost/Information/Info/1007">
+                    <path d="m 129.23943,173.76211 v 46.37778 l -98.320906,-1.23674 1.855112,-22.26134 24.116449,-9.27555 0.61837,-15.45927 z" />
+                </a>
+                <!--IKEA-->
+                <a xlink:href="http://localhost/Information/Info/1007">
+                    <path d="m 168.81514,381.53459 1.23674,54.4166 h -43.9043 l 1.23674,9.89393 -55.653344,0.61837 3.091853,-56.89008 H 13.604151 l 1.855111,-171.28863 113.780168,1.85511 v 110.06995 l 98.32091,-0.61837 1.85511,57.50845 z" />
+                </a>
+                <!--АвиаКассы-->
+                <a xlink:href="http://localhost/Information/Info/1007">
+                    <path d="m 302.38317,327.11799 30.30015,1.85511 v 31.53689 l -28.44504,1.23674 z" />
+                </a>
+                <!--BSW-->
+                <a xlink:href="http://localhost/Information/Info/1007">
+                    <path d="m 360.50999,327.73636 2.47348,62.45542 56.27172,-0.61837 0.61837,-60.60031 z" />
+                </a>
+                <!--Re New-->
+                <a xlink:href="http://localhost/Information/Info/1007">
+                    <path d="m 434.09608,327.73636 v 66.78401 l 44.52268,1.23674 -2.47349,-68.02075 z" />
+                </a>
+                <!--ЭЛИЗЕ-->
+                <a xlink:href="http://localhost/Information/Info/1007">
+                    <path d="m 534.89047,329.59147 -0.61837,79.76979 -45.14105,-1.23674 v -15.45926 l 24.73482,-1.85511 1.85511,-6.80208 -40.19408,1.23674 0.61837,-57.50845 z" />
+                </a>
+                <!--Сбербанк-->
+                <a xlink:href="http://localhost/Information/Info/1007">
+                    <path d="m 591.78055,327.11799 0.61837,35.24711 115.63529,1.85512 -0.61837,68.63912 -164.48655,1.23674 -0.61837,-9.89393 h -11.13067 l 3.71022,-94.61068 z" />
+                </a>
+                <!--Fissman-->
+                <a xlink:href="http://localhost/Information/Info/1007">
+                    <path d="m 649.28901,328.35473 -0.61837,34.62874 -56.27172,-0.61837 -0.61837,-35.24711 z" />
+                </a>
+                <!--Фитнес формула-->
+                <a xlink:href="http://localhost/Information/Info/1007">
+                    <path d="m 677.73405,327.73636 -0.61837,34.62874 -28.44504,0.61837 0.61837,-34.62874 z" />
+                </a>
+                <!--Табак-->
+                <a xlink:href="http://localhost/Information/Info/1007">
+                    <path d="m 706.79746,327.73636 1.23675,36.48386 -30.91853,-1.85512 0.61837,-34.62874 z" />
+                </a>
+                <!--Cozy home-->
+                <a xlink:href="http://localhost/Information/Info/1007">
+                    <path d="m 878.70446,328.35473 -0.61837,66.16564 20.40623,0.61837 -1.85512,25.97156 h 14.8409 l 2.47348,12.98578 26.58993,1.23674 0.61837,-106.35972 z" />
+                </a>
+                <!--Аптека Доктор СТОЛЕТОВ-->
+                <a xlink:href="http://localhost/Information/Info/1007">
+                    <path d="m 993.72137,328.9731 1.23674,64.9289 -53.17986,1.85511 -0.61837,-66.78401 z" />
+                </a>
+                <!--ЗООГАЛЕРЕЯ-->
+                <a xlink:href="http://localhost/Information/Info/1007">
+                    <path d="m 1006.7071,392.66526 45.7595,1.23674 0.6183,-66.78401 -59.36353,1.85511 -0.61837,49.46964 h 9.8939 l 0.6184,9.89392 4.947,0.61838 z" />
+                </a>
+                <!--Paper&box-->
+                <a xlink:href="http://localhost/Information/Info/1007">
+                    <path d="m 186.12952,229.41545 v 16.696 l 24.11644,-1.85511 v -16.07763 z" />
+                </a>
+                <!--Шоколадница-->
+                <a xlink:href="http://localhost/Information/Info/1007">
+                    <path d="m 291.87087,218.28478 1.23674,61.21868 137.27825,-0.61837 v -61.83705 z" />
+                </a>
+                <!--Кафе в атриуме-->
+                <a xlink:href="http://localhost/Information/Info/1007">
+                    <path d="m 480.47387,216.42967 0.61837,63.07379 239.92775,-1.23674 -1.85512,-60.60031 z" />
+                </a>
+                <!--КО-3-->
+                <a xlink:href="http://localhost/Information/Info/1007">
+                    <path d="m 774.19985,220.13989 0.61837,18.55112 h 32.77363 l -1.23674,-17.31438 z" />
+                </a>
+                <!--Yota-->
+                <a xlink:href="http://localhost/Information/Info/1007">
+                    <path d="m 808.21022,258.47886 -0.61837,17.93275 -34.01037,-0.61837 0.61837,-17.31438 z" />
+                </a>
+                <!--Фуд СИТИ-->
+                <a xlink:href="http://localhost/Information/Info/1007">
+                    <path d="m 938.06803,218.90315 -0.61837,59.98194 -115.63529,-0.61837 2.47349,-58.12683 z" />
+                </a>
+                <!--Premium device-->
+                <a xlink:href="http://localhost/Information/Info/1007">
+                    <path d="m 973.93351,234.36241 v 31.5369 l -16.07763,-0.61837 1.85511,-32.15527 z" />
+                </a>
+            </svg>
+            <img id="image" src="../SVG/0 этаж.jpg" width="1352" height="500" asp-append-version="true">
+
+        </div>
+        <div class="main-floor">
+            <div class="group-floor">
+                <h4>Этажи</h4>
+                <form>
+                    <button class="btn" id="0" name="id" value="0" onclick="ChangeText(this.id)" asp-controller="Home" asp-action="fl_0">0</button>
+                    <button class="btn" id="1" name="id" value="1" onclick="ChangeText(this.id)" asp-controller="Home" asp-action="Index">1</button>
+                    <button class="btn" id="2" name="id" value="2" onclick="ChangeText(this.id)" asp-controller="Home" asp-action="fl_2">2</button>
+                    <button class="btn" id="3" name="id" value="3" onclick="ChangeText(this.id)" asp-controller="Home" asp-action="fl_3">3</button>
+                    <button class="btn" id="4" name="id" value="4" onclick="ChangeText(this.id)" asp-controller="Home" asp-action="fl_4">4</button>
+                    <button class="btn" id="5" name="id" value="5" onclick="ChangeText(this.id)" asp-controller="Home" asp-action="fl_5">5</button>
+                    <button class="btn" id="6" name="id" value="6" onclick="ChangeText(this.id)" asp-controller="Home" asp-action="fl_6">6</button>
+                </form>
+            </div>
+        </div>
+        @foreach (var a in Model)
+        {
+            <a asp-controller="Information" asp-action="Info" class="btn" asp-route-id="@a.ArendatorId">@a.ArendatorName</a>
+        }
+    }
+    @if (User.IsInRole("Реклама"))
+    {
+        <div class="button-item">
+            <h1 id="text">План 1-ого этажа</h1>
+            <a class="btn" asp-controller="Home" asp-action="AddArendator">Добавление нового арендатора</a>
+            <a class="btn" asp-controller="Home" asp-action="DeleteArendator">Удаление арендатора</a>
+            <a class="btn" href="../Contract/AdvertDoc.doc">Шаблон договора рекламы</a>
+        </div>
+        <!--<img id="image" src="../SVG/1этаж.svg" width="1331" height="500" asp-append-version="true">-->
+        <div class="map">
+            <svg viewBox="0 0 1331 500">
+                <path d="m 833,780 c -15.9,0 -31.8,0 -47.7,0 -0.1,0 -0.1,0 -0.2,0 h -12.9 v 82.6 h -29.5 c 0,12.3 0,24.5 0,36.8 14.2,0 65.4,0 79.5,0 l 0.8,-59.2 h 35 C 849.8,820.1 841.4,800 833,780 Z" />
+                <path d="m 968.4,840.2 c -16.7,0 -33.3,0 -50,0 8.4,-20 16.8,-40.1 25.2,-60.1 8.3,0 16.6,0 24.8,-0.1 0,20.1 0,40.1 0,60.2 z" />
+                <img id="image" src="../AdvertisingSVG/1этаж.svg" width="1331" height="500" asp-append-version="true">
+            </svg>
+        </div>
+        <div class="main-floor">
+            <div class="group-floor">
+                <h4>Этажи</h4>
+                <button class="btn" id="0" name="id" onclick="ChangeTextAdvert(this.id)">0</button>
+                <button class="btn" id="1" name="id" onclick="ChangeTextAdvert(this.id)">1</button>
+                <button class="btn" id="2" name="id" onclick="ChangeTextAdvert(this.id)">2</button>
+                <button class="btn" id="3" name="id" onclick="ChangeTextAdvert(this.id)">3</button>
+                <button class="btn" id="4" name="id" onclick="ChangeTextAdvert(this.id)">4</button>
+                <button class="btn" id="5" name="id" onclick="ChangeTextAdvert(this.id)">5</button>
+            </div>
+        </div>}
+</body>
+@*<a asp-controller="Information" asp-action="Info" asp-for="Name"></a>*@
+<!--<button class="btn btn-primary" (click)="incrementCounter()">Increment</button>-->

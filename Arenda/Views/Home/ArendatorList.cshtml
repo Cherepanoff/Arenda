@@ -15,31 +15,67 @@
     <h1>Список арендаторов</h1>
     <div class="container">
         <div class="dropdown">
-            <a class="text-floor" href="#">0 этаж</a>
+            <a class="btn" href="#">0 этаж</a>
             <div class="dropdown-content">
-                @foreach (var item in Model )
+                @foreach (var item in Model)
                 {@if ((item.ArendatorFloor is 0) && (item.ArendatorType is "Обычный"))
-                {
-                <a asp-controller="Information" asp-action="Info"  asp-route-id="@item.ArendatorId" class="btn">@item.ArendatorName</a>} }
+                    {
+                        <a asp-controller="Information" asp-action="Info" asp-route-id="@item.ArendatorId" class="btn">@item.ArendatorName</a>}}
             </div>
         </div>
         <div class="dropdown">
-            <a class="text-floor" href="#">1 этаж</a>
+            <a class="btn" href="#">1 этаж</a>
             <div class="dropdown-content">
                 @foreach (var item in Model)
                 {@if ((item.ArendatorFloor is 1) && (item.ArendatorType is "Обычный"))
-                {
-            <a asp-controller="Information" asp-action="Info"  asp-route-id="@item.ArendatorId" class="btn">@item.ArendatorName</a>}}
-                            </div>
+                    {
+                        <a asp-controller="Information" asp-action="Info" asp-route-id="@item.ArendatorId" class="btn">@item.ArendatorName</a>}}
+            </div>
         </div>
         <div class="dropdown">
-            <a class="text-floor" href="#">2 этаж</a>
+            <a class="btn" href="#">2 этаж</a>
             <div class="dropdown-content">
                 @foreach (var item in Model)
                 {@if ((item.ArendatorFloor is 2) && (item.ArendatorType is "Обычный"))
-                {
-                <a asp-controller="Information" asp-action="Info" asp-route-id="@item.ArendatorId" class="btn">@item.ArendatorName</a>}}
-                </div>
+                    {
+                        <a asp-controller="Information" asp-action="Info" asp-route-id="@item.ArendatorId" class="btn">@item.ArendatorName</a>}}
+            </div>
+        </div>
+        <div class="dropdown">
+            <a class="btn" href="#">3 этаж</a>
+            <div class="dropdown-content">
+                @foreach (var item in Model)
+                {@if ((item.ArendatorFloor is 3) && (item.ArendatorType is "Обычный"))
+                    {
+                        <a asp-controller="Information" asp-action="Info" asp-route-id="@item.ArendatorId" class="btn">@item.ArendatorName</a>}}
+            </div>
+        </div>
+        <div class="dropdown">
+            <a class="btn" href="#">4 этаж</a>
+            <div class="dropdown-content">
+                @foreach (var item in Model)
+                {@if ((item.ArendatorFloor is 4) && (item.ArendatorType is "Обычный"))
+                    {
+                        <a asp-controller="Information" asp-action="Info" asp-route-id="@item.ArendatorId" class="btn">@item.ArendatorName</a>}}
+            </div>
+        </div>
+        <div class="dropdown">
+            <a class="btn" href="#">5 этаж</a>
+            <div class="dropdown-content">
+                @foreach (var item in Model)
+                {@if ((item.ArendatorFloor is 5) && (item.ArendatorType is "Обычный"))
+                    {
+                        <a asp-controller="Information" asp-action="Info" asp-route-id="@item.ArendatorId" class="btn">@item.ArendatorName</a>}}
+            </div>
+        </div>
+        <div class="dropdown">
+            <a class="btn" href="#">6 этаж</a>
+            <div class="dropdown-content">
+                @foreach (var item in Model)
+                {@if ((item.ArendatorFloor is 6) && (item.ArendatorType is "Обычный"))
+                    {
+                        <a asp-controller="Information" asp-action="Info" asp-route-id="@item.ArendatorId" class="btn">@item.ArendatorName</a>}}
+            </div>
         </div>
     </div>
 </body>

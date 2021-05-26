@@ -1,0 +1,19 @@
+﻿@model IEnumerable<Arenda.Models.PdfFile>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+<body>
+    @foreach ( var m in Model)
+    {
+        @if (m.Pdfkda != null)
+        {
+            <a class="btn" href="@m.Pdfkda" target="_blank">@m.Pdfkda</a>
+        }
+}
+    <form asp-controller="Contract" asp-action="UploadKdaPDF" asp-route-id=@TempData["ID"]
+          enctype="multipart/form-data" method="post">
+        <input type="file" name="KDAPDF" />
+        <button type="submit" class="btn">Загрузить договор</button>
+    </form>
+</body>

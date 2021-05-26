@@ -20,8 +20,10 @@ namespace Arenda.Models
         public virtual DbSet<Arendator> Arendators { get; set; }
         public virtual DbSet<Comment> Comments { get; set; }
         public virtual DbSet<Contact> Contacts { get; set; }
+        public virtual DbSet<PdfFile> PdfFiles { get; set; }
         public virtual DbSet<Role> Roles { get; set; }
         public virtual DbSet<User> Users { get; set; }
+        public virtual DbSet<WordFile> WordFiles { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -63,8 +65,6 @@ namespace Arenda.Models
                 entity.Property(e => e.CommunalPay).IsUnicode(false);
 
                 entity.Property(e => e.Contact).IsUnicode(false);
-
-                entity.Property(e => e.Contact1).IsUnicode(false);
 
                 entity.Property(e => e.ContactPerson).IsUnicode(false);
 
@@ -165,6 +165,45 @@ namespace Arenda.Models
                     .HasConstraintName("FK__Contact__Contact__2E1BDC42");
             });
 
+            modelBuilder.Entity<PdfFile>(entity =>
+            {
+                entity.HasKey(e => e.Pdfid)
+                    .HasName("PK__PdfFiles__AAE555923FF4E931");
+
+                entity.Property(e => e.Pdfid).HasColumnName("PDFId");
+
+                entity.Property(e => e.Pdfdda)
+                    .IsUnicode(false)
+                    .HasColumnName("PDFDda");
+
+                entity.Property(e => e.Pdfdoc)
+                    .IsUnicode(false)
+                    .HasColumnName("PDFDoc");
+
+                entity.Property(e => e.Pdffk).HasColumnName("PDFFk");
+
+                entity.Property(e => e.Pdfkda)
+                    .IsUnicode(false)
+                    .HasColumnName("PDFKda");
+
+                entity.Property(e => e.Pdfpda)
+                    .IsUnicode(false)
+                    .HasColumnName("PDFPda");
+
+                entity.Property(e => e.Pdfpolicy)
+                    .IsUnicode(false)
+                    .HasColumnName("PDFPolicy");
+
+                entity.Property(e => e.Pdfstore)
+                    .IsUnicode(false)
+                    .HasColumnName("PDFStore");
+
+                entity.HasOne(d => d.PdffkNavigation)
+                    .WithMany(p => p.PdfFiles)
+                    .HasForeignKey(d => d.Pdffk)
+                    .HasConstraintName("FK__PdfFiles__PDFFk__30F848ED");
+            });
+
             modelBuilder.Entity<Role>(entity =>
             {
                 entity.ToTable("ROLES");
@@ -192,6 +231,29 @@ namespace Arenda.Models
                     .WithMany(p => p.Users)
                     .HasForeignKey(d => d.RoleFk)
                     .HasConstraintName("FK__Users__RoleFK__267ABA7A");
+            });
+
+            modelBuilder.Entity<WordFile>(entity =>
+            {
+                entity.HasKey(e => e.WordId)
+                    .HasName("PK__WordFile__2C20F066AEA9025F");
+
+                entity.Property(e => e.WordDda).IsUnicode(false);
+
+                entity.Property(e => e.WordDoc).IsUnicode(false);
+
+                entity.Property(e => e.WordKda).IsUnicode(false);
+
+                entity.Property(e => e.WordPda).IsUnicode(false);
+
+                entity.Property(e => e.WordPolicy).IsUnicode(false);
+
+                entity.Property(e => e.WordStore).IsUnicode(false);
+
+                entity.HasOne(d => d.WordFkNavigation)
+                    .WithMany(p => p.WordFiles)
+                    .HasForeignKey(d => d.WordFk)
+                    .HasConstraintName("FK__WordFiles__WordF__33D4B598");
             });
 
             OnModelCreatingPartial(modelBuilder);
