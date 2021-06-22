@@ -6,9 +6,10 @@
 </head>
 <body>
     <a asp-controller="Contract" asp-action="KdaWord" asp-route-id="@Model.ArendatorId" class="btn">КДА</a>
-    <a asp-controller="Information" asp-action="SpecConditions" class="btn">ПДА</a>
-    <a asp-controller="Information" asp-action="SpecConditions" class="btn">ДДА</a>
-    <a asp-controller="Information" asp-action="SpecConditions" class="btn">Договор склада</a>
-    <a asp-controller="Information" asp-action="SpecConditions" class="btn">Учредительные документы</a>
-    <a asp-controller="Information" asp-action="SpecConditions" class="btn">Полис</a>
+    <a asp-controller="Contract" asp-action="PdaWord" asp-route-id="@Model.ArendatorId" class="btn">ПДА</a>
+    <a asp-controller="Contract" asp-action="DaWord" asp-route-id="@Model.ArendatorId" class="btn">ДА</a>
+    <a asp-controller="Contract" asp-action="DdaWord" asp-route-id="@Model.ArendatorId" class="btn">ДДА</a>
+    <a asp-controller="Contract" asp-action="StoreWord" asp-route-id="@Model.ArendatorId" class="btn">Договор склада</a>
+    <a asp-controller="Contract" asp-action="AttorneyWord" asp-route-id="@Model.ArendatorId" class="btn">Доверенность</a>
+    <a asp-controller="Contract" asp-action="DocWord" asp-route-id="@Model.ArendatorId" class="btn">Учредительные документы</a>
 </body>

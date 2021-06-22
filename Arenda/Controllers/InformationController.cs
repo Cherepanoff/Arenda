@@ -20,47 +20,23 @@ namespace Arenda.Controllers
     public class InformationController : Controller
     {
         private IWebHostEnvironment _env;
-        //private FileManager _fileManager;
         private string _dir;
         private static Logger logger = LogManager.GetCurrentClassLogger();
         public ShelkContext db;
-        //db dbop = new db();
         public InformationController(ShelkContext context, IWebHostEnvironment env)
         {
             _env = env;
             _dir = _env.ContentRootPath;
             db = context;
-        }
-      //  [HttpPost]
-      //  public async Task<IActionResult> UploadCondition(CondtitionViewModel pvm, int? id)
-       // {
-           // Arendator arendator = new Arendator { ArendatorName = pvm.Name };
-           // if (pvm.Condition != null)
-            //{
-           //     byte[] imageData = null;
-                // считываем переданный файл в массив байтов
-            //    using (var binaryReader = new BinaryReader(pvm.Condition.OpenReadStream()))
-            //    {
-            //        imageData = binaryReader.ReadBytes((int)pvm.Condition.Length);
-            //    }
-                // установка массива байтов
-            //    arendator.Files = imageData;
-           // }
-           // db.Arendators.Update(arendator);
-           // await db.SaveChangesAsync();
-
-          //  return RedirectToAction("Index", "Home");
-       // }
-
-    
+        }   
         [Authorize(Roles = "Админ,Аренда")]
         public async Task<IActionResult> Info(int? id)
         {
             if (id != null)
             {
-                ArendatorModel arendatorModel = new ArendatorModel();
-                arendatorModel.ArendatorId = (int)id;
                 Arendator arendator = await db.Arendators.FirstOrDefaultAsync(p => p.ArendatorId == id);
+                ViewBag.Contact = db.Contacts.Where(p => p.ContactFk == id).ToList();
+                ViewBag.Comment = db.Comments.Where(p => p.CommentFk == id).ToList();
                 logger.Trace("Зашел посмотреть информацию об арендаторе " + arendator.ArendatorName);
                 return View(arendator);
             }
@@ -88,82 +64,42 @@ namespace Arenda.Controllers
         [Authorize(Roles = "Админ,Аренда")]
         public async Task<IActionResult> Dogovor(int? id)
         {
-
                 Arendator arendator = await db.Arendators.FirstOrDefaultAsync(p => p.ArendatorId == id);
-                logger.Trace("Зашел посмотреть договор " + arendator.ArendatorName);
+                //logger.Trace("Зашел посмотреть договор " + arendator.ArendatorName);
                 return View(arendator);
         }
         [Authorize(Roles = "Админ,Аренда")]
         public async Task<IActionResult> SaveChanges(int? id)
         {
-            //if (id != null)
-            //{
             Contact contact = await db.Contacts.Include(u => u.ContactFkNavigation).FirstOrDefaultAsync(p => p.ContactId == id);
-            //Arendator arendator = await db.Arendators.FirstOrDefaultAsync(p => p.ArendatorId == id);
             return View("Index", "Home");
-            //}
-            //return NotFound();
-        }
-        [HttpPost]
-        public async Task<IActionResult> NewDogovor(Arendator Arendator)
-        {
-            db.Arendators.Add(Arendator);
-            await db.SaveChangesAsync();
-            return RedirectToAction("Dogovor");
-        }
-        [Authorize(Roles = "Админ,Аренда")]
 
-        public IActionResult NewDogovor()
-        {
-            return View();
         }
-        [Authorize(Roles = "Админ,Аренда")]
-        public async Task<IActionResult> SpecConditions(int? id)
+        public async Task<IActionResult> NewDogovor(int? id)
         {
-            //if (id != null)
-            //{
             Arendator arendator = await db.Arendators.FirstOrDefaultAsync(p => p.ArendatorId == id);
             return View(arendator);
-            //}
-           //return NotFound();
-        }
-        [Authorize(Roles = "Админ,Аренда")]
-        public async Task<IActionResult> NewCondition(int? id)
-        {
-            // if (id != null)
-            // {
-            Arendator arendator = await db.Arendators.FirstOrDefaultAsync(p => p.ArendatorId == id);
-            //if (arendator != null)
-            return View(arendator);
-            //}
-            //return NotFound();
         }
         [HttpPost]
         [Authorize(Roles = "Админ,Аренда")]
-
-        public async Task<IActionResult> NewCondition(Arendator arendator)
+        public async Task<IActionResult> NewDogovor(Arendator arendator)
         {
             db.Arendators.Update(arendator);
             await db.SaveChangesAsync();
-            return RedirectToAction("Info");
+            return RedirectToAction("Index", "Home");
         }
         [Authorize(Roles = "Админ,Аренда")]
         public async Task<IActionResult> Card(int? id)
         {
-
             Arendator arendator = await db.Arendators.FirstOrDefaultAsync(p => p.ArendatorId == id);
             return View(arendator);
         }
         [Authorize(Roles = "Админ,Аренда")]
         public async Task<IActionResult> NewCard(int? id)
         {
-            //if (id != null)
-           // {
-                Arendator arendator = await db.Arendators.FirstOrDefaultAsync(p => p.ArendatorId == id);
-             //   if (arendator != null)
-                    return View(arendator);
-           // }
-            //return NotFound();
+           Arendator arendator = await db.Arendators.FirstOrDefaultAsync(p => p.ArendatorId == id);
+           return View(arendator);
+
         }
         [HttpPost]
         [Authorize(Roles = "Админ,Аренда")]
@@ -179,7 +115,7 @@ namespace Arenda.Controllers
             if (id != null)
             {
                 Arendator arendator = await db.Arendators.FirstOrDefaultAsync(p => p.ArendatorId == id);
-                logger.Trace("Зашел посмотреть информацию об арендаторе " + arendator.ArendatorName);
+                logger.Trace("Зашел посмотреть договора PDF " + arendator.ArendatorName);
                 return View(arendator);
             }
             return NotFound();
@@ -191,7 +127,7 @@ namespace Arenda.Controllers
             if (id != null)
             {
                 Arendator arendator = await db.Arendators.FirstOrDefaultAsync(p => p.ArendatorId == id);
-                logger.Trace("Зашел посмотреть информацию об арендаторе " + arendator.ArendatorName);
+                logger.Trace("Зашел посмотреть договора Word" + arendator.ArendatorName);
                 return View(arendator);
             }
             return NotFound();
@@ -214,9 +150,26 @@ namespace Arenda.Controllers
                 db.Arendators.Update(arendator);
                 db.SaveChanges();
 
-                return RedirectToAction("Info");
+                return RedirectToAction("Index", "Home");
             }
-            return RedirectToAction("Info");
+            return RedirectToAction("Index", "Home");
+
+        }
+        public async Task<IActionResult> AddTable( int? id, string name, string tel, string email, string comment)
+        {
+            Contact contact = new Contact {ContactFk = id, ContactName = name, ContactTel = tel, ContactEmail = email, ContactComment = comment };
+            ViewBag.Contact = contact;
+            db.Contacts.Add(contact);
+            await db.SaveChangesAsync();
+            return RedirectToAction("Index", "Home");
+        }
+        public async Task<IActionResult> AddComment(int? id, string commentName)
+        {
+            Comment comment = new Comment { CommentFk = id, CommentName = commentName };
+            ViewBag.Comment = comment;
+            db.Comments.Add(comment);
+            await db.SaveChangesAsync();
+            return RedirectToAction("Index", "Home");
         }
         [Authorize(Roles = "Админ,Аренда")]
         public IActionResult Excel()

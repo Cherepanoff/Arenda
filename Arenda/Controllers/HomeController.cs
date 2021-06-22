@@ -43,9 +43,9 @@ namespace Arenda.Controllers
             return View();
         }
         [HttpPost]
-        public async Task<IActionResult> DeleteArendator(int? id)
+        public async Task<IActionResult> Delete1Arendator(Arendator arendator)
         {
-            Arendator arendator = await db.Arendators.FirstOrDefaultAsync(p => p.ArendatorId == id);
+            arendator = await db.Arendators.FirstOrDefaultAsync(p => p.ArendatorName == arendator.ArendatorName);
             db.Arendators.Remove(arendator);
             await db.SaveChangesAsync();
             return RedirectToAction("Index");

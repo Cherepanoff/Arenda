@@ -5,10 +5,12 @@
     <link rel="stylesheet" href="~/css/style.css" />
 </head>
 <body>
+    <a asp-controller="Contract" asp-action="PdaPDF" asp-route-id="@Model.ArendatorId" class="btn">ПДА</a>
     <a asp-controller="Contract" asp-action="KdaPDF" asp-route-id="@Model.ArendatorId" class="btn">КДА</a>
-    <a asp-controller="Information" asp-action="SpecConditions" class="btn">ПДА</a>
-    <a asp-controller="Information" asp-action="SpecConditions" class="btn">ДДА</a>
-    <a asp-controller="Information" asp-action="SpecConditions" class="btn">Договор склада</a>
-    <a asp-controller="Information" asp-action="SpecConditions" class="btn">Учредительные документы</a>
-    <a asp-controller="Information" asp-action="SpecConditions" class="btn">Полис</a>
+    <a asp-controller="Contract" asp-action="DaPDF" asp-route-id="@Model.ArendatorId" class="btn">ДА</a>
+    <a asp-controller="Contract" asp-action="DdaPDF" asp-route-id="@Model.ArendatorId" class="btn">ДДА</a>
+    <a asp-controller="Contract" asp-action="StorePDF" asp-route-id="@Model.ArendatorId" class="btn">Договор склада</a>
+    <a asp-controller="Contract" asp-action="PolicyPDF" asp-route-id="@Model.ArendatorId" class="btn">Страховой полис</a>
+    <a asp-controller="Contract" asp-action="AttorneyPDF" asp-route-id="@Model.ArendatorId" class="btn">Доверенность</a>
+    <a asp-controller="Contract" asp-action="DocPDF" asp-route-id="@Model.ArendatorId" class="btn">Учредительные документы</a>
 </body>

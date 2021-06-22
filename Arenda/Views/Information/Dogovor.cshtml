@@ -6,14 +6,10 @@
 </head>
 <body>
     <div class="button-item">
-        <!--<a asp-controller="Information" asp-action="Card" class="btn" asp-route-id="@Model.ArendatorId">Карточка</a>-->
-        <a asp-controller="Information" asp-action="NewDogovor" class="btn">Добавить договор</a>
         <a asp-controller="Information" asp-action="NewCard" class="btn" asp-route-id="@Model.ArendatorId">Добавить информацию в карточку</a>
+        <a asp-controller="Information" asp-action="NewDogovor" asp-route-id="@Model.ArendatorId" class="btn">Добавить информацию в условие</a>
     </div>
     <div class="container">
-        <div id="modDialog" class="modal fade">
-            <div id="dialogContent" class="modal-dialog"></div>
-        </div>
         <div>
             <h3>Карточка</h3>
             <table class="content-table">
@@ -49,26 +45,10 @@
                     <tr><td>Потенциальные арендаторы</td><td>@Model.Commercial</td></tr>
                     <tr><td>Контактные данные</td><td>@Model.Contact</td></tr>
                     <tr><td>Предыдущие объекты</td><td>@Model.Object</td></tr>
+                    <tr><td>Предыдущая аренда</td><td>@Model.PastArenda</td></tr>
                     <tr><td>Куратор</td><td>@Model.Curator</td></tr>
                 </tbody>
             </table>
         </div>
     </div>
 </body>
-@section scripts
-{
-    <script type="text/javascript">
-
-        $(function () {
-            $.ajaxSetup({ cache: false });
-           $(".compItem").click(function (e) {
-
-                e.preventDefault();
-                $.get(this.href, function (data) {
-                    $('#dialogContent').html(data);
-                    $('#modDialog').modal('show');
-                });
-            });
-        })
-    </script>
-}

@@ -6,44 +6,72 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="~/css/style.css" />
 </head>
-<form asp-action="NewInfo" asp-controller="Information" asp-route-id="@Model.ArendatorId">
-    <input asp-for="ArendatorId" type="hidden" />
-    <input asp-for="ArendatorName" type="hidden" />
-    <input asp-for="ArendatorFloor" type="hidden" />
-    <input asp-for="ArendatorType" type="hidden" />
-    <div class="form-group">
-        <label asp-for="LegalPerson" class="control-label">Юридическое лицо</label>
-        <input type="text" asp-for="LegalPerson" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="GeneralDirector" class="control-label">Генеральный директор</label>
-        <input type="text" asp-for="GeneralDirector" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="NumberContract" class="control-label">Номер договора</label>
-        <input type="number" asp-for="NumberContract" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="DateContract" class="control-label">Дата договора</label>
-        <input type="date" asp-for="DateContract" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="AdressLegal" class="control-label">Юридический адрес</label>
-        <input type="text" asp-for="AdressLegal" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="AdressFact" class="control-label">Фактический адрес</label>
-        <input type="text" asp-for="AdressFact" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="AllowAct" class="control-label">Акт допуска</label>
-        <input type="date" asp-for="AllowAct" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="StartAct" class="control-label">Акт приема передачи</label>
-        <input type="date" asp-for="StartAct" class="form-control" />
-    </div>
-    <div class="form-group">
-        <input type="submit" value="Отправить" class="btn btn-default" />
-    </div>
-</form>
+<div class="full">
+    <form asp-action="NewInfo" asp-controller="Information" asp-route-id="@Model.ArendatorId">
+        <input asp-for="ArendatorId" type="hidden" />
+        <input asp-for="ArendatorName" type="hidden" />
+        <input asp-for="ArendatorFloor" type="hidden" />
+        <input asp-for="ArendatorType" type="hidden" />
+        <input asp-for="Commercial" type="hidden" />
+        <input asp-for="Contact" type="hidden" />
+        <input asp-for="Object" type="hidden" />
+        <input asp-for="PastArenda" type="hidden" />
+        <input asp-for="Curator" type="hidden" />
+        <input asp-for="Logo" type="hidden" />
+        <input asp-for="ProductCategory" type="hidden" />
+        <input asp-for="RoomNumber" type="hidden" />
+        <input asp-for="Area" type="hidden" />
+        <input asp-for="PayCondition" type="hidden" />
+        <input asp-for="ExplPay" type="hidden" />
+        <input asp-for="MarkPay" type="hidden" />
+        <input asp-for="CommunalPay" type="hidden" />
+        <input asp-for="Curs" type="hidden" />
+        <input asp-for="IndexSize" type="hidden" />
+        <input asp-for="AvansPay" type="hidden" />
+        <input asp-for="Deposit" type="hidden" />
+        <input asp-for="DateOpen" type="hidden" />
+        <input asp-for="PayStart" type="hidden" />
+        <input asp-for="RepairTime" type="hidden" />
+        <input asp-for="ElectricPower" type="hidden" />
+        <input asp-for="TermArenda" type="hidden" />
+        <div class="form-group">
+            <label asp-for="LegalPerson" class="control-label">Юридическое лицо</label>
+            <input type="text" asp-for="LegalPerson" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="GeneralDirector" class="control-label">Генеральный директор</label>
+            <input type="text" asp-for="GeneralDirector" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="NumberContract" class="control-label">Номер договора</label>
+            <input type="number" asp-for="NumberContract" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="DateContract" class="control-label">Дата договора</label>
+            <input type="date" asp-for="DateContract" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="AdressLegal" class="control-label">Юридический адрес</label>
+            <input type="text" asp-for="AdressLegal" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="AdressFact" class="control-label">Фактический адрес</label>
+            <input type="text" asp-for="AdressFact" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="AllowAct" class="control-label">Акт допуска</label>
+            <input type="date" asp-for="AllowAct" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="StartAct" class="control-label">Акт приема передачи</label>
+            <input type="date" asp-for="StartAct" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Email" class="control-label">E-mail</label>
+            <input type="text" asp-for="Email" class="form-control" />
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Отправить" class="btn btn-default" />
+        </div>
+    </form>
+</div>

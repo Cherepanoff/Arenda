@@ -1,7 +1,5 @@
 ﻿@model Arenda.Models.Arendator
-@{
-    ViewBag.Title = Model.ArendatorName;
-}
+@{ ViewBag.Title = Model.ArendatorName; }
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="~/css/style.css" />
@@ -9,13 +7,14 @@
 <body>
     <div class="button-item">
         <a asp-controller="Information" asp-action="NewInfo" class="btn" asp-route-id="@Model.ArendatorId">Добавить(Редактировать) данные</a>
-        <input type="button" class="btn" value="Добавить комментарий" onClick='addrow();'>
-        <input type="button" class="btn" value="Удалить комментарий" onClick='deleterow();'>
+        <a asp-controller="Information" asp-action="Dogovor" asp-route-id="@Model.ArendatorId" class="btn">Информация о договоре</a>
+        <a asp-controller="Information" asp-action="ContractWord" asp-route-id="@Model.ArendatorId" class="btn">Договоры Word</a>
+        <a asp-controller="Information" asp-action="ContractPDF" asp-route-id="@Model.ArendatorId" class="btn">Договоры PDF</a>
         <a asp-controller="Information" asp-action="Excel" class="btn">Экспорт данных</a>
-        <!--<input type="button" class="btn" value="Удалить комментарий(1)" onClick='deleterow2();'>-->
     </div>
     <h1>@Model.ArendatorName</h1>
-    <div class="container">
+<div class="container">
+    <div>
         <table id="table" class="content-table">
             <tr><td>Юридическое лицо</td><td>@Model.GeneralDirector</td>
             <tr><td>Ген. директор</td><td>@Model.LegalPerson</td></tr>
@@ -25,37 +24,21 @@
             <tr><td>Факт. Адрес</td><td>@Model.AdressFact</td></tr>
             <tr><td>Акт допуска</td><td>@Model.AllowAct</td></tr>
             <tr><td>Акт приема передачи</td><td>@Model.StartAct</td></tr>
+            <tr><td>E-mail</td><td>@Model.Email</td></tr>
             <tr><td>Комментарий:</td><td></td></tr>
-            <tr><td><input type='text' name='1'><input type="button" class="btn" value="+" onClick='addrow();'></td></tr>
-        </table>
-        <div>
-            <form asp-action="NewCard" asp-controller="Information" asp-route-id="@Model.ArendatorId">
-                <table class="content-table1" id="table1">
-                    <tr><td>ФИО</td><td><input type='text' name='2' ></tr>
-                    <tr><td>Телефон</td><td><input type='text' name='3'></tr>
-                    <tr><td>Е-mail</td><td><input type='text' name='4'></tr>
-                    <tr><td>Комментарий</td><td><input type='text' name='5'></td></tr>
-                </table>
-                <input type="button" class="btn" value="+" onClick='addrow1();'>
-                <input type="submit" value="Сохранить" class="btn" />
+            @if (ViewBag.Comment != null)
+            {
+        @foreach (Comment comment in ViewBag.Comment)
+        {
+        @if ((comment.CommentFk == Model.ArendatorId))
+        {
+        <tr><td>@comment.CommentName</td></tr>
+}}}
+            <form asp-actsion="AddComment" asp-controller="Information" asp-route-id="@Model.ArendatorId">
+                <tr><td><input type='text' name='commentName'><input type="button" class="btn" value="+" onClick='addrow();'></td></tr>
+                <tr><td><input type="submit" value="Сохранить" class="btn" /></td></tr>
             </form>
-                @if (Model.Logo != null)
-                {
-                    <img style='width:300px; height:200px;' src="data:image/jpeg;base64,@(Convert.ToBase64String(Model.Logo))" />
-                }
-        </div>
-    </div>
-    <a asp-controller="Information" asp-action="Dogovor" asp-route-id="@Model.ArendatorId" class="btn">Информация о договоре</a>
-    <a asp-controller="Information" asp-action="SpecConditions" asp-route-id="@Model.ArendatorId" class="btn">Спец условия</a>
-    <a asp-controller="Information" asp-action="ContractWord" asp-route-id="@Model.ArendatorId" class="btn">Договоры Word</a>
-    <a asp-controller="Information" asp-action="ContractPDF" asp-route-id="@Model.ArendatorId" class="btn">Договоры PDF</a>
-    <h4>Договор</h4>
-    <form asp-controller="Information" asp-action="UploadCondition" asp-route-id="@Model.ArendatorId"
-          enctype="multipart/form-data" method="post">
-        <input type="file" name="Files" />
-        <button type="submit" class="btn">Загрузить договор</button>
-    </form>
-    <div class="button-item">
+        </table>
         <h4>Изображение</h4>
         <form asp-controller="Information" asp-action="UploadImage" asp-route-id="@Model.ArendatorId"
               enctype="multipart/form-data" method="post">
@@ -63,6 +46,37 @@
             <button type="submit" class="btn">Загрузить изображение</button>
         </form>
     </div>
-    <script src="/js/site.js"></script>
+    <div>
+            @if (ViewBag.Contact != null)
+            {
+    @foreach (Contact contact in ViewBag.Contact)
+    {
+    @if ((contact.ContactFk == Model.ArendatorId))
+    {
+    <table class="content-table1" id="table1">
+        <tr><td>ФИО</td><td>@contact.ContactName</td></tr>
+        <tr><td>Телефон</td><td>@contact.ContactTel</td></tr>
+        <tr><td>Е-mail</td><td>@contact.ContactEmail</td></tr>
+        <tr><td>Комментарий</td><td>@contact.ContactComment</td></tr>
+    </table>}}}
+            <form asp-action="AddTable" asp-controller="Information" asp-route-id="@Model.ArendatorId">
+                <table class="content-table1" id="table1">
+                    <tr><td>ФИО</td><td><input type='text' name='name'></tr>
+                    <tr><td>Телефон</td><td><input type='text' name='tel'></tr>
+                    <tr><td>Е-mail</td><td><input type='text' name='email'></tr>
+                    <tr><td>Комментарий</td><td><input type='text' name='comment'></td></tr>
+                </table>
+                <input type="button" class="btn" value="+" onClick='addrow1();'>
+                <input type="submit" value="Сохранить" class="btn" />
+            </form>
+        </div>
+    <div>
+        @if (Model.Logo != null)
+        {
+    <img style='width:300px; height:200px;' src="data:image/jpeg;base64,@(Convert.ToBase64String(Model.Logo))" />}
+    </div>
+    </div>
 </body>
+<script src="/js/site.js"></script>
+<script src="/js/Contact.js"></script>
 

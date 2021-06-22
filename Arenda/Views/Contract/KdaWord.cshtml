@@ -1,17 +1,61 @@
-﻿@model Arenda.Models.Arendator
-@{ }
+﻿@model IEnumerable<Arenda.Models.WordFile>
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="~/css/style.css" />
 </head>
 <body>
-    @if (Model.Contact != null)
+    <h2>Краткосрочный договор аренды</h2>
+    @foreach (var m in Model)
     {
-    <a class="btn" href="@Model.Contact" target="_blank">@Model.Contact</a>
+        @if (m.WordKda != null)
+        {
+            <a class="btn" asp-controller="Contract" asp-action="ViewWord">@m.WordKda</a>
+        }
     }
- <form asp-controller="Contract" asp-action="UploadKdaWord" asp-route-id="@Model.ArendatorId"
-                enctype="multipart/form-data" method="post">
-                    <input type="file" name="ContactWord" />
-                    <button type="submit" class="btn">Загрузить договор</button>
-                </form>
-                            </body>
+    <form asp-controller="Contract" asp-action="UploadKdaWord" asp-route-id=@TempData["ID"]
+          enctype="multipart/form-data" method="post">
+        <input type="file" name="KDAWord" />
+        <button type="submit" class="btn">Загрузить договор</button>
+    </form>
+    <form method="post" asp-controller="Contract" asp-action="ViewWord"  id="formDownload">
+<textarea name="editor" id="editor" rows="80" cols="100">
+                @if (ViewBag.HtmlContent == null)
+                 {
+        <p>Write something or open an existing Word document. </p>
+                 }
+                 else
+                 {
+                     @ViewBag.HtmlContent;
+                 }
+ </textarea>
+    </form>
+</body>
+<!-- suneditor -->
+<link href="~/suneditor/dist/css/suneditor.min.css" rel="stylesheet">
+<!-- suneditor -->
+<script src="~/suneditor/dist/suneditor.min.js"></script>
+<script>
+    var suneditor = SUNEDITOR.create('editor', {
+        display: 'block',
+        width: '100%',
+        height: '30%',
+        popupDisplay: 'full',
+        buttonList: [
+            ['font', 'fontSize', 'formatBlock'],
+            ['paragraphStyle', 'blockquote'],
+            ['bold', 'underline', 'align', 'strike', 'subscript', 'superscript', 'horizontalRule', 'list'],
+            ['table', 'link', 'image'],
+            ['align', 'horizontalRule', 'list', 'lineHeight'],
+            ['codeView']
+        ],
+        placeholder: 'Start typing something...'
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        $("#download").click(function () {
+            suneditor.save();
+            $("#formDownload").submit();
+        });
+    });
+</script>

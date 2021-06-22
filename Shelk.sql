@@ -27,25 +27,17 @@ ArendatorType varchar(max),
  AdressFact varchar(max),
  AllowAct date,
  StartAct date,
+ email varchar(max),
  Commercial varchar(max),
  Contact varchar(max),
  Object varchar(max),
  PastArenda varchar(max),
  Curator varchar(max),
- Rate varchar(max),
- Marketing varchar(max),
- Communal varchar(max),
- Post varchar(max),
- Email varchar(max),
- Sale varchar(max),
- Advertising varchar(max),
- SpecCondition varchar(max),
- ParkingCondition varchar(max),
  Logo image,
- PayCondition varchar(max),
  ProductCategory varchar(max),
  RoomNumber varchar(max),
  Area varchar(max),
+ PayCondition varchar(max),
  ExplPay varchar(max),
  MarkPay varchar(max),
  CommunalPay varchar(max),
@@ -78,12 +70,14 @@ ContactFK int foreign key references Arendator(ArendatorID)
 CREATE TABLE PdfFiles 
 (
  PDFId int primary key identity(1,1),
- PDFKda varchar(max),
  PDFPda varchar(max),
+ PDFKda varchar(max),
+ PDFDa varchar(max),
  PDFDda varchar(max), 
- PDFStore varchar(max), 
- PDFDoc varchar(max),
+ PDFStore varchar(max),
  PDFPolicy varchar(max),
+ PDFAttorney varchar(max),
+ PDFDoc varchar(max),
  PDFFk int foreign key references Arendator(ArendatorID)
 )
 
@@ -92,10 +86,11 @@ CREATE TABLE WordFiles
  WordId int primary key identity(1,1),
  WordKda varchar(max),
  WordPda varchar(max),
+ WordDa varchar(max), 
  WordDda varchar(max), 
  WordStore varchar(max), 
+ WordAttorney varchar(max),
  WordDoc varchar(max),
- WordPolicy varchar(max),
  WordFk int foreign key references Arendator(ArendatorID)
 )
 
@@ -120,7 +115,10 @@ SELECT * FROM Roles
 SELECT * FROM arendator
 SELECT * FROM contact
 SELECT * FROM PdfFiles
+SELECT * FROM WordFiles
+SELECT * FROM Comment
 
+DELETE FROM contact WHERE ContactId = 1
 
 INSERT INTO PDFFiles Select pdfFk
 INSERT INTO arendator VALUES ('Счастливый взгляд',0,'Обычный','','','','','','',)

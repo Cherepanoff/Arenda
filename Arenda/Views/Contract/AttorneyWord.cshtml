@@ -1,0 +1,20 @@
+﻿@model IEnumerable<Arenda.Models.WordFile>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+<body>
+    <h2>Доверенность</h2>
+    @foreach (var m in Model)
+    {
+        @if (m.WordAttorney != null)
+        {
+            <a class="btn" href="@m.WordAttorney" target="_blank">@m.WordAttorney</a>
+        }
+    }
+    <form asp-controller="Contract" asp-action="UploadAttorneyWord" asp-route-id=@TempData["ID"]
+          enctype="multipart/form-data" method="post">
+        <input type="file" name="AttorneyWord" />
+        <button type="submit" class="btn">Загрузить договор</button>
+    </form>
+</body>

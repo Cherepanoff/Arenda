@@ -4,17 +4,17 @@
     <link rel="stylesheet" href="~/css/style.css" />
 </head>
 <body>
-    <h2>Краткосрочный договор аренды</h2>
+    <h2>Договор склада</h2>
     @foreach (var m in Model)
     {
-        @if (m.Pdfkda != null)
+        @if (m.Pdfstore != null)
         {
-            <a class="btn" href="@m.Pdfkda" target="_blank">@m.Pdfkda</a>
+            <a class="btn" href="@m.Pdfstore" target="_blank">@m.Pdfstore</a>
         }
     }
-    <form asp-controller="Contract" asp-action="UploadKdaPDF" asp-route-id=@TempData["ID"]
+    <form asp-controller="Contract" asp-action="UploadStorePDF" asp-route-id=@TempData["ID"]
           enctype="multipart/form-data" method="post">
-        <input type="file" name="KDAPDF" />
+        <input type="file" name="STOREPDF" />
         <button type="submit" class="btn">Загрузить договор</button>
     </form>
 </body>

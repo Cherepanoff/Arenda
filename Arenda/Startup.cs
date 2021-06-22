@@ -35,7 +35,7 @@ namespace Arenda
                 });
 
             string connection = Configuration.GetConnectionString("DefaultConnection");
-            services.AddDbContext<ShelkContext>(options => options.UseSqlServer(connection));
+           services.AddDbContext<ShelkContext>(options => options.UseSqlServer(connection));
             services.AddControllersWithViews();
         }
         public void Configure(IApplicationBuilder app)

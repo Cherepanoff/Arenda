@@ -46,8 +46,6 @@ namespace Arenda.Models
 
                 entity.Property(e => e.AdressLegal).IsUnicode(false);
 
-                entity.Property(e => e.Advertising).IsUnicode(false);
-
                 entity.Property(e => e.AllowAct).HasColumnType("date");
 
                 entity.Property(e => e.Area).IsUnicode(false);
@@ -59,8 +57,6 @@ namespace Arenda.Models
                 entity.Property(e => e.AvansPay).IsUnicode(false);
 
                 entity.Property(e => e.Commercial).IsUnicode(false);
-
-                entity.Property(e => e.Communal).IsUnicode(false);
 
                 entity.Property(e => e.CommunalPay).IsUnicode(false);
 
@@ -80,7 +76,9 @@ namespace Arenda.Models
 
                 entity.Property(e => e.ElectricPower).IsUnicode(false);
 
-                entity.Property(e => e.Email).IsUnicode(false);
+                entity.Property(e => e.Email)
+                    .IsUnicode(false)
+                    .HasColumnName("email");
 
                 entity.Property(e => e.ExplPay).IsUnicode(false);
 
@@ -94,13 +92,9 @@ namespace Arenda.Models
 
                 entity.Property(e => e.MarkPay).IsUnicode(false);
 
-                entity.Property(e => e.Marketing).IsUnicode(false);
-
                 entity.Property(e => e.NumberContract).IsUnicode(false);
 
                 entity.Property(e => e.Object).IsUnicode(false);
-
-                entity.Property(e => e.ParkingCondition).IsUnicode(false);
 
                 entity.Property(e => e.PastArenda).IsUnicode(false);
 
@@ -108,19 +102,11 @@ namespace Arenda.Models
 
                 entity.Property(e => e.PayStart).IsUnicode(false);
 
-                entity.Property(e => e.Post).IsUnicode(false);
-
                 entity.Property(e => e.ProductCategory).IsUnicode(false);
-
-                entity.Property(e => e.Rate).IsUnicode(false);
 
                 entity.Property(e => e.RepairTime).IsUnicode(false);
 
                 entity.Property(e => e.RoomNumber).IsUnicode(false);
-
-                entity.Property(e => e.Sale).IsUnicode(false);
-
-                entity.Property(e => e.SpecCondition).IsUnicode(false);
 
                 entity.Property(e => e.StartAct).HasColumnType("date");
 
@@ -168,9 +154,17 @@ namespace Arenda.Models
             modelBuilder.Entity<PdfFile>(entity =>
             {
                 entity.HasKey(e => e.Pdfid)
-                    .HasName("PK__PdfFiles__AAE555923FF4E931");
+                    .HasName("PK__PdfFiles__AAE55592FF5983AF");
 
                 entity.Property(e => e.Pdfid).HasColumnName("PDFId");
+
+                entity.Property(e => e.Pdfattorney)
+                    .IsUnicode(false)
+                    .HasColumnName("PDFAttorney");
+
+                entity.Property(e => e.Pdfda)
+                    .IsUnicode(false)
+                    .HasColumnName("PDFDa");
 
                 entity.Property(e => e.Pdfdda)
                     .IsUnicode(false)
@@ -236,7 +230,11 @@ namespace Arenda.Models
             modelBuilder.Entity<WordFile>(entity =>
             {
                 entity.HasKey(e => e.WordId)
-                    .HasName("PK__WordFile__2C20F066AEA9025F");
+                    .HasName("PK__WordFile__2C20F0661F023EFF");
+
+                entity.Property(e => e.WordAttorney).IsUnicode(false);
+
+                entity.Property(e => e.WordDa).IsUnicode(false);
 
                 entity.Property(e => e.WordDda).IsUnicode(false);
 
@@ -245,8 +243,6 @@ namespace Arenda.Models
                 entity.Property(e => e.WordKda).IsUnicode(false);
 
                 entity.Property(e => e.WordPda).IsUnicode(false);
-
-                entity.Property(e => e.WordPolicy).IsUnicode(false);
 
                 entity.Property(e => e.WordStore).IsUnicode(false);
 

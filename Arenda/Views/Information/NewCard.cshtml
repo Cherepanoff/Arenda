@@ -4,89 +4,106 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="~/css/style.css" />
 </head>
-<form asp-action="NewCard" asp-controller="Information" asp-route-id="@Model.ArendatorId">
-    <input asp-for="ArendatorId" type="hidden" />
-    <input asp-for="ArendatorName" type="hidden" />
-    <input asp-for="ArendatorFloor" type="hidden" />
-    <input asp-for="ArendatorType" type="hidden" />
-    <div class="form-group">
-        <label asp-for="ProductCategory" class="control-label">Категория товара</label>
-        <input type="text" asp-for="ProductCategory" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="RoomNumber" class="control-label">Номер помещения</label>
-        <input type="text" asp-for="RoomNumber" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="NumberContract" class="control-label">Номер договора</label>
-        <input type="text" asp-for="NumberContract" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="ArendatorFloor" class="control-label">Этаж</label>
-        <input type="text" asp-for="ArendatorFloor" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="Area" class="control-label">Расчетная площадь</label>
-        <input type="text" asp-for="Area" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="PayCondition" class="control-label">Арендная ставка</label>
-        <input type="text" asp-for="PayCondition" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="ExplPay" class="control-label">Эксплуатационные платежи</label>
-        <input type="text" asp-for="ExplPay" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="MarkPay" class="control-label">Маркетинговые платежи</label>
-        <input type="text" asp-for="MarkPay" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="CommunalPay" class="control-label">Коммунальные платежи</label>
-        <input type="text" asp-for="CommunalPay" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="Curs" class="control-label">Курс</label>
-        <input type="text" asp-for="Curs" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="IndexSize" class="control-label">Размер индексации</label>
-        <input type="text" asp-for="IndexSize" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="AvansPay" class="control-label">Авансовый платеж</label>
-        <input type="text" asp-for="AvansPay" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="Deposit" class="control-label">Депозит, порядок зачета депозита</label>
-        <input type="text" asp-for="Deposit" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="Deposit" class="control-label">Дата открытия</label>
-        <input type="date" asp-for="Deposit" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="DateOpen" class="control-label">Начало начисления аренды</label>
-        <input type="text" asp-for="DateOpen" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="PayStart" class="control-label">Срок на ремонт</label>
-        <input type="text" asp-for="PayStart" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="RepairTime" class="control-label">Электромощность</label>
-        <input type="text" asp-for="RepairTime" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="ElectricPower" class="control-label">Срок аренды</label>
-        <input type="text" asp-for="ElectricPower" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="TermArenda" class="control-label">Контактное лицо</label>
-        <input type="text" asp-for="TermArenda" class="form-control" />
-    </div>
+<div class="full">
+    <form asp-action="NewCard" asp-controller="Information" asp-route-id="@Model.ArendatorId">
+        <input asp-for="ArendatorId" type="hidden" />
+        <input asp-for="ArendatorName" type="hidden" />
+        <input asp-for="ArendatorFloor" type="hidden" />
+        <input asp-for="ArendatorType" type="hidden" />
+        <input asp-for="LegalPerson" type="hidden" />
+        <input asp-for="GeneralDirector" type="hidden" />
+        <input asp-for="NumberContract" type="hidden" />
+        <input asp-for="DateContract" type="hidden" />
+        <input asp-for="AdressLegal" type="hidden" />
+        <input asp-for="AdressFact" type="hidden" />
+        <input asp-for="AllowAct" type="hidden" />
+        <input asp-for="StartAct" type="hidden" />
+        <input asp-for="Email" type="hidden" />
+        <input asp-for="Logo" type="hidden" />
+        <input asp-for="Commercial" type="hidden" />
+        <input asp-for="Contact" type="hidden" />
+        <input asp-for="Object" type="hidden" />
+        <input asp-for="PastArenda" type="hidden" />
+        <input asp-for="Curator" type="hidden" />
+        <div class="form-group">
+            <label asp-for="ProductCategory" class="control-label">Категория товара</label>
+            <input type="text" asp-for="ProductCategory" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="RoomNumber" class="control-label">Номер помещения</label>
+            <input type="text" asp-for="RoomNumber" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="NumberContract" class="control-label">Номер договора</label>
+            <input type="text" asp-for="NumberContract" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="ArendatorFloor" class="control-label">Этаж</label>
+            <input type="text" asp-for="ArendatorFloor" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Area" class="control-label">Расчетная площадь</label>
+            <input type="text" asp-for="Area" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="PayCondition" class="control-label">Арендная ставка</label>
+            <input type="text" asp-for="PayCondition" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="ExplPay" class="control-label">Эксплуатационные платежи</label>
+            <input type="text" asp-for="ExplPay" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="MarkPay" class="control-label">Маркетинговые платежи</label>
+            <input type="text" asp-for="MarkPay" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="CommunalPay" class="control-label">Коммунальные платежи</label>
+            <input type="text" asp-for="CommunalPay" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Curs" class="control-label">Курс</label>
+            <input type="text" asp-for="Curs" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="IndexSize" class="control-label">Размер индексации</label>
+            <input type="text" asp-for="IndexSize" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="AvansPay" class="control-label">Авансовый платеж</label>
+            <input type="text" asp-for="AvansPay" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Deposit" class="control-label">Депозит, порядок зачета депозита</label>
+            <input type="text" asp-for="Deposit" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="DateOpen" class="control-label">Дата открытия</label>
+            <input type="date" asp-for="DateOpen" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="PayStart" class="control-label">Начало начисления аренды</label>
+            <input type="text" asp-for="PayStart" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="RepairTime" class="control-label">Срок на ремонт</label>
+            <input type="text" asp-for="RepairTime" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="ElectricPower" class="control-label">Электромощность</label>
+            <input type="text" asp-for="ElectricPower" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="TermArenda" class="control-label">Срок аренды</label>
+            <input type="text" asp-for="TermArenda" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="ContactPerson" class="control-label">Контактное лицо</label>
+            <input type="text" asp-for="ContactPerson" class="form-control" />
+        </div>
 
-    <div class="form-group">
-        <input type="submit" value="Отправить" class="btn btn-default" />
-    </div>
-</form>
+        <div class="form-group">
+            <input type="submit" value="Отправить" class="btn btn-default" />
+        </div>
+    </form>
+</div>

@@ -6,13 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Models\**" />
     <Compile Remove="Services\**" />
-    <Content Remove="Models\**" />
     <Content Remove="Services\**" />
-    <EmbeddedResource Remove="Models\**" />
     <EmbeddedResource Remove="Services\**" />
-    <None Remove="Models\**" />
     <None Remove="Services\**" />
   </ItemGroup>
 
@@ -27,18 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Include="Models\Arendator.cs" />
-    <Compile Include="Models\Comment.cs" />
-    <Compile Include="Models\Contact.cs" />
-    <Compile Include="Models\ErrorViewModel.cs" />
-    <Compile Include="Models\PdfFile.cs" />
-    <Compile Include="Models\Role.cs" />
-    <Compile Include="Models\ShelkContext.cs" />
-    <Compile Include="Models\User.cs" />
-    <Compile Include="Models\WordFile.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <PackageReference Include="Aspose.Words" Version="21.5.0" />
     <PackageReference Include="ClosedXML" Version="0.95.4" />
     <PackageReference Include="EPPlus" Version="5.5.4" />
     <PackageReference Include="Extended.Wpf.Toolkit" Version="4.1.0" />
@@ -53,6 +38,7 @@
     <PackageReference Include="Microsoft.Office.Interop.Word" Version="15.0.4797.1003" />
     <PackageReference Include="NLog" Version="4.7.8" />
     <PackageReference Include="NLog.Schema" Version="4.7.8" />
+    <PackageReference Include="Syncfusion.DocIO.Net.Core" Version="19.1.0.65" />
     <PackageReference Include="System.IO" Version="4.3.0" />
   </ItemGroup>
 
@@ -62,8 +48,22 @@
     </None>
     <None Include="Views\Account\Login.cshtml" />
     <None Include="Views\Account\Register.cshtml" />
+    <None Include="Views\Contract\AttorneyPDF.cshtml" />
+    <None Include="Views\Contract\AttorneyWord.cshtml" />
+    <None Include="Views\Contract\DaPDF.cshtml" />
+    <None Include="Views\Contract\DaWord.cshtml" />
+    <None Include="Views\Contract\DdaPDF.cshtml" />
+    <None Include="Views\Contract\DdaWord.cshtml" />
+    <None Include="Views\Contract\DocPDF.cshtml" />
+    <None Include="Views\Contract\DocWord.cshtml" />
     <None Include="Views\Contract\KdaPDF.cshtml" />
     <None Include="Views\Contract\KdaWord.cshtml" />
+    <None Include="Views\Contract\PdaPDF.cshtml" />
+    <None Include="Views\Contract\PdaWord.cshtml" />
+    <None Include="Views\Contract\PolicyPDF.cshtml" />
+    <None Include="Views\Contract\StorePDF.cshtml" />
+    <None Include="Views\Contract\StoreWord.cshtml" />
+    <None Include="Views\Home\AddArendator.cshtml" />
     <None Include="Views\Home\ArendatorList.cshtml" />
     <None Include="Views\Home\DeleteArendator.cshtml" />
     <None Include="Views\Home\fl_0.cshtml" />
@@ -81,10 +81,8 @@
     <None Include="Views\Information\Dogovor.cshtml" />
     <None Include="Views\Information\Info.cshtml" />
     <None Include="Views\Information\NewCard.cshtml" />
-    <None Include="Views\Information\NewCondition.cshtml" />
     <None Include="Views\Information\NewDogovor.cshtml" />
     <None Include="Views\Information\NewInfo.cshtml" />
-    <None Include="Views\Information\SpecConditions.cshtml" />
     <None Include="Views\Shared\Error.cshtml" />
     <None Include="Views\Shared\_Layout.cshtml" />
     <None Include="Views\Shared\_ValidationScriptsPartial.cshtml" />
@@ -97,6 +95,21 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\contract\pdf\Kda\" />
+    <Folder Include="wwwroot\contract\pdf\pda\" />
+    <Folder Include="wwwroot\contract\pdf\dda\" />
+    <Folder Include="wwwroot\contract\pdf\store\" />
+    <Folder Include="wwwroot\contract\pdf\policy\" />
+    <Folder Include="wwwroot\contract\pdf\doc\" />
+    <Folder Include="wwwroot\contract\pdf\da\" />
+    <Folder Include="wwwroot\contract\pdf\attorney\" />
+    <Folder Include="wwwroot\contract\word\dda\" />
+    <Folder Include="wwwroot\contract\word\doc\" />
+    <Folder Include="wwwroot\contract\word\kda\" />
+    <Folder Include="wwwroot\contract\word\pda\" />
+    <Folder Include="wwwroot\contract\word\policy\" />
+    <Folder Include="wwwroot\contract\word\store\" />
+    <Folder Include="wwwroot\contract\word\da\" />
+    <Folder Include="wwwroot\contract\word\attorney\" />
   </ItemGroup>
 
   <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
